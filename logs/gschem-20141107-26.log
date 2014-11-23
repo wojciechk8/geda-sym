@@ -1,0 +1,11 @@
+gEDA/gschem, wersja 1.9.1.20140308
+Autorzy gEDA/gschem nie udzielają ŻADNYCH gwarancji; szczegóły (w języku angielskim) w pliku o nazwie COPYING .
+Ten program jest dostępny jako wolne oprogramowanie, można go rozprowadzać
+pod pewnymi warunkami. Szczegóły (w języku angielskim) znajdują się w pliku COPYING.
+
+Wczytano plik inicjalizacji scm [/usr/share/gEDA/scheme/gschem.scm]
+Loaded RC file [/usr/share/gEDA/system-gafrc]
+Loaded RC file [/home/wojtek/.gEDA/gafrc]
+Loaded RC file [/home/wojtek/Pulpit/comcom/gafrc]
+Loaded RC file [/usr/share/gEDA/system-gschemrc]
+Loaded RC file [/home/wojtek/.gEDA/gschemrc]

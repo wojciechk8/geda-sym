@@ -1,0 +1,37 @@
+From 28e7fde2046930e099da46d4b594f39cbce148de Mon Sep 17 00:00:00 2001
+From: Wojciech Krutnik <mientos4@gmail.com>
+Date: Thu, 5 Jun 2014 16:57:00 +0200
+Subject: [PATCH 1/2] gschem: changed bus end style to END_ROUND
+
+---
+ gschem/src/o_bus.c         | 2 +-
+ libgedacairo/edarenderer.c | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/gschem/src/o_bus.c b/gschem/src/o_bus.c
+index 8a2e5a2..fe2a64e 100644
+--- a/gschem/src/o_bus.c
++++ b/gschem/src/o_bus.c
+@@ -189,5 +189,5 @@ o_bus_draw_rubber (GschemToplevel *w_current, EdaRenderer *renderer)
+                   w_current->first_wx,  w_current->first_wy,
+                   w_current->second_wx, w_current->second_wy);
+   eda_cairo_set_source_color (cr, SELECT_COLOR, color_map);
+-  eda_cairo_stroke (cr, flags, TYPE_SOLID, END_NONE, size, -1, -1);
++  eda_cairo_stroke (cr, flags, TYPE_SOLID, END_ROUND, size, -1, -1);
+ }
+diff --git a/libgedacairo/edarenderer.c b/libgedacairo/edarenderer.c
+index df2dc9f..d801698 100644
+--- a/libgedacairo/edarenderer.c
++++ b/libgedacairo/edarenderer.c
+@@ -658,7 +658,7 @@ eda_renderer_draw_bus (EdaRenderer *renderer, OBJECT *object)
+                   object->line->x[0], object->line->y[0],
+                   object->line->x[1], object->line->y[1]);
+   eda_cairo_stroke (renderer->priv->cr, EDA_RENDERER_CAIRO_FLAGS (renderer),
+-                    TYPE_SOLID, END_SQUARE,
++                    TYPE_SOLID, END_ROUND,
+                     EDA_RENDERER_STROKE_WIDTH (renderer, BUS_WIDTH),
+                     -1, -1);
+ }
+-- 
+2.0.0.rc2
+

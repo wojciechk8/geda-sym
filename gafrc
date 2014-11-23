@@ -1,0 +1,19 @@
+; PRINT
+(load (build-path (getenv "HOME") ".gEDA" "print-colormap"))
+
+; LIBRARY
+
+(reset-component-library) ; don't use system symbols
+(reset-source-library) ; don't use system schematics
+
+; current dir stuff
+(define current-working-directory ".")
+(define symbols (build-path (getenv "HOME") ".gEDA" "sym"))
+;(footprint-library "~/.gEDA/fp")
+
+;(component-library current-working-directory "Current dir")
+;(source-library current-working-directory "Current dir")
+
+(component-library-search (build-path symbols) )
+;(component-library (build-path mysymbols) "AVR")
+;(component-library (build-path mysymbols "misc") "Misc (git)")

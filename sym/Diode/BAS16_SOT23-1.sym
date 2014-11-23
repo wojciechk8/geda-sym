@@ -1,0 +1,49 @@
+v 20140308 2
+T 150 500 8 10 1 1 0 0 1
+refdes=D?
+T 100 700 5 10 0 0 0 0 1
+symversion=1.0
+T 100 800 5 10 0 0 0 0 1
+device=DIODE
+T 100 900 5 10 0 0 0 0 1
+footprint=SOT23
+T 100 1000 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 100 1100 5 10 0 0 0 0 1
+documentation=http://www.nxp.com/documents/data_sheet/BAS16_SER.pdf
+T 100 1200 5 10 0 0 0 0 1
+description=High-speed diode 100V 215mA
+T 100 1300 5 10 0 0 0 0 1
+numslots=0
+T 100 1400 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 1500 5 10 0 0 0 0 1
+use-license=unlimited
+T 150 400 8 10 1 1 0 0 1
+value=BAS16
+P 0 200 150 200 1 0 0
+{
+T 100 250 5 10 0 0 0 0 1
+pintype=pas
+T 255 195 9 10 0 0 0 0 1
+pinlabel=A
+T 150 250 5 8 0 0 0 6 1
+pinnumber=1
+T 100 250 5 10 0 0 0 0 1
+pinseq=1
+}
+L 150 300 350 200 3 15 2 0 -1 -1
+L 350 200 150 100 3 15 2 0 -1 -1
+L 150 100 150 300 3 15 2 0 -1 -1
+P 500 200 350 200 1 0 0
+{
+T 400 150 5 10 0 0 180 0 1
+pintype=pas
+T 245 205 9 10 0 0 180 0 1
+pinlabel=K
+T 350 250 5 8 0 0 0 0 1
+pinnumber=3
+T 400 150 5 10 0 0 180 0 1
+pinseq=3
+}
+L 350 100 350 300 3 15 0 0 -1 -1

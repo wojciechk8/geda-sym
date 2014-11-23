@@ -1,0 +1,88 @@
+From 1020a70103ff1e2f9ac4ca40e065fc38610f8bb4 Mon Sep 17 00:00:00 2001
+From: Wojciech Krutnik <mientos4@gmail.com>
+Date: Thu, 5 Jun 2014 17:10:48 +0200
+Subject: [PATCH 2/2] gschem: let the user set up a font
+
+---
+ gschem/src/o_basic.c | 10 ++++++++++
+ gschem/src/x_print.c | 10 ++++++++++
+ 2 files changed, 20 insertions(+)
+
+diff --git a/gschem/src/o_basic.c b/gschem/src/o_basic.c
+index d8faa8a..66421d0 100644
+--- a/gschem/src/o_basic.c
++++ b/gschem/src/o_basic.c
+@@ -53,9 +53,11 @@ void o_redraw_rects (GschemToplevel *w_current,
+   GList *iter;
+   BOX *world_rect;
+   EdaRenderer *renderer;
++  EdaConfig *cfg;
+   int render_flags;
+   GArray *render_color_map = NULL;
+   GArray *render_outline_color_map = NULL;
++  gchar *render_font; /* UTF-8 */
+ 
+   g_return_if_fail (w_current != NULL);
+   g_return_if_fail (toplevel != NULL);
+@@ -132,6 +134,13 @@ void o_redraw_rects (GschemToplevel *w_current,
+                 "color-map", render_color_map,
+                 NULL);
+ 
++  /* Set up renderer font */
++  cfg = eda_config_get_context_for_path (toplevel -> page_current -> page_filename);
++  render_font = eda_config_get_string (cfg, "gschem","font", NULL);
++  if (render_font != NULL) {
++    g_object_set (G_OBJECT (renderer), "font-name", render_font, NULL);
++  }
++
+   /* Determine whether we should draw the selection at all */
+   draw_selected = !(w_current->inside_action &&
+                     ((w_current->event_state == MOVE) ||
+@@ -297,6 +306,7 @@ void o_redraw_rects (GschemToplevel *w_current,
+   g_object_unref (G_OBJECT (renderer));
+   g_array_free (render_color_map, TRUE);
+   g_array_free (render_outline_color_map, TRUE);
++  g_free (render_font);
+ }
+ 
+ 
+diff --git a/gschem/src/x_print.c b/gschem/src/x_print.c
+index 42a22d5..284d0a6 100644
+--- a/gschem/src/x_print.c
++++ b/gschem/src/x_print.c
+@@ -122,8 +122,10 @@ x_print_draw_page (TOPLEVEL *toplevel, PAGE *page,
+                    gboolean is_color, gboolean is_raster)
+ {
+   EdaRenderer *renderer;
++  EdaConfig *cfg;
+   cairo_matrix_t mtx;
+   GArray *color_map;
++  gchar *font; /* UTF-8 */
+   int status, wx_min, wy_min, wx_max, wy_max;
+   double w_width, w_height, scale;
+   GList *iter;
+@@ -179,6 +181,13 @@ x_print_draw_page (TOPLEVEL *toplevel, PAGE *page,
+                            "render-flags", is_raster ? EDA_RENDERER_FLAG_HINTING : 0,
+                            NULL);
+ 
++  /* Fourthly, change the used font name if it is set up */
++  cfg = eda_config_get_context_for_path (page->page_filename);
++  font = eda_config_get_string (cfg, "gschem", "font", NULL);
++  if (font != NULL) {
++    g_object_set (G_OBJECT (renderer), "font-name", font, NULL);
++  }
++
+   /* Finally, actually do drawing */
+   cairo_save (cr);
+   cairo_transform (cr, &mtx);
+@@ -203,6 +212,7 @@ x_print_draw_page (TOPLEVEL *toplevel, PAGE *page,
+ 
+   g_object_unref (renderer);
+   g_array_free (color_map, TRUE);
++  g_free (font);
+ }
+ 
+ /*! Drawing callback for use with GtkPrintOperation. */
+-- 
+2.0.0.rc2
+

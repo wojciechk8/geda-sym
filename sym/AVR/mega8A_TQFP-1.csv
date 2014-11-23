@@ -1,0 +1,96 @@
+# This is the template file for creating symbols with tragesym							
+# every line starting with '#' is a comment line.							
+# save it as text file with tab separated cells and start tragesym							
+							
+[options]							
+# wordswap swaps labels if the pin is on the right side an looks like this:							
+"#   ""PB1 (CLK)"". That's useful for micro controller port labels"							
+# rotate_labels rotates the pintext of top and bottom pins							
+#   this is useful for large symbols like FPGAs with more than 100 pins							
+# sort_labels will sort the pins by it's labels							
+#   useful for address ports, busses, ...							
+wordswap	no						
+rotate_labels	no						
+sort_labels	no						
+generate_pinseq	yes						
+sym_width	2000						
+pinwidthvertical	200						
+pinwidthhorizontal	200						
+							
+[geda_attr]							
+# name will be printed in the top of the symbol							
+# if you have a device with slots, you'll have to use slot= and slotdef=							
+# use comment= if there are special information you want to add							
+symversion	1.0						
+device	ATMEGA8A						
+refdes	U?						
+value	ATmega8A						
+graphical	0						
+footprint	TQFP32P900						
+description	AVR microcontroller						
+documentation	file:///home/wojtek/Dropbox/Dokumenty/Datasheet/AVR/ATmega8A.pdf						
+author	Wojciech Krutnik						
+numslots	0						
+dist-license	GPL						
+use-license	unlimited						
+#slot	1						
+#slotdef	1:						
+#slotdef	2:						
+#slotdef	3:						
+#slotdef	4:						
+#comment							
+#comment							
+#comment							
+							
+[pins]							
+# tabseparated list of pin descriptions							
+#							
+# pinnr is the physical number of the pin							
+# seq is the pinseq= attribute, leave it blank if it doesn't matter							
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)							
+# style can be (line,dot,clk,dotclk,spacer(only w/o wordswap),none). none if only want to add a net							
+# posit. can be (l,r,t,b) or empty for nets							
+# net specifies the name of the net. Vcc or GND for example.							
+# label represents the pinlabel.							
+#	"negation lines can be added with ""\_"" example: \_enable\_ "						
+#	"if you want to write a ""\"" use ""\\"" as escape sequence"						
+# swap can be (s,) specifies if words in label are to be swapped							
+#							
+#pinnr	seq	type	style	posit.	net	label	swap
+29	1	io	line	l		(RESET) PC6	s
+	2		spacer	l			
+7	3	io	line	l		(XTAL1/TOSC1) PB6	s
+8	4	io	line	l		(XTAL2/TOSC2) PB7	s
+	5		spacer	l			
+4	6	pwr	line	l		VCC	
+6	7	pwr	line	l		VCC	
+18	8	pwr	line	l		AVCC	
+20	9	pwr	line	l		AREF	
+	10		spacer	l			
+3	11	pwr	line	l		GND	
+5	12	pwr	line	l		GND	
+21	13	pwr	line	l		GND	
+12	14	io	line	r		(ICP1) PB0	
+13	15	io	line	r		PB1 (OC1A)	s
+14	16	io	line	r		PB2 (SS/OC1B)	s
+15	17	io	line	r		PB3 (MOSI/OC2)	s
+16	18	io	line	r		PB4 (MISO)	s
+17	19	io	line	r		PB5 (SCK)	s
+	20		spacer	r			
+23	21	io	line	r		PC0 (ADC0)	s
+24	22	io	line	r		PC1 (ADC1)	s
+25	23	io	line	r		PC2 (ADC2)	s
+26	24	io	line	r		PC3 (ADC3)	s
+27	25	io	line	r		PC4 (ADC4/SDA)	s
+28	26	io	line	r		PC5 (ADC5/SCL)	s
+19	27	in	line	r		ADC6	
+22	28	in	line	r		ADC7	
+	29		spacer	r			
+30	30	io	line	r		(RXD) PD0	
+31	31	io	line	r		(TXD) PD1	
+32	32	io	line	r		(INT0) PD2	
+1	33	io	line	r		(INT1) PD3	
+2	34	io	line	r		(XCK/T0) PD4	
+9	35	io	line	r		(T1) PD5	
+10	36	io	line	r		(AIN0) PD6	
+11	37	io	line	r		(AIN1) PD7	

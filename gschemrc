@@ -1,0 +1,18 @@
+(logging "disabled")
+;; UI
+(window-size 1260 640) ; Good size for 1600x1200
+(load (build-path (getenv "HOME") ".gEDA" "gschem-colormap"))
+(define default-titleblock "title-bordered-A4.sym")
+(undo-levels 30)
+(undo-panzoom "disabled")
+(zoom-with-pan "enabled")
+(log-window "later")
+(text-size 10)
+(middle-button "action")
+(third-button "mousepan")
+
+; bus ripper
+(bus-ripper-size 200)
+(bus-ripper-type "component")
+(bus-ripper-symname "busentry-1.sym")
+(bus-ripper-rotation "non-symmetric")

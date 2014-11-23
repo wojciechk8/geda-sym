@@ -1,0 +1,25 @@
+v 20140308 2
+T 37100 34950 8 10 1 1 0 0 1
+refdes=R?
+T 37100 35100 5 10 0 0 0 0 1
+symversion=1.0
+T 37100 35200 5 10 0 0 0 0 1
+device=RESISTOR
+T 37100 35300 5 10 0 0 0 0 1
+footprint=ACY100
+T 37100 35400 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 37100 35500 5 10 0 0 0 0 1
+documentation=none
+T 37100 35600 5 10 0 0 0 0 1
+description=Resistor
+T 37100 35700 5 10 0 0 0 0 1
+numslots=0
+T 37100 35800 5 10 0 0 0 0 1
+dist-license=GPL
+T 37100 35900 5 10 0 0 0 0 1
+use-license=unlimited
+T 37100 36000 5 10 0 0 0 0 1
+graphical=0
+T 37500 34950 8 10 1 1 0 0 1
+value=100

@@ -1,0 +1,25 @@
+From a8b2b5a146d1f573bfe486a993ce3803335f7a07 Mon Sep 17 00:00:00 2001
+From: Wojciech Krutnik <wojciechk8@gmail.com>
+Date: Tue, 9 Sep 2014 13:31:28 +0200
+Subject: [PATCH] libgeda: Changed font factor from 1.3 to 0.75
+
+---
+ libgeda/src/o_text_basic.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libgeda/src/o_text_basic.c b/libgeda/src/o_text_basic.c
+index 87b2410..505306f 100644
+--- a/libgeda/src/o_text_basic.c
++++ b/libgeda/src/o_text_basic.c
+@@ -84,7 +84,7 @@
+  *  The following factor was empirically determined to approximately match the
+  *  cap-height between the legacy gschem font, and fonts rendered using pango.
+  */
+-#define GEDA_FONT_FACTOR 1.3
++#define GEDA_FONT_FACTOR 0.75
+ 
+ /*! Size of a tab in characters */
+ int tab_in_chars = 8;
+-- 
+2.1.0
+
