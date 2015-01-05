@@ -1,0 +1,58 @@
+v 20140308 2
+T 100 300 8 10 1 1 0 0 1
+refdes=K?
+T 100 500 5 10 0 0 0 0 1
+symversion=1.0
+T 100 600 5 10 0 0 0 0 1
+device=RELAY
+T 100 700 5 10 0 0 0 0 1
+footprint=RELAY
+T 100 800 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 100 900 5 10 0 0 0 0 1
+documentation=none
+T 100 1000 5 10 0 0 0 0 1
+description=Single pole double throw
+T 100 1100 5 10 0 0 0 0 1
+numslots=0
+T 100 1200 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 1300 5 10 0 0 0 0 1
+use-license=unlimited
+P 0 100 100 100 1 0 0
+{
+T 100 150 5 10 0 0 0 0 1
+pintype=pas
+T 155 95 9 10 0 0 0 0 1
+pinlabel=COM
+T 5 145 5 10 0 0 0 6 1
+pinnumber=3
+T 100 150 5 10 0 0 0 0 1
+pinseq=3
+}
+P 500 0 400 0 1 0 0
+{
+T 400 -50 5 10 0 0 180 0 1
+pintype=pas
+T 345 5 9 10 0 0 180 0 1
+pinlabel=NO
+T 495 -45 5 10 0 0 180 6 1
+pinnumber=4
+T 400 -50 5 10 0 0 180 0 1
+pinseq=4
+}
+V 375 0 25 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1
+L 400 150 150 100 3 15 0 0 -1 -1
+V 125 100 25 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1
+P 500 200 400 200 1 0 0
+{
+T 400 150 5 10 0 0 180 0 1
+pintype=pas
+T 345 205 9 10 0 0 180 0 1
+pinlabel=NC
+T 495 155 5 10 0 0 180 6 1
+pinnumber=5
+T 400 150 5 10 0 0 180 0 1
+pinseq=5
+}
+V 375 200 25 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1

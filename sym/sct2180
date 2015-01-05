@@ -1,0 +1,26 @@
+VDD       ,24
+GNDD      ,2
+GNDD      ,15
+GNDA      ,4
+
+IN0       ,3
+IN1       ,5
+IN2       ,11
+IN3       ,12
+IN4       ,13
+IN5       ,14
+IN6       ,20
+IN7       ,22
+INS       ,10
+\_LA\_    ,21
+\_OE\_    ,1
+REXT      ,23
+
+OUT0      ,6
+OUT1      ,7
+OUT2      ,8
+OUT3      ,9
+OUT4      ,16
+OUT5      ,17
+OUT6      ,18
+OUT7      ,19
