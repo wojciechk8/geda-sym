@@ -4,7 +4,7 @@ refdes=T?
 T 100 700 5 10 0 0 0 0 1
 symversion=1.0
 T 100 800 5 10 0 0 0 0 1
-device=TRANSISTOR_BC337
+device=BC337
 T 100 900 5 10 0 0 0 0 1
 footprint=TO92
 T 100 1000 5 10 0 0 0 0 1
