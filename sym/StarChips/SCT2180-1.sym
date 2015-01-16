@@ -273,7 +273,7 @@ symversion=1.0
 T 300 3300 5 10 0 0 0 0 1
 device=SCT2180
 T 300 3400 5 10 0 0 0 0 1
-footprint=SO24
+footprint=SO24W
 T 300 3500 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 3600 5 10 0 0 0 0 1
