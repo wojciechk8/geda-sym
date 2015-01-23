@@ -10,6 +10,7 @@
 (text-size 10)
 (middle-button "action")
 (third-button "mousepan")
+(third-button-cancel "disabled")
 
 ; bus ripper
 (bus-ripper-size 200)
