@@ -1,6 +1,6 @@
 (logging "disabled")
 ;; UI
-(window-size 1260 640) ; Good size for 1600x1200
+(window-size 1600 1200)
 (load (build-path (getenv "HOME") ".gEDA" "gschem-colormap"))
 (define default-titleblock "title-bordered-A4.sym")
 (undo-levels 30)
@@ -8,7 +8,7 @@
 (zoom-with-pan "enabled")
 (log-window "later")
 (text-size 10)
-(middle-button "action")
+(middle-button "repeat")
 (third-button "mousepan")
 (third-button-cancel "disabled")
 
