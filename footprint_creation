@@ -1,0 +1,43 @@
+-Set grid to unit according to source drawing
+-Draw the pads. User CTRL-M to measure on component layer
+-Draw the silkscreen with 0.2mm line thickness on silk layer. The outline
+of the component is the outer edge of the silkscreen (not the center of the
+line nor the inner edge).
+-Draw an alignment cross in the future component reference point
+using two rectangles placed on "unused" or "unused1" layer
+-Check all dimensions according to drawing using CTRL-M
+-Go over each pad, press 'n' and enter number of the pad.
+-Select everything
+-Copy selection to buffer
+-Click on the alignment cross
+-Convert buffer to element
+-Set the grid to maximum
+-Place the element somewhere apart from the original drawing
+-Press Q on pads which shall be square
+-Go over every pad, press 'n' and enter the number again.
+-Now you need to change soldermask for all pads. Always select all pads with
+the same thickness (measure using CTRL-M). If you are working in milimeters,
+issue then "changeclearsize(selectedobjects, thickness/2+0.1mm)". If in mils,
+"changeclearsize(selectedobjects, thickness/2+4mil)".
+-Unselect all
+-Turn off soldermask
+-Turn off silk
+-Select component layer
+-Draw a big rectangle over the footprint
+-Select all pads
+-"changeclearsize(selectedobjects, 0.35, mm)"
+-Remove the big rectangle
+-Turn on silk
+-Press 'n' over the silk and enter for resistor R000, capacitor C000,
+coil L000, transistor Q000, soldering point T000, diode D000 etc.
+-Place the label suitably near the footprint
+-Press 'd' over the footprint, check the numbers, press 'd' again
+-Select the whole footprint
+-Copy selection to buffer
+-Click exactly over the middle of the diamond
+-Save buffer elements to file, enter the filename
+-File, Quit Program, OK to lose data? OK.
+-pcb
+-Load element data to buffer
+-Enter the name of the file
+-Click somewhere and check the footprint looks as expected
