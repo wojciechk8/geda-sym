@@ -3,14 +3,14 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20091103]
 
-PCB["" 10.2540mm 615.99mil]
+PCB["" 6000.00mil 5000.00mil]
 
-Grid[1000.000000 0.0000 0.0000 0]
+Grid[196.850394 0.0000 0.0000 1]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[10.00mil 10.00mil 10.00mil 10.00mil 15.00mil 10.00mil]
-Flags("nameonpcb,uniquename,clearnew,snappin")
-Groups("1,c:2,s")
+Flags("nameonpcb,clearnew,snappin")
+Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
 Symbol[' ' 18.00mil]
@@ -785,23 +785,18 @@ Symbol['~' 12.00mil]
 	SymbolLine[15.00mil 35.00mil 20.00mil 35.00mil 8.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
-Attribute("PCB::grid::unit" "mil")
-
-Element["" "" "" "" 1.3170mm 14.6270mm 1.5000mm 2.2500mm 0 100 ""]
-(
-	Pin[300.00mil 0.0000 60.00mil 20.00mil 66.00mil 0.6000mm "OUT" "3" ""]
-	Pin[100.00mil 0.0000 60.00mil 20.00mil 66.00mil 0.6000mm "VCC" "2" ""]
-	Pin[0.0000 0.0000 60.00mil 20.00mil 66.00mil 0.6000mm "GND" "1" ""]
-	ElementLine [6.5600mm -11.2000mm 6.5600mm -2.0000mm 10.00mil]
-	ElementLine [1.0600mm -11.2000mm 1.0600mm -2.0000mm 10.00mil]
-	ElementLine [-1.1900mm -14.5000mm -1.1900mm -2.0000mm 10.00mil]
-	ElementLine [8.8100mm -14.5000mm -1.1900mm -14.5000mm 10.00mil]
-	ElementLine [8.8100mm -2.0000mm 8.8100mm -14.5000mm 10.00mil]
-	ElementLine [-1.1900mm -2.0000mm 8.8100mm -2.0000mm 10.00mil]
-	ElementArc [150.00mil -11.2000mm 2.7500mm 2.7500mm 180 90 10.00mil]
-	ElementArc [150.00mil -11.2000mm 2.7500mm 2.7500mm 270 90 10.00mil]
-
-	)
+Attribute("PCB::grid::unit" "mm")
+Attribute("PCB::grid::size" "0.0500mm")
+Via[82.5800mm 37.4500mm 60.00mil 20.00mil 66.00mil 0.8000mm "6" ""]
+Via[80.0400mm 37.4500mm 60.00mil 20.00mil 66.00mil 0.8000mm "7" ""]
+Via[77.5000mm 37.4500mm 60.00mil 20.00mil 66.00mil 0.8000mm "8" ""]
+Via[74.9600mm 37.4500mm 60.00mil 20.00mil 66.00mil 0.8000mm "9" ""]
+Via[72.4200mm 37.4500mm 60.00mil 20.00mil 66.00mil 0.8000mm "10" ""]
+Via[82.5800mm 97.6500mm 60.00mil 20.00mil 66.00mil 0.8000mm "5" ""]
+Via[80.0400mm 97.6500mm 60.00mil 20.00mil 66.00mil 0.8000mm "4" ""]
+Via[77.5000mm 97.6500mm 60.00mil 20.00mil 66.00mil 0.8000mm "3" ""]
+Via[74.9600mm 97.6500mm 60.00mil 20.00mil 66.00mil 0.8000mm "2" ""]
+Via[72.4200mm 97.6500mm 60.00mil 20.00mil 66.00mil 0.8000mm "1" ""]
 Layer(1 "top")
 (
 )
@@ -813,4 +808,48 @@ Layer(3 "signal2")
 )
 Layer(4 "signal3")
 (
+)
+Layer(5 "power")
+(
+)
+Layer(6 "bottom")
+(
+)
+Layer(7 "outline")
+(
+)
+Layer(8 "spare")
+(
+)
+Layer(9 "bottom silk")
+(
+)
+Layer(10 "top silk")
+(
+	Line[57.6000mm 36.7000mm 57.6000mm 32.7000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 36.7000mm 57.6000mm 36.7000mm 10.00mil 20.00mil "clearline"]
+	Line[97.4000mm 36.7000mm 97.4000mm 32.7000mm 10.00mil 20.00mil "clearline"]
+	Line[101.4000mm 36.7000mm 97.4000mm 36.7000mm 10.00mil 20.00mil "clearline"]
+	Line[97.4000mm 98.4000mm 101.4000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[97.4000mm 102.4000mm 97.4000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 32.7000mm 53.6000mm 102.4000mm 10.00mil 20.00mil "clearline"]
+	Line[101.4000mm 32.7000mm 53.6000mm 32.7000mm 10.00mil 20.00mil "clearline"]
+	Line[101.4000mm 102.4000mm 101.4000mm 32.7000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 102.4000mm 101.4000mm 102.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 98.4000mm 53.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 102.4000mm 57.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[54.6000mm 102.4000mm 53.6000mm 101.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 100.4000mm 55.6000mm 102.4000mm 10.00mil 20.00mil "clearline"]
+	Line[56.6000mm 102.4000mm 53.6000mm 99.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 98.4000mm 57.6000mm 102.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 101.4000mm 54.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 100.4000mm 55.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 99.4000mm 56.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 99.4000mm 54.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 100.4000mm 55.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[56.6000mm 98.4000mm 53.6000mm 101.4000mm 10.00mil 20.00mil "clearline"]
+	Line[53.6000mm 102.4000mm 57.6000mm 98.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 99.4000mm 54.6000mm 102.4000mm 10.00mil 20.00mil "clearline"]
+	Line[55.6000mm 102.4000mm 57.6000mm 100.4000mm 10.00mil 20.00mil "clearline"]
+	Line[57.6000mm 101.4000mm 56.6000mm 102.4000mm 10.00mil 20.00mil "clearline"]
 )
