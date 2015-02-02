@@ -1,0 +1,53 @@
+v 20140308 2
+T 110 360 8 10 1 1 0 0 1
+refdes=TVS?
+T 110 510 5 10 0 0 0 0 1
+symversion=1.0
+T 110 610 5 10 0 0 0 0 1
+device=TVS
+T 110 710 5 10 0 0 0 0 1
+footprint=DO214AC
+T 110 810 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 110 910 5 10 0 0 0 0 1
+documentation=http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf
+T 110 1010 5 10 0 0 0 0 1
+description=400W Transient Voltage Suppression Diode
+T 110 1110 5 10 0 0 0 0 1
+numslots=0
+T 110 1210 5 10 0 0 0 0 1
+dist-license=GPL
+T 110 1310 5 10 0 0 0 0 1
+use-license=unlimited
+T 110 1410 5 10 0 0 0 0 1
+graphical=0
+T 510 360 8 10 1 1 0 0 1
+value=SMAJXXA
+L 260 310 460 210 3 15 2 0 -1 -1
+L 460 210 260 110 3 15 2 0 -1 -1
+L 260 110 260 310 3 15 2 0 -1 -1
+P 610 210 460 210 1 0 0
+{
+T 510 160 5 10 0 0 180 0 1
+pintype=pas
+T 355 215 9 10 0 0 180 0 1
+pinlabel=K
+T 460 260 5 8 0 0 0 0 1
+pinnumber=1
+T 510 160 5 10 0 0 180 0 1
+pinseq=1
+}
+L 460 135 460 285 3 15 0 0 -1 -1
+P 110 210 260 210 1 0 0
+{
+T 210 260 5 10 0 0 0 0 1
+pintype=pas
+T 365 205 9 10 0 0 0 0 1
+pinlabel=A
+T 260 260 5 8 0 0 0 6 1
+pinnumber=2
+T 210 260 5 10 0 0 0 0 1
+pinseq=2
+}
+L 460 285 485 310 3 15 2 0 -1 -1
+L 460 135 435 110 3 15 2 0 -1 -1
