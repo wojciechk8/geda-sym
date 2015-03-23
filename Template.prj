@@ -1,0 +1,6 @@
+schematics Temp.sch
+output-name	Temp
+
+skip-m4
+
+gnetlist partslist3 -o Temp.parts
