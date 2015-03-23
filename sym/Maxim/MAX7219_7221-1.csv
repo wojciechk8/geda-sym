@@ -26,7 +26,7 @@ device	MAX7219
 refdes	U?						
 value	MAX7219						
 graphical	0						
-footprint	SO24						
+footprint	SO24W						
 description	Serially Interfaced, 8-Digit LED Display Drivers						
 documentation	file:///home/wojtek/Dropbox/Dokumenty/Datasheet/MAX7219-MAX7221.pdf						
 author	Wojciech Krutnik						

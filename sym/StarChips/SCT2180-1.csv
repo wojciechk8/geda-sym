@@ -26,7 +26,7 @@ device	SCT2180
 refdes	U?						
 value	SCT2180						
 graphical	0						
-footprint	SO24						
+footprint	SO24W						
 description	8-bit Parallel-In/Parallel-Out Constant Current Driver						
 documentation	file:///home/wojtek/Dropbox/Dokumenty/Datasheet/sct2180.pdf						
 author	Wojciech Krutnik						
