@@ -21,7 +21,7 @@
    (graphic            "#034536");#047000
    (net                "#353691")
    (attribute          "#000275")
-   (logic-bubble       "#00ffff")
+   (logic-bubble       "#2CA0B8")
    (dots-grid          "#bebebe")
    (mesh-grid-major    "#c5c6d9");#191421
    (mesh-grid-minor    "#d5d5e0");#110b1a

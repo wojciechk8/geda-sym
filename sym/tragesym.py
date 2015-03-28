@@ -411,8 +411,8 @@ def writesym(filename,options,attr,pins):
 ### draw the pin
         if (pin.style=="dot" or  #short pin and dot?
             pin.style=="dotclk"):
-            x=basex + xf*100
-            y=basey + yf*100
+            x=basex + xf*150
+            y=basey + yf*150
         else:
             x=basex + xf*200
             y=basey + yf*200
@@ -435,10 +435,10 @@ def writesym(filename,options,attr,pins):
         pinax, pinay, pinaa, pinar=pina
         if (pin.style=="clk" or  #move label if clocksign
             pin.style=="dotclk"):
-            pinlx=pinlx + xf*75
-            pinly=pinly + yf*75
-            pinax=pinax + xf*75
-            pinay=pinay + yf*75
+            pinlx=pinlx + xf*50
+            pinly=pinly + yf*50
+            pinax=pinax + xf*50
+            pinay=pinay + yf*50
         pinlx=pinlx + basex
         pinly=pinly + basey
         pinax=pinax + basex
@@ -459,20 +459,20 @@ def writesym(filename,options,attr,pins):
         f.write("}\n")
 ### draw the negation bubble
         if (pin.style=="dot" or pin.style=="dotclk"):
-            x=basex + xf*250
-            y=basey + yf*250
-            f.write("V %i"%x+" %i"%y +" 50 6 0 0 0 -1 -1 0 -1 -1 -1 -1 -1\n")
+            x=basex + xf*175
+            y=basey + yf*175
+            f.write("V %i"%x+" %i"%y +" 25 6 10 0 0 -1 -1 0 -1 -1 -1 -1 -1\n")
 ### draw the clocksign
         if (pin.style=="clk" or
             pin.style=="dotclk"):
-            x1=basex+ xf*400
-            y1=basey+ yf*400
-            x2=x1- xf*100 +yf*75
-            y2=y1- yf*100 +xf*75
-            x3=x1- xf*100 -yf*75
-            y3=y1- yf*100 -xf*75
-            f.write("L %i"%x1+" %i"%y1+" %i"%x2+" %i"%y2 + " 3 0 0 0 -1 -1\n")
-            f.write("L %i"%x1+" %i"%y1+" %i"%x3+" %i"%y3 + " 3 0 0 0 -1 -1\n")
+            x1=basex+ xf*275
+            y1=basey+ yf*275
+            x2=x1- xf*75 +yf*50
+            y2=y1- yf*75 +xf*50
+            x3=x1- xf*75 -yf*50
+            y3=y1- yf*75 -xf*50
+            f.write("L %i"%x1+" %i"%y1+" %i"%x2+" %i"%y2 + " 6 10 2 0 -1 -1\n")
+            f.write("L %i"%x1+" %i"%y1+" %i"%x3+" %i"%y3 + " 6 10 2 0 -1 -1\n")
 ### draw a box
     f.write("B %i"%bottomleftx+" %i"%bottomlefty+" %i"%o_symwidth+" %i"%high+
             " 3 15 0 0 -1 -1 0 -1 -1 -1 -1 -1\n")
@@ -486,8 +486,8 @@ def writesym(filename,options,attr,pins):
 #	namex, namey = (bottomleftx + o_symwidth) / 2, (bottomlefty + high) / 2 + 100
 #    else:
     valuex, valuey = bottomleftx, bottomlefty-50
-    if numpbottom > 0:
-	valuey -= pinlength
+#   if numpbottom > 0:
+#	valuey -= pinlength
 
     textx = valuex
     texty = valuey + high + 250
@@ -496,13 +496,13 @@ def writesym(filename,options,attr,pins):
 
     ## special attribute format
     if attr.has_key(("refdes",1)):
-        f.write("T %i"% urefx +" %i"% urefy +" 8 12 1 1 0 0 1\n")
+        f.write("T %i"% urefx +" %i"% urefy +" 8 10 1 1 0 0 1\n")
         f.write("refdes=" + attr[("refdes",1)] + "\n")
     else:
         print "Warning: refdes attribut missing"
 
     if attr.has_key(("value",1)):
-        f.write("T %i" %valuex + " %i"% valuey + " 8 12 1 1 0 2 1\n")
+        f.write("T %i" %valuex + " %i"% valuey + " 8 10 1 1 0 2 1\n")
         f.write("value=" + attr[("value",1)] + "\n")
     else:
         print "Warning: value attribut missing"
