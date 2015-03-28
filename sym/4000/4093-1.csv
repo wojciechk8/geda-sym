@@ -22,13 +22,13 @@ pinwidthhorizontal	200
 # if you have a device with slots, you'll have to use slot= and slotdef=							
 # use comment= if there are special information you want to add							
 symversion	1.0						
-device	4066						
+device	4093						
 refdes	U?						
-value	4066						
+value	4093						
 graphical	0						
 footprint	DIP14						
-description	Quad single-pole single-throw analog switch						
-documentation	http://www.nxp.com/documents/data_sheet/HEF4066B.pdf						
+description	Quad 2-input NAND Schmitt trigger						
+documentation	http://www.nxp.com/documents/data_sheet/HEF4093B.pdf						
 author	Wojciech Krutnik						
 numslots	0						
 dist-license	GPL						
@@ -59,21 +59,19 @@ use-license	unlimited
 #pinnr	seq	type	style	posit.	net	label	swap
 14	1	pwr	line	t		VDD	
 7	2	pwr	line	b		VSS	
-13	3	in	line	l		EN1	
-5	4	in	line	l		EN2	
-6	5	in	line	l		EN3	
-12	6	in	line	l		EN4	
-	7		spacer	l			
-1	8	pas	line	l		I/O1	
-4	9	pas	line	l		I/O2	
-8	10	pas	line	l		I/O3	
-11	11	pas	line	l		I/O4	
-	12		spacer	r			
+1	3	in	line	l		1A	
+2	4	in	line	l		1B	
+	5		spacer	r			
+3	6	out	dot	r		1Y	
+5	7	in	line	l		2A	
+6	8	in	line	l		2B	
+	9		spacer	r			
+4	10	out	dot	r		2Y	
+8	11	in	line	l		3A	
+9	12	in	line	l		3B	
 	13		spacer	r			
-	14		spacer	r			
-	15		spacer	r			
-	16		spacer	r			
-2	17	pas	line	r		O/I1	
-3	18	pas	line	r		O/I2	
-9	19	pas	line	r		O/I3	
-10	20	pas	line	r		O/I4	
+10	14	out	dot	r		3Y	
+12	15	in	line	l		4A	
+13	16	in	line	l		4B	
+	17		spacer	r			
+11	18	out	dot	r		4Y	
