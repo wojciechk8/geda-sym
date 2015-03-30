@@ -19,8 +19,6 @@ T 100 1400 5 10 0 0 0 0 1
 dist-license=GPL
 T 100 1500 5 10 0 0 0 0 1
 use-license=unlimited
-T 100 1600 5 10 0 0 0 0 1
-graphical=0
 T 350 250 8 10 1 1 0 0 1
 value=BC847
 P 0 300 150 300 1 0 0
