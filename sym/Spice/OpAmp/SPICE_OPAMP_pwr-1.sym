@@ -39,7 +39,7 @@ pinlabel=VEE
 T 175 125 5 8 1 1 0 8 1
 pinnumber=4
 }
+T 100 950 5 10 1 0 0 0 1
+file=OPAMP.cir
 T 100 1100 5 10 0 0 0 0 1
-file=/home/wojtek/.gEDA/sym/Spice/OpAmp/LM358.cir
-T 100 1000 5 10 0 0 0 0 1
-model-name=LM358
+model-name=OPAMP
