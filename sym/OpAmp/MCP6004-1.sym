@@ -1,0 +1,74 @@
+v 20140308 2
+T 800 200 8 10 1 1 0 6 1
+refdes=U?
+T 200 800 5 10 0 0 0 0 1
+symversion=1.0
+T 200 900 5 10 0 0 0 0 1
+device=OPAMP
+T 200 1000 5 10 0 0 0 0 1
+footprint=SO14
+T 200 1100 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 200 1200 5 10 0 0 0 0 1
+documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf
+T 200 1300 5 10 0 0 0 0 1
+description=1 MHz, Low-Power Op Amp
+T 200 1800 5 10 0 0 0 0 1
+numslots=2
+T 200 1900 5 10 0 0 0 0 1
+dist-license=GPL
+T 200 2000 5 10 0 0 0 0 1
+use-license=unlimited
+T 800 100 8 10 1 1 0 6 1
+value=MCP6001
+L 200 700 200 100 3 15 2 0 -1 -1
+L 200 700 800 400 3 15 2 0 -1 -1
+L 800 400 200 100 3 15 2 0 -1 -1
+P 0 200 200 200 1 0 0
+{
+T 200 250 5 10 0 0 0 0 1
+pintype=pas
+T 255 195 9 10 0 0 0 0 1
+pinlabel=non-inverting
+T 150 225 5 8 1 1 0 6 1
+pinnumber=3
+T 200 250 5 10 0 0 0 0 1
+pinseq=3
+}
+P 0 600 200 600 1 0 0
+{
+T 200 650 5 10 0 0 0 0 1
+pintype=pas
+T 255 595 9 10 0 0 0 0 1
+pinlabel=inverting
+T 150 625 5 8 1 1 0 6 1
+pinnumber=2
+T 200 650 5 10 0 0 0 0 1
+pinseq=2
+}
+L 230 580 310 580 3 10 1 0 -1 -1
+L 230 220 310 220 3 10 1 0 -1 -1
+L 270 260 270 180 3 10 1 0 -1 -1
+P 1000 400 800 400 1 0 0
+{
+T 800 350 5 10 0 0 180 0 1
+pintype=pas
+T 745 405 9 10 0 0 180 0 1
+pinlabel=output
+T 825 425 5 8 1 1 0 0 1
+pinnumber=1
+T 800 350 5 10 0 0 180 0 1
+pinseq=1
+}
+T 900 200 8 10 1 1 0 6 1
+slot=1
+T 200 1700 5 10 0 0 0 0 1
+slotdef=1:1,2,3
+T 200 1600 5 10 0 0 0 0 1
+slotdef=2:7,6,5
+T 900 200 8 10 1 1 0 0 1
+slotof=/4
+T 200 1500 5 10 0 0 0 0 1
+slotdef=3:8,9,10
+T 200 1400 5 10 0 0 0 0 1
+slotdef=4:14,13,12
