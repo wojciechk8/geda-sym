@@ -1,0 +1,57 @@
+v 20140308 2
+T 550 300 8 10 1 1 0 6 1
+refdes=U?
+T 100 1100 5 10 0 0 0 0 1
+symversion=1.0
+T 100 1200 5 10 0 0 0 0 1
+device=MCP15XX
+T 100 1300 5 10 0 0 0 0 1
+footprint=TO220
+T 100 1400 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 100 1500 5 10 0 0 0 0 1
+documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/21653C.pdf
+T 100 1600 5 10 0 0 0 0 1
+description=2.5V and 4.096V Voltage References
+T 100 1700 5 10 0 0 0 0 1
+numslots=0
+T 100 1800 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 1900 5 10 0 0 0 0 1
+use-license=unlimited
+T 550 200 8 10 1 1 0 6 1
+value=MCP15XX
+B 600 200 400 600 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1
+P 800 1000 800 800 1 0 0
+{
+T 850 900 5 10 0 0 270 0 1
+pintype=pwr
+T 800 750 9 10 1 1 0 5 1
+pinlabel=VIN
+T 750 825 5 8 1 1 0 6 1
+pinnumber=1
+T 850 900 5 10 0 0 270 0 1
+pinseq=3
+}
+P 1200 500 1000 500 1 0 0
+{
+T 1100 450 5 10 0 0 180 0 1
+pintype=pwr
+T 950 500 9 10 1 1 180 1 1
+pinlabel=VOUT
+T 1025 550 5 8 1 1 0 0 1
+pinnumber=3
+T 1100 450 5 10 0 0 180 0 1
+pinseq=1
+}
+P 800 0 800 200 1 0 0
+{
+T 750 100 5 10 0 0 90 0 1
+pintype=pwr
+T 800 250 9 10 1 1 0 3 1
+pinlabel=GND
+T 750 175 5 8 1 1 0 8 1
+pinnumber=2
+T 750 100 5 10 0 0 90 0 1
+pinseq=2
+}
