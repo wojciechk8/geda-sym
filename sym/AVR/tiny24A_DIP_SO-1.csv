@@ -59,15 +59,22 @@ use-license	unlimited
 #pinnr	seq	type	style	posit.	net	label	swap
 1	1	pwr	line	l		VCC	
 14	2	pwr	line	l		GND	
-13	3	io	line	r		PA0 (ADC0/AREF/PCINT0)	s
-12	4	io	line	r		PA1 (ADC1/AIN0/PCINT1)	s
-11	5	io	line	r		PA2 (ADC2/AIN1/PCINT2)	s
-10	6	io	line	r		PA3 (ADC3/T0/PCINT3)	s
-9	7	io	line	r		PA4 (ADC4/USCK/SCL/T1/PCINT4)	s
-8	8	io	line	r		PA5 (ADC5/DO/MISO/OC1B/PCINT5)	s
-7	9	io	line	r		(PCINT6/OC1A/SDA/MOSI/DI/ADC6) PA6	
-6	10	io	line	r		(PCINT7/ICP/OC0B/ADC7) PA7	
-2	11	io	line	r		(PCINT8/XTAL1/CLKI) PB0	
-3	12	io	line	r		(PCINT9/XTAL2) PB1	
-5	13	io	line	r		(PCINT10/INT0/OC0A/CKOUT) PB2	
-4	14	io	line	r		(PCINT11/\_RESET\_/dW) PB3	
+	3		spacer	l			
+	4		spacer	l			
+	5		spacer	l			
+	6		spacer	l			
+	7		spacer	l			
+	8		spacer	l			
+4	9	io	line	l		(PCINT11/\_RESET\_/dW) PB3	s
+13	10	io	line	r		PA0 (ADC0/AREF/PCINT0)	s
+12	11	io	line	r		PA1 (ADC1/AIN0/PCINT1)	s
+11	12	io	line	r		PA2 (ADC2/AIN1/PCINT2)	s
+10	13	io	line	r		PA3 (ADC3/T0/PCINT3)	s
+9	14	io	line	r		PA4 (ADC4/USCK/SCL/T1/PCINT4)	s
+8	15	io	line	r		PA5 (ADC5/DO/MISO/OC1B/PCINT5)	s
+7	16	io	line	r		(PCINT6/OC1A/SDA/MOSI/DI/ADC6) PA6	
+6	17	io	line	r		(PCINT7/ICP/OC0B/ADC7) PA7	
+	18		spacer	r			
+2	19	io	line	r		(PCINT8/XTAL1/CLKI) PB0	
+3	20	io	line	r		(PCINT9/XTAL2) PB1	
+5	21	io	line	r		(PCINT10/INT0/OC0A/CKOUT) PB2	
