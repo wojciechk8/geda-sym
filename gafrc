@@ -17,3 +17,6 @@
 (component-library-search (build-path symbols) )
 ;(component-library (build-path mysymbols) "AVR")
 ;(component-library (build-path mysymbols "misc") "Misc (git)")
+
+(component-library ".")
+(source-library  ".")
