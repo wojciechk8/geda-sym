@@ -1,0 +1,4 @@
+.CONTROL
+  OP
+  PRINT I(Vcur)
+.ENDC
