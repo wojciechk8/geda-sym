@@ -6,7 +6,7 @@ symversion=1.0
 T 0 1400 5 10 0 0 0 0 1
 device=CONNECTOR
 T 0 1500 5 10 0 0 0 0 1
-footprint=JUMPER3
+footprint=JUMPER5
 T 0 1600 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 1700 5 10 0 0 0 0 1
@@ -59,21 +59,21 @@ P 500 400 300 400 1 0 0
 {
 T 400 450 5 10 0 0 0 6 1
 pintype=pas
+T 250 400 9 12 1 1 0 7 1
+pinlabel=4
 T 395 445 5 10 0 1 0 0 1
 pinnumber=4
 T 400 450 5 10 0 0 0 6 1
 pinseq=4
-T 250 400 9 12 1 1 0 7 1
-pinlabel=4
 }
 P 500 200 300 200 1 0 0
 {
 T 400 250 5 10 0 0 0 6 1
 pintype=pas
+T 250 200 9 12 1 1 0 7 1
+pinlabel=5
 T 395 245 5 10 0 1 0 0 1
 pinnumber=5
 T 400 250 5 10 0 0 0 6 1
 pinseq=5
-T 250 200 9 12 1 1 0 7 1
-pinlabel=5
 }
