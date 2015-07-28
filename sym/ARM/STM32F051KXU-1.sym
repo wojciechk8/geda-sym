@@ -160,7 +160,7 @@ pinnumber=23
 T 275 950 5 8 0 1 0 8 1
 pinseq=15
 T 350 1000 9 10 1 1 0 1 1
-pinlabel=PA13
+pinlabel=PA13/SWDIO
 T 350 1000 5 10 0 1 0 2 1
 pintype=io
 }
@@ -171,7 +171,7 @@ pinnumber=24
 T 275 750 5 8 0 1 0 8 1
 pinseq=16
 T 350 800 9 10 1 1 0 1 1
-pinlabel=PA14
+pinlabel=PA14/SWCLK
 T 350 800 5 10 0 1 0 2 1
 pintype=io
 }
@@ -292,7 +292,7 @@ pinnumber=2
 T 2325 1550 5 8 0 1 0 2 1
 pinseq=27
 T 2250 1600 9 10 1 1 0 7 1
-pinlabel=(OSC_IN) PF0
+pinlabel=OSC_IN/PF0
 T 2250 1600 5 10 0 1 0 8 1
 pintype=io
 }
@@ -303,7 +303,7 @@ pinnumber=3
 T 2325 1350 5 8 0 1 0 2 1
 pinseq=28
 T 2250 1400 9 10 1 1 0 7 1
-pinlabel=(OSC_OUT) PF1
+pinlabel=OSC_OUT/PF1
 T 2250 1400 5 10 0 1 0 8 1
 pintype=io
 }
@@ -332,22 +332,22 @@ pintype=in
 P 1300 4000 1300 3800 1 0 0
 {
 T 1250 3825 5 8 1 1 90 0 1
-pinnumber=5
+pinnumber=17
 T 1350 3825 5 8 0 1 90 2 1
 pinseq=31
 T 1300 3750 9 10 1 1 90 7 1
-pinlabel=VDDA
+pinlabel=VDD
 T 1300 3750 5 10 0 1 90 8 1
 pintype=pwr
 }
 P 1500 4000 1500 3800 1 0 0
 {
 T 1450 3825 5 8 1 1 90 0 1
-pinnumber=17
+pinnumber=5
 T 1550 3825 5 8 0 1 90 2 1
 pinseq=32
 T 1500 3750 9 10 1 1 90 7 1
-pinlabel=VDD
+pinlabel=VDDA
 T 1500 3750 5 10 0 1 90 8 1
 pintype=pwr
 }

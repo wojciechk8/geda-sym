@@ -71,8 +71,8 @@ use-license	unlimited
 20	20	io	line	l		PA10	
 21	21	io	line	l		PA11	
 22	22	io	line	l		PA12	
-23	23	io	line	l		PA13	
-24	24	io	line	l		PA14	
+23	23	io	line	l		PA13/SWDIO	
+24	24	io	line	l		PA14/SWCLK	
 25	25	io	line	l		PA15	
 14	14	io	line	r		PB0	
 15	15	io	line	r		PB1	
@@ -84,11 +84,11 @@ use-license	unlimited
 30	30	io	line	r		PB7	
 32	32	io	line	r		PB8	
 			spacer	r			
-2	2	io	line	r		PF0 (OSC_IN)	s
-3	3	io	line	r		PF1 (OSC_OUT)	s
+2	2	io	line	r		OSC_IN/PF0	
+3	3	io	line	r		OSC_OUT/PF1	
 			spacer	r			
 4	4	io	line	r		NRST	
 31	31	in	line	r		BOOT0	
-5	5	pwr	line	t		VDDA	
 17	17	pwr	line	t		VDD	
+5	5	pwr	line	t		VDDA	
 33	33	pwr	line	b		VSS	
