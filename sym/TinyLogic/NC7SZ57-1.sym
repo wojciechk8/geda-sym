@@ -17,7 +17,7 @@ pinnumber=2
 T 550 375 5 8 0 1 0 8 1
 pinseq=2
 T 600 450 9 10 1 1 0 3 1
-pinlabel=VSS
+pinlabel=GND
 T 600 600 5 10 0 1 0 3 1
 pintype=pwr
 }
@@ -71,7 +71,7 @@ refdes=U?
 T 100 350 8 10 1 1 0 2 1
 value=NC7SZ57
 T 300 1500 5 10 0 0 0 0 1
-symversion=1.0
+symversion=1.1
 T 300 1600 5 10 0 0 0 0 1
 device=IC
 T 300 1700 5 10 0 0 0 0 1
