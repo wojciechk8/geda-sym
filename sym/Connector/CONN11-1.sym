@@ -21,6 +21,8 @@ T 0 3300 5 10 0 0 0 0 1
 use-license=unlimited
 T 0 50 8 10 1 1 0 2 1
 value=CONN11
+T 0 -50 8 10 1 1 0 2 1
+comment=comment
 B 0 100 300 2200 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1
 P 500 2200 300 2200 1 0 0
 {

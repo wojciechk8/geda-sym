@@ -29,6 +29,8 @@ T 0 @{[$height+1100]} 5 10 0 0 0 0 1
 use-license=unlimited
 T 0 50 8 10 1 1 0 2 1
 value=CONN$num
+T 0 -50 8 10 1 1 0 2 1
+comment=comment
 B 0 100 300 $height 3 15 1 0 -1 -1 0 -1 -1 -1 -1 -1
 EOF
   
