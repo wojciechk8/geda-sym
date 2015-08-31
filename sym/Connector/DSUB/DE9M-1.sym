@@ -1,23 +1,23 @@
 v 20140308 2
 T 50 150 8 10 1 1 0 0 1
 refdes=J?
-T 0 2300 5 10 0 0 0 0 1
-symversion=1.0
-T 0 2400 5 10 0 0 0 0 1
-device=CONNECTOR
 T 0 2500 5 10 0 0 0 0 1
-footprint=DE9M
+symversion=1.0
 T 0 2600 5 10 0 0 0 0 1
-author=Wojciech Krutnik
+device=CONNECTOR
 T 0 2700 5 10 0 0 0 0 1
-documentation=none
+footprint=DE9M
 T 0 2800 5 10 0 0 0 0 1
-description=DE-9 male connector
+author=Wojciech Krutnik
 T 0 2900 5 10 0 0 0 0 1
-numslots=0
+documentation=none
 T 0 3000 5 10 0 0 0 0 1
-dist-license=GPL
+description=DE-9 male connector
 T 0 3100 5 10 0 0 0 0 1
+numslots=0
+T 0 3200 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 3300 5 10 0 0 0 0 1
 use-license=unlimited
 T 50 50 8 10 1 1 0 0 1
 value=DE9M
@@ -127,9 +127,9 @@ pintype=pas
 T 400 250 9 12 0 0 270 7 1
 pinlabel=SHIELD
 T 445 105 5 10 0 0 270 0 1
-pinnumber=10
+pinnumber=11
 T 450 100 5 10 0 0 270 6 1
-pinseq=10
+pinseq=11
 }
 V 525 2000 25 3 0 1 0 -1 -1 1 -1 -1 -1 -1 -1
 V 225 1800 25 3 0 1 0 -1 -1 1 -1 -1 -1 -1 -1
@@ -163,3 +163,14 @@ L 250 1000 700 1000 3 10 1 0 -1 -1
 L 550 800 700 800 3 10 1 0 -1 -1
 L 250 600 700 600 3 10 1 0 -1 -1
 L 550 400 700 400 3 10 1 0 -1 -1
+P 400 2400 400 2200 1 0 0
+{
+T 350 2300 5 10 0 0 90 6 1
+pintype=pas
+T 400 2150 9 12 0 0 90 7 1
+pinlabel=SHIELD
+T 355 2295 5 10 0 0 90 0 1
+pinnumber=10
+T 350 2300 5 10 0 0 90 6 1
+pinseq=10
+}
