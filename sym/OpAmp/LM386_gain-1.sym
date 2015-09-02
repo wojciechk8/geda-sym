@@ -1,0 +1,53 @@
+v 20140308 2
+T 100 650 8 10 1 1 0 0 1
+refdes=U?
+T 100 800 5 10 0 0 0 0 1
+symversion=1.0
+T 100 900 5 10 0 0 0 0 1
+device=IC
+T 100 1000 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 100 1100 5 10 0 0 0 0 1
+documentation=none
+T 100 1200 5 10 0 0 0 0 1
+description=Gain/bypass pins
+T 100 1300 5 10 0 0 0 0 1
+numslots=0
+T 100 1400 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 1500 5 10 0 0 0 0 1
+use-license=unlimited
+P 200 600 200 400 1 0 0
+{
+T 250 600 5 8 0 0 270 0 1
+pintype=pas
+T 250 600 5 8 0 0 270 0 1
+pinseq=1
+T 175 475 5 8 1 1 0 6 1
+pinnumber=1
+T 150 375 9 6 1 1 0 5 1
+pinlabel=GAIN
+}
+P 400 600 400 450 1 0 0
+{
+T 450 600 5 8 0 0 270 0 1
+pintype=pas
+T 175 275 9 8 0 0 0 0 1
+pinlabel=GAIN
+T 450 600 5 8 0 0 270 0 1
+pinseq=8
+T 325 400 5 8 1 1 0 6 1
+pinnumber=8
+}
+L 300 350 400 450 1 10 0 0 -1 -1
+P 200 0 200 200 1 0 0
+{
+T 150 225 9 6 1 1 0 3 1
+pinlabel=BYP
+T 150 0 5 8 0 0 90 0 1
+pintype=pas
+T 150 0 5 8 0 0 90 0 1
+pinseq=7
+T 175 125 5 8 1 1 0 8 1
+pinnumber=7
+}

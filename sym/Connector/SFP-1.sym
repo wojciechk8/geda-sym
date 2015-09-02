@@ -233,7 +233,7 @@ footprint=AMPHENOL_UX75_A20
 T 300 2900 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 3000 5 10 0 0 0 0 1
-documentation=https://www.amphenolcanada.com/StockAvailabilityPrice.aspx?From=&PartNum=UE75A203000T
+documentation=http://www.amphenolcanada.com/StockAvailabilityPrice.aspx?From=&PartNum=UE75A203000T
 T 300 3100 5 10 0 0 0 0 1
 description=Small form-factor pluggable transceiver connector
 T 300 3200 5 10 0 0 0 0 1
