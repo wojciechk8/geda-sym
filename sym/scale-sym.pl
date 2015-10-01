@@ -7,6 +7,9 @@
 #   1. Added support for multiple files on the command line
 #   2. Misc. Perlification
 
+# Additions by wojciechk8
+#   Added path support
+
 $Scale = shift;
 die "Scale must be greater than 0" unless $Scale > 0;
 
@@ -21,6 +24,7 @@ die "Scale must be greater than 0" unless $Scale > 0;
      "U 1 1 1 1 0 0",
      "P 1 1 1 1 0 0 0",
      "C 1 1 0 0 0 0",
+     "H 0 1 0 0 1 1 0 1 0 1 0 1 0",
      "F 0 1 0");
 
 foreach $infilename (@ARGV) {
@@ -43,6 +47,20 @@ foreach $infilename (@ARGV) {
 		foreach (1..$args[8]) {
 		    $_ = <>;
 		    print OUT;
+		    last if eof;
+		}
+	    }
+	    if ($type eq "H") {
+		foreach (1..$args[12]) {
+		    $_ = <>;
+		    my ($type_path, @coords) = split;
+		    foreach my $i (0..$#coords) {
+			my ($x, $y) = split(',', $coords[$i]);
+			$x = int($x * $Scale);
+			$y = int($y * $Scale);
+			$coords[$i] = join(',', $x, $y);
+		    }
+		    print OUT join(' ', $type_path, @coords), "\n";
 		    last if eof;
 		}
 	    }

@@ -13,7 +13,7 @@
 (third-button-cancel "disabled")
 
 ; bus ripper
-(bus-ripper-size 200)
+(bus-ripper-size 300)
 (bus-ripper-type "component")
 (bus-ripper-symname "busentry-1.sym")
 (bus-ripper-rotation "non-symmetric")
