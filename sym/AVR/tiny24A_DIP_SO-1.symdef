@@ -1,0 +1,42 @@
+#--vmode
+--minwidth 3500
+--extlabels
+
+[labels]
+r U?
+v ATtiny24A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit AVR Microcontroller with 2K/4K/8K Bytes In-System Programmable Flash
+! documentation=http://www.atmel.com/Images/doc8183.pdf
+! author=Wojciech Krutnik
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+
+
+[right]
+4  io  PB3 (dW/\_RESET\_/PCINT11)
+
+13 io  PA0 (ADC0/AREF/PCINT0)
+12 io  PA1 (ADC1/AIN0/PCINT1)
+11 io  PA2 (ADC2/AIN1/PCINT2)
+10 io  PA3 (ADC3/T0/PCINT3)
+9  io  PA4 (ADC4/USCK/SCL/T1/PCINT4)
+8  io  PA5 (ADC5/DO/MISO/OC1B/PCINT5)
+7  io  PA6 (ADC6/DI/MOSI/SDA/OC1A/PCINT6)
+6  io  PA7 (ADC7/OC0B/ICP/PCINT7)
+
+2  io  PB0 (CLKI/XTAL1/PCINT8)
+3  io  PB1 (XTAL2/PCINT9)
+5  io  PB2 (CKOUT/OC0A/INT0/PCINT10)
+
+[top]
+1  p   VCC
+
+[bottom]
+14 p   GND
+

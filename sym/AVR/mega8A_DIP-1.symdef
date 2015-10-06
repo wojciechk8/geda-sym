@@ -1,0 +1,55 @@
+#--vmode
+--minwidth 2800
+--extlabels
+
+[labels]
+r U?
+v ATmega8A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit AVR Microcontroller
+! documentation=http://www.atmel.com/Images/Atmel-8159-8-bit-AVR-microcontroller-ATmega8A_datasheet.pdf
+! author=Wojciech Krutnik
+! footprint=DIP28N
+! device=IC
+! symversion=1.0
+
+[left]
+1  io  PC6 (RESET)
+.skip 2400
+14 io  PB0 (ICP1)
+15 io  PB1 (OC1A)
+16 io  PB2 (SS/OC1B)
+17 io  PB3 (MOSI/OC2)
+18 io  PB4 (MISO)
+19 io  PB5 (SCK)
+9  io  PB6 (XTAL1/TOSC1)
+10 io  PB7 (XTAL2/TOSC2)
+
+[right]
+23 io  PC0 (ADC0)
+24 io  PC1 (ADC1)
+25 io  PC2 (ADC2)
+26 io  PC3 (ADC3)
+27 io  PC4 (ADC4/SDA)
+28 io  PC5 (ADC5/SCL)
+
+2  io PD0 (RXD)
+3  io PD1 (TXD)
+4  io PD2 (INT0)
+5  io PD3 (INT1)
+6  io PD4 (XCK/T0)
+11 io PD5 (T1)
+12 io PD6 (AIN0)
+13 io PD7 (AIN1)
+
+[top]
+7  p   VCC
+20 p   AVCC
+21 p   AREF
+
+[bottom]
+8  p   GND
+22 p   GND
+

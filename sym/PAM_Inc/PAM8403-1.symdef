@@ -1,0 +1,41 @@
+--vmode
+--minwidth 2400
+#--extlabels
+
+[labels]
+r U?
+v PAM8403
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Filterless 3W Class-D Stereo Audio Amplifier
+! documentation=http://www.elecrow.com/download/PAM8403-datasheet.pdf
+! author=Wojciech Krutnik
+! footprint=SO16
+! device=IC
+! symversion=1.0
+
+[left]
+7  i   INL
+10 i   INR
+
+8  p   VREF
+
+5  i!  #MUTE
+12 i!  #SHDN
+9      NC
+[right]
+.skip 400
+1  o   +OUT_L
+3  o   -OUT_L
+.skip 800
+16 o   +OUT_R
+14 o   -OUT_R
+[top]
+6  p   VDD
+13 p   PVDD
+4  p   PVDD
+[bottom]
+11 p   GND
+2  p   PGND
+15 p   PGND

@@ -1,0 +1,55 @@
+--vmode
+--minwidth 3000
+
+[labels]
+r U?
+v STM32F051K6U6
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=ARM-based 32-bit MCU, 16 to 64-KB Flash, timers, ADC, DAC and communication interfaces, 2.0-3.6 V
+! documentation=http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf
+! author=Wojciech Krutnik
+! footprint=QFN32_5_EP
+! device=IC
+! symversion=1.0
+
+[left]
+6  io  PA0
+7  io  PA1
+8  io  PA2
+9  io  PA3
+10 io  PA4
+11 io  PA5
+12 io  PA6
+13 io  PA7
+18 io  PA8
+19 io  PA9
+20 io  PA10
+21 io  PA11
+22 io  PA12
+23 io  PA13/SWDIO
+24 io  PA14/SWCLK
+25 io  PA15
+[right]
+14 io  PB0
+15 io  PB1
+16 io  PB2
+26 io  PB3
+27 io  PB4
+28 io  PB5
+29 io  PB6
+30 io  PB7
+32 io  PB8
+
+2  io  OSC_IN/PF0
+3  io  OSC_OUT/PF1
+
+4  i!  NRST
+31 i   BOOT0
+[top]
+1  p   VDD
+17 p   VDD
+5  p   VDDA
+[bottom]
+33 p   VSS

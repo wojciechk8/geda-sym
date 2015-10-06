@@ -1,0 +1,38 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 74HC165
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit parallel-in/serial out shift register
+! documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT165.pdf
+! author=Wojciech Krutnik
+! footprint=DIP16
+! device=IC
+! symversion=1.0
+
+[left]
+11 i   D0
+12 i   D1
+13 i   D2
+14 i   D3
+3  i   D4
+4  i   D5
+5  i   D6
+6  i   D7
+[right]
+9  o   Q7
+7  o!  \_Q7\_
+
+1  i!  \_PL\_
+
+10 i   DS
+2  i>  CP
+15 i!  \_CE\_
+[top]
+16 p   VCC
+[bottom]
+8  p   GND

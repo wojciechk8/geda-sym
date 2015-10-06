@@ -1,14 +1,13 @@
-TRAGESYM=./tragesym.py
-SYMBOLDIRS=$(sort $(dir $(wildcard */*.csv)))
-SYMBOLSCSV=$(wildcard */*.csv)
-SYMBOLS=$(SYMBOLSCSV:.csv=.sym)
+SYMGEN=./djboxsym
+SYMBOLSDEF=$(wildcard */*.symdef)
+SYMBOLS=$(SYMBOLSDEF:.symdef=.sym)
 
-.PHONY: sym clean $(SYMBOLDIRS)
+.PHONY: sym clean
 
 sym: $(SYMBOLS)
 
-%.sym : %.csv $(TRAGESYM)
-	$(TRAGESYM) $< $@
+%.sym : %.symdef $(SYMGEN)
+	$(SYMGEN) $< > $@
 
 clean:
 	rm $(SYMBOLS)

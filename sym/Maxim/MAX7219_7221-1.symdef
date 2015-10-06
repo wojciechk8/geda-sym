@@ -1,0 +1,48 @@
+--vmode
+--minwidth 2200
+#--extlabels
+
+[labels]
+r U?
+v MAX7219
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Serially Interfaced, 8-Digit LED Display Drivers
+! documentation=http://www.sparkfun.com/datasheets/Components/General/COM-09622-MAX7219-MAX7221.pdf
+! author=Wojciech Krutnik
+! footprint=SO24W
+! device=IC
+! symversion=1.0
+
+[left]
+1  i   DIN
+12 i   LOAD (\_CS\_)
+13 i   CLK
+
+2  oc  DIG0
+11 oc  DIG1
+6  oc  DIG2
+7  oc  DIG3
+3  oc  DIG4
+10 oc  DIG5
+5  oc  DIG6
+8  oc  DIG7
+[right]
+24 o   DOUT
+
+18     ISET
+
+14 o   SEG A
+16 o   SEG B
+20 o   SEG C
+23 o   SEG D
+21 o   SEG E
+15 o   SEG F
+17 o   SEG G
+22 o   SEG DP
+[top]
+19 p   V+
+[bottom]
+9  p   GND
+4  p   GND

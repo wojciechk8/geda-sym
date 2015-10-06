@@ -1,0 +1,38 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 4093
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Quad 2-input NAND Schmitt trigger
+! documentation=http://www.nxp.com/documents/data_sheet/HEF4093B.pdf
+! author=Wojciech Krutnik
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+1  i   1A
+2  i   1B
+5  i   2A
+6  i   2B
+8  i   3A
+9  i   3B
+12 i   4A
+13 i   4B
+[right]
+.skip 400
+3  o!  \_1Y\_
+
+4  o!  \_2Y\_
+
+10 o!  \_3Y\_
+
+11 o!  \_4Y\_
+[top]
+14 p   VDD
+[bottom]
+7  p   VSS

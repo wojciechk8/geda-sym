@@ -1,0 +1,36 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 4066
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Quad single-pole single-throw analog switch
+! documentation=http://www.nxp.com/documents/data_sheet/HEF4066B.pdf
+! author=Wojciech Krutnik
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+13 i   EN1
+5  i   EN2
+6  i   EN3
+12 i   EN4
+
+1      I/O1
+4      I/O2
+8      I/O3
+11     I/O4
+[right]
+.skip 2000
+2      O/I1
+3      O/I2
+9      O/I3
+10     O/I4
+[top]
+14 p   VDD
+[bottom]
+7  p   VSS

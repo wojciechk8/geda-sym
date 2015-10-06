@@ -1,0 +1,49 @@
+#--vmode
+--minwidth 4000
+--extlabels
+
+[labels]
+r U?
+v ATtiny2313A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit AVR Microcontroller with 2K/4K Bytes In-System Programmable Flash
+! documentation=http://www.atmel.com/Images/doc8246.pdf
+! author=Wojciech Krutnik
+! footprint=DIP20
+! device=IC
+! symversion=1.0
+
+[left]
+1  io  PA2 (PCINT10/RESET/dW)
+
+5  io  PA0 (XTAL1/CLKI/PCINT8)
+4  io  PA1 (XTAL2/PCINT9)
+
+12 io  PB0 (AIN0/PCINT0)
+13 io  PB1 (AIN1/PCINT1)
+14 io  PB2 (OC0A/PCINT2)
+15 io  PB3 (OC1A/PCINT3)
+16 io  PB4 (OC1B/PCINT4)
+17 io  PB5 (MOSI/DI/SDA/PCINT5)
+18 io  PB6 (MISO/DO/PCINT6)
+19 io  PB7 (USCK/SCL/SCK/PCINT7)
+
+[right]
+.skip 800
+2  io  PD0 (PCINT11/RXD)
+3  io  PD1 (PCINT12/TXD)
+6  io  PD2 (PCINT13/CKOUT/XCK/INT0)
+7  io  PD3 (PCINT14/INT1)
+8  io  PD4 (PCINT15/T0)
+9  io  PD5 (PCINT16/OC0B/T1)
+11 io  PD6 (PCINT17/ICPI)
+
+
+[top]
+20 p   VCC
+
+[bottom]
+10 p   GND
+

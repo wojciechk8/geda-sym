@@ -31,7 +31,6 @@ T 400 300 8 10 1 1 0 8 1
 value=CONN$num
 T 400 100 8 10 1 1 0 8 1
 comment=comment
-B 0 400 400 $height 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1
 EOF
 
   for($pin = 1; $pin <= $num; $pin++){
@@ -51,6 +50,8 @@ pinseq=$pin
 EOF
     $data = $data . $pindata;
   }
+
+  $data = $data . "B 0 400 400 $height 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1\n";
 
   print file "$data";
 

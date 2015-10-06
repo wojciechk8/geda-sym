@@ -1,0 +1,35 @@
+#--vmode
+--minwidth 3200
+--extlabels
+
+[labels]
+r U?
+v ATtiny13A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit AVR Microcontroller with 1K Bytes In-System Programmable Flash
+! documentation=http://www.atmel.com/Images/doc8126.pdf
+! author=Wojciech Krutnik
+! footprint=DIP8
+! device=IC
+! symversion=1.0
+
+[left]
+
+
+[right]
+1  io  PB5 (PCINT5/\_RESET\_/ADC0/dW)
+
+5  io  PB0 (PCINT0/OC0A/AIN0/MOSI)
+6  io  PB1 (PCINT1/INT0/OC0B/AIN1/MISO)
+7  io  PB2 (PCINT2/T0/ADC1/SCK)
+2  io  PB3 (PCINT3/CLKI/ADC3)
+3  io  PB4 (PCINT4/ADC2)
+
+[top]
+8  p   VCC
+
+[bottom]
+4  p   GND
+
