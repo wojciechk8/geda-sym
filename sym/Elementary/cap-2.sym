@@ -2,7 +2,7 @@ v 20140308 2
 T 500 500 8 10 1 1 0 0 1
 refdes=C?
 T 200 800 5 10 0 0 0 0 1
-symversion=2.0
+symversion=1.0
 T 200 1000 5 10 0 0 0 0 1
 device=CAPACITOR
 T 200 1200 5 10 0 0 0 0 1

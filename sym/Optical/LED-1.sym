@@ -2,7 +2,7 @@ v 20140308 2
 T 300 800 8 10 1 1 0 0 1
 refdes=LED?
 T 200 1000 5 10 0 0 0 0 1
-symversion=2.0
+symversion=1.0
 T 200 1200 5 10 0 0 0 0 1
 device=LED
 T 200 1400 5 10 0 0 0 0 1

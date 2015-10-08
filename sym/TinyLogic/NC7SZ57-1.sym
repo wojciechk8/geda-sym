@@ -71,7 +71,7 @@ refdes=U?
 T 0 200 8 10 1 1 0 2 1
 value=NC7SZ57
 T 400 2500 5 10 0 0 0 0 1
-symversion=1.1
+symversion=1.0
 T 400 2700 5 10 0 0 0 0 1
 device=IC
 T 400 2900 5 10 0 0 0 0 1

@@ -2,7 +2,7 @@ v 20140308 2
 T 200 900 8 10 1 1 0 0 1
 refdes=P?
 T 200 1200 5 10 0 0 0 0 1
-symversion=4.0
+symversion=1.0
 T 200 1400 5 10 0 0 0 0 1
 device=POTENTIOMETER
 T 200 1600 5 10 0 0 0 0 1

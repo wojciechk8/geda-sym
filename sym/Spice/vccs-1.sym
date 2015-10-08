@@ -70,7 +70,7 @@ description=voltage controlled current source
 T 400 2900 5 10 0 0 0 0 1
 numslots=0
 T 400 2500 5 10 0 0 0 0 1
-symversion=0.1
+symversion=1.0
 T 400 3300 5 10 0 0 0 0 1
 documentation=http://newton.ex.ac.uk/teaching/CDHW/Electronics2/userguide/sec3.html#3.2.2
 T 1000 1200 9 10 1 0 0 0 1

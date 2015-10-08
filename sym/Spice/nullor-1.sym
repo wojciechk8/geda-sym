@@ -49,4 +49,4 @@ refdes=N?
 T 0 2400 9 8 0 0 0 0 1
 value=1000Meg
 T 0 2800 9 8 0 0 0 0 1
-symversion=0.1
+symversion=1.0
