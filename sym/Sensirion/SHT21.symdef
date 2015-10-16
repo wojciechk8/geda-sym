@@ -23,6 +23,7 @@ v SHT21
 5  p   VDD
 [bottom]
 2  p   GND
+7  p   GND
 [nc]
 3
 4
