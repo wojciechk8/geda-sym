@@ -1,0 +1,43 @@
+v 20150930 2
+T 0 1600 8 10 1 1 0 0 1
+refdes=U?
+T 0 2100 5 10 0 0 0 0 1
+symversion=1.0
+T 0 2300 5 10 0 0 0 0 1
+device=IC
+T 0 2500 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 0 2700 5 10 0 0 0 0 1
+documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/22141a.pdf
+T 0 2900 5 10 0 0 0 0 1
+description=10 MHz, 850 μA Op Amps
+T 0 3100 5 10 0 0 0 0 1
+numslots=0
+T 0 3300 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 3500 5 10 0 0 0 0 1
+use-license=unlimited
+P 200 1400 200 1100 1 0 0
+{
+T 300 1100 5 8 0 0 270 0 1
+pintype=pwr
+T 300 1100 5 8 0 0 270 0 1
+pinseq=7
+T 200 1000 9 6 1 1 0 5 1
+pinlabel=VDD
+T 150 1250 5 8 1 1 0 6 1
+pinnumber=7
+}
+P 200 0 200 300 1 0 0
+{
+T 100 300 5 8 0 0 90 0 1
+pintype=pwr
+T 100 300 5 8 0 0 90 0 1
+pinseq=4
+T 200 400 9 6 1 1 0 3 1
+pinlabel=VSS
+T 150 150 5 8 1 1 0 8 1
+pinnumber=4
+}
+T 0 1900 5 10 0 0 0 0 1
+value=MCP6L91
