@@ -1,0 +1,29 @@
+#--vmode
+--minwidth 1000
+#--extlabels
+
+[labels]
+r U?
+v TC7660
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Charge Pump DC-to-DC Voltage Converter
+! documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/21465C.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+2      CAP+
+
+4      CAP-
+[right]
+5      VOUT
+7      OSC
+6      LV
+[top]
+8  p   V+
+[bottom]
+3  p   GND
