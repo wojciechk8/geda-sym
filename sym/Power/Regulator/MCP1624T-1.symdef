@@ -1,15 +1,15 @@
 #--vmode
---minwidth 1500
+--minwidth 1200
 #--extlabels
 
 [labels]
 r U?
-v 4013
+v MCP1624T
 ! use-license=unlimited
 ! dist-license=GPL
 ! numslots=0
 ! description=Low-Voltage Input Boost Regulator
-! documentation=http://www.tme.eu/pl/Document/b33c2675bb81b8cede83269dd159ec05/MCP1624T-I_CHY.pdf
+! documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/41420C.pdf
 ! author=Paweł Gomułka
 ! footprint=SOT23_6
 ! device=IC
@@ -17,10 +17,11 @@ v 4013
 
 [left]
 6  p		VIN
+.skip   400
 3  i		EN
 [right]
-#.skip 400
 5  o		VOUT
+.skip   400
 4  o		VFB
 [top]
 1 			SW
