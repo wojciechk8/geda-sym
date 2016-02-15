@@ -1,0 +1,29 @@
+#--vmode
+--minwidth 1200
+#--extlabels
+
+[labels]
+r U?
+v MCP1624T
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Low-Voltage Input Boost Regulator
+! documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/41420C.pdf
+! author=Paweł Gomułka
+! footprint=SOT23_6
+! device=IC
+! symversion=1.0
+
+[left]
+6  p		VIN
+.skip   400
+3  i		EN
+[right]
+5  o		VOUT
+.skip   400
+4  o		VFB
+[top]
+1 			SW
+[bottom]
+2  p		GND

@@ -1,0 +1,37 @@
+#--vmode
+--minwidth 1500
+#--extlabels
+
+[labels]
+r U?
+v 4013
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=HD44780 LCD
+! documentation=
+! author=Paweł Gomułka
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+6  i   1SD
+5  i   1D
+3  i>  1CP
+4  i   1CD
+8  i   2SD
+9  i   2D
+11 i>  2CP
+10 i   2CD
+[right]
+.skip 400
+1  o   1Q
+2  o!  \_1Q\_
+.skip 800
+13 o   2Q
+12 o!  \_2Q\_
+[top]
+14 p   VDD
+[bottom]
+7  p   VSS
