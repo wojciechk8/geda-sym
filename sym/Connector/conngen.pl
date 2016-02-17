@@ -7,7 +7,7 @@ for($num = 2; $num <= 40; $num++){
 
   $data = <<"EOF";
 v 20140308 2
-T 400 @{[$height+500]} 8 10 1 1 0 6 1
+T 500 @{[$height+500]} 8 10 1 1 0 6 1
 refdes=J?
 T 0 @{[$height+800]} 5 10 0 0 0 0 1
 symversion=1.0
@@ -27,9 +27,9 @@ T 0 @{[$height+2200]} 5 10 0 0 0 0 1
 dist-license=GPL
 T 0 @{[$height+2400]} 5 10 0 0 0 0 1
 use-license=unlimited
-T 400 300 8 10 1 1 0 8 1
+T 500 300 8 10 1 1 0 8 1
 value=CONN$num
-T 400 100 8 10 1 1 0 8 1
+T 500 100 8 10 1 1 0 8 1
 comment=comment
 EOF
 
