@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-for($num = 2; $num <= 40; $num++){
+for($num = 1; $num <= 40; $num++){
   open(file, ">CONN$num-1.sym") or die "Couldn't open file CONN$num-1.sym, $!";
 
   $height = $num*400;
