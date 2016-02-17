@@ -36,22 +36,22 @@ EOF
   for($pin = 1; $pin <= $num; $pin++){
     $piny = ($height+200)-400*($pin-1);
     $pindata = <<"EOF";
-P 700 $piny 400 $piny 1 0 0
+P 800 $piny 500 $piny 1 0 0
 {
-T 600 @{[$piny+100]} 5 10 0 0 0 6 1
+T 700 @{[$piny+100]} 5 10 0 0 0 6 1
 pintype=pas
-T 300 $piny 9 12 1 1 0 7 1
+T 400 $piny 9 12 1 1 0 7 1
 pinlabel=$pin
-T 595 @{[$piny+95]} 5 10 0 1 0 0 1
+T 695 @{[$piny+95]} 5 10 0 1 0 0 1
 pinnumber=$pin
-T 600 @{[$piny+100]} 5 10 0 0 0 6 1
+T 700 @{[$piny+100]} 5 10 0 0 0 6 1
 pinseq=$pin
 }
 EOF
     $data = $data . $pindata;
   }
 
-  $data = $data . "B 0 400 400 $height 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1\n";
+  $data = $data . "B 0 400 500 $height 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1\n";
 
   print file "$data";
 
