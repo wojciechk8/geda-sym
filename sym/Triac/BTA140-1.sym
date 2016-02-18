@@ -1,0 +1,63 @@
+v 20150930 2
+T 1000 550 8 10 1 1 0 0 1
+refdes=TC?
+T 0 1200 5 10 0 0 0 0 1
+symversion=1.0
+T 0 1400 5 10 0 0 0 0 1
+device=TRIAC
+T 0 1600 5 10 0 0 0 0 1
+footprint=TO220W
+T 0 1800 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 0 2000 5 10 0 0 0 0 1
+documentation=http://www.nxp.com/documents/data_sheet/BTA140-600.pdf
+T 0 2200 5 10 0 0 0 0 1
+description=4Q Triac 25A 600/800V
+T 0 2400 5 10 0 0 0 0 1
+numslots=0
+T 0 2600 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 2800 5 10 0 0 0 0 1
+use-license=unlimited
+T 1000 350 8 10 1 1 0 0 1
+value=BTA140
+P 600 1000 600 650 1 0 0
+{
+T 700 700 5 10 0 0 270 0 1
+pintype=pas
+T 550 750 5 8 1 1 0 6 1
+pinlabel=MT2
+T 700 600 5 8 0 0 270 6 1
+pinnumber=2
+T 700 700 5 10 0 0 270 0 1
+pinseq=2
+}
+L 900 650 750 350 3 30 2 0 -1 -1
+L 750 350 600 650 3 30 2 0 -1 -1
+L 300 650 900 650 3 30 2 0 -1 -1
+P 600 0 600 350 1 0 0
+{
+T 500 250 5 10 0 0 90 0 1
+pintype=pas
+T 650 250 5 8 1 1 0 2 1
+pinlabel=MT1
+T 700 350 5 8 0 0 270 0 1
+pinnumber=1
+T 500 250 5 10 0 0 90 0 1
+pinseq=1
+}
+L 300 350 450 650 3 30 2 0 -1 -1
+L 450 650 600 350 3 30 2 0 -1 -1
+P 0 100 250 100 1 0 0
+{
+T -100 250 5 10 0 0 90 0 1
+pintype=pas
+T 200 150 5 8 1 1 0 6 1
+pinlabel=G
+T 100 350 5 8 0 0 270 0 1
+pinnumber=3
+T -100 250 5 10 0 0 90 0 1
+pinseq=3
+}
+L 250 100 450 350 1 20 0 0 -1 -1
+L 300 350 900 350 3 30 2 0 -1 -1
