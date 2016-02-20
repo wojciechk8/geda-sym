@@ -8,7 +8,7 @@ footprint=DIP6
 T 0 2100 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 2300 5 10 0 0 0 0 1
-documentation=http://www.fairchildsemi.com/datasheets/MO/MOC3020M.pdf
+documentation=http://toshiba.semicon-storage.com/info/docget.jsp?did=1423&prodName=TLP3042(S)
 T 0 2500 5 10 0 0 0 0 1
 description=TOSHIBA PHOTOCOUPLER GaAs IRED & PHOTO-TRIAC 400V
 T 0 2700 5 10 0 0 0 0 1
