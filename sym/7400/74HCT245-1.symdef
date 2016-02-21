@@ -1,0 +1,44 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 74HCT245
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Octal bus tranceiver; 3-state
+! documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT245.pdf
+! author=Wojciech Krutnik
+! footprint=DIP20
+! device=IC
+! symversion=1.0
+
+[left]
+1  i   DIR
+19 i!  \_OE\_
+
+2  io  A0
+3  io  A1
+4  io  A2
+5  io  A3
+6  io  A4
+7  io  A5
+8  io  A6
+9  io  A7
+
+[right]
+.skip 1200
+18 io  B0
+17 io  B1
+16 io  B2
+15 io  B3
+14 io  B4
+13 io  B5
+12 io  B6
+11 io  B7
+
+[top]
+20 p   VCC
+[bottom]
+10 p   GND
