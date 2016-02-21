@@ -1,0 +1,36 @@
+#--vmode
+--minwidth 1400
+
+[labels]
+r U?
+v 74HCT243
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Quad-Bus Transceiver with Three-State Outputs
+! documentation=http://www.ti.com/lit/ds/symlink/cd54hc243.pdf
+! author=Wojciech Krutnik
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+13 i  OEA
+
+3  io  A0
+4  io  A1
+5  io  A2
+6  io  A3
+
+[right]
+1  i!  \_OEB\_
+
+11 io  B0
+10 io  B1
+9  io  B2
+8  io  B3
+
+[top]
+14 p   VCC
+[bottom]
+7  p   GND

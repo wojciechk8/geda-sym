@@ -1,0 +1,157 @@
+v 20140308 2
+T 300 3500 5 10 0 0 0 0 1
+symversion=1.0
+T 300 3700 5 10 0 0 0 0 1
+device=IC
+T 300 3900 5 10 0 0 0 0 1
+footprint=DIP14
+T 300 4100 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 300 4300 5 10 0 0 0 0 1
+documentation=http://www.ti.com/lit/ds/symlink/cd54hc243.pdf
+T 300 4500 5 10 0 0 0 0 1
+description=Quad-Bus Transceiver with Three-State Outputs
+T 300 4700 5 10 0 0 0 0 1
+numslots=0
+T 300 4900 5 10 0 0 0 0 1
+dist-license=GPL
+T 300 5100 5 10 0 0 0 0 1
+use-license=unlimited
+T 300 3150 8 10 1 1 0 0 1
+refdes=U?
+T 300 250 8 10 1 1 0 2 1
+value=74HCT243
+P 2200 2700 2000 2700 1 0 0
+{
+T 1850 2700 9 10 1 1 0 7 1
+pinlabel=\_OEB\_
+T 2000 2750 5 8 1 1 0 0 1
+pinnumber=1
+T 2000 2750 5 8 0 1 0 0 1
+pinseq=1
+T 1800 2750 5 10 0 1 0 6 1
+pintype=in
+}
+V 1950 2700 50 6 20 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 0 1900 300 1900 1 0 0
+{
+T 350 1900 9 10 1 1 0 1 1
+pinlabel=A0
+T 200 1950 5 8 1 1 0 6 1
+pinnumber=3
+T 200 1950 5 8 0 1 0 6 1
+pinseq=3
+T 200 1950 5 10 0 1 0 6 1
+pintype=io
+}
+P 0 1500 300 1500 1 0 0
+{
+T 350 1500 9 10 1 1 0 1 1
+pinlabel=A1
+T 200 1550 5 8 1 1 0 6 1
+pinnumber=4
+T 200 1550 5 8 0 1 0 6 1
+pinseq=4
+T 200 1550 5 10 0 1 0 6 1
+pintype=io
+}
+P 0 1100 300 1100 1 0 0
+{
+T 350 1100 9 10 1 1 0 1 1
+pinlabel=A2
+T 200 1150 5 8 1 1 0 6 1
+pinnumber=5
+T 200 1150 5 8 0 1 0 6 1
+pinseq=5
+T 200 1150 5 10 0 1 0 6 1
+pintype=io
+}
+P 0 700 300 700 1 0 0
+{
+T 350 700 9 10 1 1 0 1 1
+pinlabel=A3
+T 200 750 5 8 1 1 0 6 1
+pinnumber=6
+T 200 750 5 8 0 1 0 6 1
+pinseq=6
+T 200 750 5 10 0 1 0 6 1
+pintype=io
+}
+P 1100 0 1100 300 1 0 0
+{
+T 1100 350 9 10 1 1 0 3 1
+pinlabel=GND
+T 1150 200 5 8 1 1 0 2 1
+pinnumber=7
+T 1150 200 5 8 0 1 0 2 1
+pinseq=7
+T 1000 50 5 10 0 1 0 6 1
+pintype=pwr
+}
+P 2200 700 1900 700 1 0 0
+{
+T 1850 700 9 10 1 1 0 7 1
+pinlabel=B3
+T 2000 750 5 8 1 1 0 0 1
+pinnumber=8
+T 2000 750 5 8 0 1 0 0 1
+pinseq=8
+T 1800 750 5 10 0 1 0 6 1
+pintype=io
+}
+P 2200 1100 1900 1100 1 0 0
+{
+T 1850 1100 9 10 1 1 0 7 1
+pinlabel=B2
+T 2000 1150 5 8 1 1 0 0 1
+pinnumber=9
+T 2000 1150 5 8 0 1 0 0 1
+pinseq=9
+T 1800 1150 5 10 0 1 0 6 1
+pintype=io
+}
+P 2200 1500 1900 1500 1 0 0
+{
+T 1850 1500 9 10 1 1 0 7 1
+pinlabel=B1
+T 2000 1550 5 8 1 1 0 0 1
+pinnumber=10
+T 2000 1550 5 8 0 1 0 0 1
+pinseq=10
+T 1800 1550 5 10 0 1 0 6 1
+pintype=io
+}
+P 2200 1900 1900 1900 1 0 0
+{
+T 1850 1900 9 10 1 1 0 7 1
+pinlabel=B0
+T 2000 1950 5 8 1 1 0 0 1
+pinnumber=11
+T 2000 1950 5 8 0 1 0 0 1
+pinseq=11
+T 1800 1950 5 10 0 1 0 6 1
+pintype=io
+}
+P 0 2700 300 2700 1 0 0
+{
+T 350 2700 9 10 1 1 0 1 1
+pinlabel=OEA
+T 200 2750 5 8 1 1 0 6 1
+pinnumber=13
+T 200 2750 5 8 0 1 0 6 1
+pinseq=13
+T 200 2750 5 10 0 1 0 6 1
+pintype=in
+}
+P 1100 3400 1100 3100 1 0 0
+{
+T 1100 3050 9 10 1 1 0 5 1
+pinlabel=VCC
+T 1150 3200 5 8 1 1 0 0 1
+pinnumber=14
+T 1150 3200 5 8 0 1 0 0 1
+pinseq=14
+T 1000 3150 5 10 0 1 0 6 1
+pintype=pwr
+}
+B 300 300 1600 2800 3 30 0 0 -1 -1 0 -1 -1 -1 -1 -1
