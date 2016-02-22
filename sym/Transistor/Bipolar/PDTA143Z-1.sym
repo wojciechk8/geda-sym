@@ -10,9 +10,9 @@ footprint=SOT23
 T 100 1900 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 100 2100 5 10 0 0 0 0 1
-documentation=http://www.nxp.com/documents/data_sheet/PDTC114E_SER.pdf
+documentation=http://www.nxp.com/documents/data_sheet/PDTA143Z_SER.pdf
 T 100 2300 5 10 0 0 0 0 1
-description=NPN resistor-equipped transistor R1 = 10kΩ, R2 = 10kΩ 100mA 50V
+description=PNP resistor-equipped transistors; R1 = 4,7kΩ, R2 = 47kΩ 100mA 50V
 T 100 2500 5 10 0 0 0 0 1
 numslots=0
 T 100 2700 5 10 0 0 0 0 1
@@ -20,7 +20,7 @@ dist-license=GPL
 T 100 2900 5 10 0 0 0 0 1
 use-license=unlimited
 T 1000 400 8 10 1 1 0 0 1
-value=PDTC114ET
+value=PDTA143Z
 P 0 500 200 500 1 0 0
 {
 T 100 600 5 10 0 0 0 0 1
@@ -58,10 +58,10 @@ L 600 800 600 200 3 30 2 0 -1 -1
 L 600 400 900 200 3 30 2 0 -1 -1
 L 600 600 900 800 3 30 2 0 -1 -1
 H 3 30 0 0 -1 -1 1 -1 -1 -1 -1 -1 5
-M 742,246
-L 874,216
-L 798,326
-L 778,282
+M 758,354
+L 626,384
+L 702,274
+L 722,318
 z
 L 200 500 250 500 3 20 1 0 -1 -1
 L 600 500 450 500 3 20 1 0 -1 -1
