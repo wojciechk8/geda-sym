@@ -1,0 +1,17 @@
+Element["" "" "" "" 20.8mm 12.5mm 0.0000 0.0000 0 100 ""]
+(
+  Pin[-12.7mm 0.0000 200mil 0.7620mm 208mil 2.5000mm "" "0" "edge2"]
+  Pin[12.7mm 0.0000 200mil 0.7620mm 208mil 2.5000mm "" "0" "edge2"]
+  ElementLine [-20.8mm -12.5mm -20.8mm 12.5mm 0.2500mm]
+  ElementLine [-20.8mm 12.5mm -8.5mm 12.5mm 0.2500mm]
+  ElementLine [-8.5mm 12.5mm -8.5mm 0.75mm 0.2500mm]
+  ElementLine [-8.5mm 0.75mm 8.5mm 0.75mm 0.2500mm]
+  ElementLine [8.5mm 0.75mm 8.5mm 12.5mm 0.2500mm]
+  ElementLine [8.5mm 12.5mm 20.8mm 12.5mm 0.2500mm]
+  ElementLine [20.8mm 12.5mm 20.8mm -12.5mm 0.2500mm]
+  ElementLine [20.8mm -12.5mm 8.5mm -12.5mm 0.2500mm]
+  ElementLine [8.5mm -12.5mm 8.5mm -0.75mm 0.2500mm]
+  ElementLine [8.5mm -0.75mm -8.5mm -0.75mm 0.2500mm]
+  ElementLine [-8.5mm -0.75mm -8.5mm -12.5mm 0.2500mm]
+  ElementLine [-8.5mm -12.5mm -20.8mm -12.5mm 0.2500mm]
+)
