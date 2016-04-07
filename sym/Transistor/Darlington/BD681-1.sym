@@ -28,9 +28,9 @@ pintype=pas
 T 310 490 9 10 0 0 0 0 1
 pinlabel=B
 T 10 590 5 10 0 0 0 6 1
-pinnumber=1
+pinnumber=3
 T 100 600 5 10 0 0 0 0 1
-pinseq=1
+pinseq=3
 }
 P 500 0 500 200 1 0 0
 {
@@ -39,9 +39,9 @@ pintype=pas
 T 500 310 9 10 0 0 90 0 1
 pinlabel=E
 T 600 10 5 10 0 0 90 6 1
-pinnumber=3
+pinnumber=1
 T 400 100 5 10 0 0 90 0 1
-pinseq=3
+pinseq=1
 }
 P 500 1000 500 800 1 0 0
 {
