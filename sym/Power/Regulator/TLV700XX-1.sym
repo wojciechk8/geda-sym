@@ -1,4 +1,4 @@
-v 20140308 2
+v 20150930 2
 T 300 1400 8 10 1 1 0 0 1
 refdes=U?
 T 100 1700 5 10 0 0 0 0 1
@@ -10,7 +10,7 @@ footprint=SOT23_5
 T 100 2300 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 100 2500 5 10 0 0 0 0 1
-documentation=http://www.ti.com/lit/ds/slvsa61f/slvsa61f.pdf
+documentation=http://www.ti.com/lit/ds/symlink/tlv700.pdf
 T 100 2700 5 10 0 0 0 0 1
 description=200-mA LOW-IQ LOW-DROPOUT REGULATOR FOR PORTABLE DEVICES
 T 100 2900 5 10 0 0 0 0 1
