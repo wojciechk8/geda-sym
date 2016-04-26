@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for f in *.pcb;
+do
+  echo "Processing $f file..";
+  pcb -x png --outfile ${f%.pcb}.png --dpi 400 $f
+  pcb -x png --outfile ${f%.pcb}_top.png --dpi 600 --photo-mode --photo-plating copper $f
+  pcb -x png --outfile ${f%.pcb}_bot.png --dpi 600 --photo-mode --photo-flip-x --photo-plating copper $f
+  pcb -x ps --psfile ${f%.pcb}.ps --align-marks --outline --auto-mirror --media A4 --drill-copper --show-legend $f
+  pcb -x ps --psfile ${f%.pcb}_inv.ps --align-marks --outline --mirror --auto-mirror --ps-invert --media A4 --no-drill-copper --show-legend $f
+done
