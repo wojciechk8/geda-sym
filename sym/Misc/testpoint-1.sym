@@ -1,0 +1,35 @@
+v 20150930 2
+T 0 800 5 10 0 0 0 0 1
+symversion=1.0
+T 0 1200 5 10 0 0 0 0 1
+device=none
+T 0 1400 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 0 1600 5 10 0 0 0 0 1
+documentation=none
+T 0 1800 5 10 0 0 0 0 1
+description=Testpoint
+T 0 2000 5 10 0 0 0 0 1
+numslots=0
+T 0 2200 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 2400 5 10 0 0 0 0 1
+use-license=unlimited
+T 0 2600 5 10 0 0 0 0 1
+graphical=0
+P 200 0 200 200 1 0 0
+{
+T -600 200 5 10 0 0 90 0 1
+pintype=in
+T -800 200 5 10 0 0 90 0 1
+pinlabel=OUT
+T -400 200 5 10 0 0 90 0 1
+pinnumber=1
+T -200 200 5 10 0 0 90 0 1
+pinseq=1
+}
+T 200 450 8 10 1 1 0 3 1
+refdes=TP?
+V 200 300 100 6 30 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 0 1000 5 10 0 0 0 0 1
+footprint=TP70
