@@ -1,0 +1,53 @@
+*
+*******************************************
+*
+*PDZ6.2B
+*
+*NXP Semiconductors
+*
+*Voltage regulator diode
+*
+*
+*
+*
+*
+*
+*IR    = 500nA @ VR = 3V
+*IZSM  = 5,5A  @ tp = 100µs
+*VZmax = 5,33V @ IZ = 5mA
+*
+*
+*
+*
+*
+*
+*
+*Package pinning does not match Spice model pinning.
+*Package: SOD323
+*
+*Package Pin 1: Cathode
+*Package Pin 2: Anode
+*
+*
+*
+*
+*Simulator: SPICE2
+*
+*******************************************
+*#
+.SUBCKT PDZ6_2B 1 2
+D1 1 2 PDZ6.2B
+
+.MODEL PDZ6.2B D
++ IS = 7.526E-16
++ N = 0.992
++ BV = 6.195
++ IBV = 0.005
++ RS = 0.2338
++ CJO=113.90E-12
++ VJ=.70655
++ M=.34012
+.ENDS
+*##
+*
+

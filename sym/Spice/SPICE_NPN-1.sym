@@ -1,0 +1,63 @@
+v 20150930 2
+T 600 600 8 10 1 1 0 0 1
+refdes=XT?
+T 100 1200 5 10 0 0 0 0 1
+symversion=1.0
+T 100 1400 5 10 0 0 0 0 1
+device=TRANSISTOR
+T 100 1600 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 100 1800 5 10 0 0 0 0 1
+documentation=none
+T 100 2000 5 10 0 0 0 0 1
+description=NPN Transistor
+T 100 2200 5 10 0 0 0 0 1
+numslots=0
+T 100 2400 5 10 0 0 0 0 1
+dist-license=GPL
+T 100 2600 5 10 0 0 0 0 1
+use-license=unlimited
+T 600 400 8 10 1 1 0 0 1
+model-name=NPN
+P 500 0 500 200 1 0 0
+{
+T 400 100 5 10 0 0 90 0 1
+pintype=pas
+T 500 310 9 10 0 0 90 0 1
+pinlabel=E
+T 600 10 5 10 0 0 90 6 1
+pinnumber=3
+T 400 100 5 10 0 0 90 0 1
+pinseq=3
+}
+P 500 1000 500 800 1 0 0
+{
+T 400 900 5 10 0 0 90 6 1
+pintype=pas
+T 500 690 9 10 0 0 90 6 1
+pinlabel=C
+T 600 990 5 10 0 0 90 0 1
+pinnumber=1
+T 400 900 5 10 0 0 90 6 1
+pinseq=1
+}
+L 200 800 200 200 3 30 2 0 -1 -1
+L 200 400 500 200 3 30 2 0 -1 -1
+L 200 600 500 800 3 30 2 0 -1 -1
+H 3 30 0 0 -1 -1 1 -1 -1 -1 -1 -1 5
+M 342,246
+L 474,216
+L 398,326
+L 378,282
+z
+P 0 500 200 500 1 0 0
+{
+T 100 600 5 10 0 0 0 0 1
+pintype=pas
+T 310 490 9 10 0 0 0 0 1
+pinlabel=B
+T 10 590 5 10 0 0 0 6 1
+pinnumber=2
+T 100 600 5 10 0 0 0 0 1
+pinseq=2
+}
