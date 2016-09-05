@@ -1,0 +1,27 @@
+#--vmode
+--minwidth 1400
+#--extlabels
+
+[labels]
+r U?
+v MC34063A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=1.5 A, Step-Up/Down/Inverting Switching Regulators
+! documentation=http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF
+! author=Wojciech Krutnik
+! footprint=SOP8
+! device=IC
+! symversion=1.0
+
+[left]
+1       SWc
+2       SWe
+3       Ct
+4   p   GND
+[right]
+8       DRc
+7       Isen
+6   p   VCC
+5       FB
