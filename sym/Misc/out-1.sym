@@ -1,8 +1,6 @@
 v 20150930 2
 T 0 1600 5 10 0 0 0 0 1
 symversion=1.0
-T 0 1800 5 10 0 0 0 0 1
-device=OUTPUT
 T 0 2000 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 2200 5 10 0 0 0 0 1
@@ -39,3 +37,5 @@ L 650,300
 z
 T 900 200 8 10 1 1 0 1 1
 refdes=OUT
+T 0 1800 5 10 0 0 0 0 1
+device=none
