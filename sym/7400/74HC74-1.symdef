@@ -1,0 +1,36 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 74HC74
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Dual D-type flip-flop with set and reset; positive edge-trigger
+! documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT74.pdf
+! author=Wojciech Krutnik
+! footprint=DIP14
+! device=IC
+! symversion=1.0
+
+[left]
+4  i   \_1SD\_
+2  i   1D
+3  i>  1CP
+1  i   \_1CD\_
+
+10 i   \_2SD\_
+12 i   2D
+11 i>  2CP
+13 i   \_2CD\_
+[right]
+5  o   1Q
+6  o!  \_1Q\_
+.skip 1200
+9  o   2Q
+8  o!  \_2Q\_
+[top]
+14 p   VCC
+[bottom]
+7  p   GND
