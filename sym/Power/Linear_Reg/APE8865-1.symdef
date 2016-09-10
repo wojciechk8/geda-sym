@@ -1,0 +1,27 @@
+#--vmode
+--minwidth 1200
+#--extlabels
+
+[labels]
+r U?
+v APE8865
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=300mA LOW DROPOUT LINEAR REGULATOR
+! documentation=http://www.a-power.com.tw/files/AP_ProductData/PD_File/APE8865.pdf
+! author=Wojciech Krutnik
+! footprint=SOT23_5
+! device=IC
+! symversion=1.0
+
+[left]
+1  p		VIN
+2  p    GND
+3  i		\_SHDN\_
+[right]
+5   		VOUT
+.skip   400
+4   		BP
+[top]
+[bottom]
