@@ -1,10 +1,10 @@
-v 20140308 2
+v 20150930 2
 T 300 2700 5 10 0 0 0 0 1
 symversion=1.0
 T 300 2900 5 10 0 0 0 0 1
 device=IC
 T 300 3100 5 10 0 0 0 0 1
-footprint=SOP8
+footprint=SO8
 T 300 3300 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 3500 5 10 0 0 0 0 1

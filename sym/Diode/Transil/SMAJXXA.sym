@@ -1,4 +1,4 @@
-v 20140308 2
+v 20150930 2
 T 200 600 8 10 1 1 0 0 1
 refdes=TVS?
 T 0 800 5 10 0 0 0 0 1
@@ -19,8 +19,6 @@ T 0 2200 5 10 0 0 0 0 1
 dist-license=GPL
 T 0 2400 5 10 0 0 0 0 1
 use-license=unlimited
-T 0 2600 5 10 0 0 0 0 1
-graphical=0
 T 200 400 8 10 1 1 0 0 1
 value=SMAJXXA
 P 800 200 550 200 1 0 0

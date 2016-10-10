@@ -15,8 +15,6 @@ T 0 2200 5 10 0 0 0 0 1
 dist-license=GPL
 T 0 2400 5 10 0 0 0 0 1
 use-license=unlimited
-T 0 2600 5 10 0 0 0 0 1
-graphical=0
 P 200 0 200 200 1 0 0
 {
 T -600 200 5 10 0 0 90 0 1

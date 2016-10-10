@@ -10,7 +10,7 @@ footprint=SOD123
 T 0 1600 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 1800 5 10 0 0 0 0 1
-documentation=https://www.fairchildsemi.com/datasheets/MB/MBR0520L.pdf
+documentation=http://www.fairchildsemi.com/datasheets/MB/MBR0520L.pdf
 T 0 2000 5 10 0 0 0 0 1
 description=0.5A Schottky Rectifier
 T 0 2200 5 10 0 0 0 0 1

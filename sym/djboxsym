@@ -370,7 +370,7 @@ sub drawpin_top {
     } else {
 	&pltext($pinx{$pin}, $y-50, 5, $pinlabel{$pin});
     }
-    &ntext($pinx{$pin}+50, $y+100, 0, $pin);
+    &nvtext($pinx{$pin}-50, $y+100, 0, $pin);
     &pttext($pinx{$pin} -100, $y + 50, 6, $pintype{$pin});
     print "}\n";
 }
@@ -385,7 +385,7 @@ sub drawpin_bottom {
     } else {
 	&pltext($pinx{$pin}, 350, 3, $pinlabel{$pin});
     }
-    &ntext($pinx{$pin}+50, 200, 2, $pin);
+    &nvtext($pinx{$pin}-50, 200, 6, $pin);
     &pttext($pinx{$pin} -100, $piny{$pin} + 50, 6, $pintype{$pin});
     print "}\n";
 }
@@ -465,6 +465,21 @@ sub drawpin_right {
 sub ntext {
     my ($x, $y, $a, $s) = @_;
     printf("T %d %d 5 8 1 1 0 %s 1\npinnumber=%s\n", $x, $y, $a, $s);
+    if ($s =~ /^\d+$/) {
+	$my_pinseq = $s;
+    } else {
+	while ($pinseq_used[$pinseq]) {
+	    $pinseq ++;
+	}
+	$pinseq_used[$pinseq] = 1;
+	$my_pinseq = $pinseq;
+    }
+    printf("T %d %d 5 8 0 1 0 %s 1\npinseq=%d\n", $x, $y, $a, $my_pinseq);
+}
+
+sub nvtext {
+    my ($x, $y, $a, $s) = @_;
+    printf("T %d %d 5 8 1 1 90 %s 1\npinnumber=%s\n", $x, $y, $a, $s);
     if ($s =~ /^\d+$/) {
 	$my_pinseq = $s;
     } else {
