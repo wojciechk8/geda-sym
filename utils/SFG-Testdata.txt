@@ -1,0 +1,200 @@
+Device = Global
+  author = "Stefan Salewski"
+  email = ""
+  license = ""
+  dist-license = GPL
+  use-license = unlimited
+  copyright = ""
+  comment = "arbitrary test data"
+  version = ""
+  date = "08-FEB-2009"
+  elementdir = ""
+  defaultunit = "mil" # mm or mil
+  silkwidth = 10 mil # thickness of silk lines
+  silkoffset = 10 mil # distance between pads/pins and silk lines, ignored if silkbox = custom
+  textpos = upperleft # position of reference designator, upperleft, some devices may accept center
+  textorientation = horizontal # horizontal, some devices may accept vertical
+  refdessize = 100 # size of reference designator, default is 100 (integer)
+  mask = 6 mil # distance between the copper of pads/pins and the mask
+  clearance = 10 mil # distance between the copper of pads/pins and any polygon
+  p1silkmark = "" # mark pin/pad 1 with silk: to get a mark use: mark, p1mark, silkmark, yes, true, 1
+  p1coppermark = "" # mark pin/pad 1 with copper: to get a mark use: mark, coppermark, yes, true, 1
+Device = DIP
+  hole-scale 100
+  hole-add-on 0
+  silkbox = "outer" # inner or outer for autosize, custom for explicit size, otherwise no box
+  silkboxwidth = 0 mil # silkbox width, used if silkbox = custom, no box if value is too small
+  silkboxheight = 0 mil # silkbox height, used if silkbox = custom, no box if value is too small
+  name = "" # name of the footprint -- if left empty then filename is used
+  description = "" # detailed description
+  desc = "" # short description
+  documentation = "www..." # source of layout, i.e. URI of datasheet
+  pins =  8 # total number of pins (even)
+  width =  300 # separation of the two columns of pins -- center to center
+  pitch =  100 # distance between adjancent pins
+  pad-dia = 1.6mm # outer diameter of copper annulus
+  drill-dia =  1 mm# diameter of the hole
+  ovalpads = "oval" # to get ovals use: oval, ovalpads, yes, true, 1
+  p1silkmark = "notch" # mark pin/pad 1: see global, or for specific shape: semicircle, notch, damage, slash
+  p1coppermark = "no" # mark pin/pad 1: see global section, or for specific shape: square, octagon
+  Generate DIP8_OvalPads.fp
+Device = QFP
+  silkbox = "outer" # inner or outer for autosize, custom for explicit size, otherwise no box
+  silkboxwidth = 0 mil # silkbox width, used if silkbox = custom, no box if value is too small
+  silkboxheight = 0 mil # silkbox height, used if silkbox = custom, no box if value is too small
+  centerpadwidth 0 mm
+  centerpadheight 0 mm
+  name = "" # name of the footprint -- if left empty then filename is used
+  description = "" # detailed description
+  desc = "" # short description
+  documentation = "not available" # source of layout, i.e. URI of datasheet
+  pins =  16 # total number of pins (even)
+  rows = 0 # number of pins at side of pin one -- 0 is identical to pins/4
+  width =  3 mm # separation of the two columns of pads -- center to center. If 0 height is used.
+  height = 0 # separation of the two rows of pads -- center to center. If 0 width is used.
+  pitch =  0.5 mm# distance between adjancent pads -- center to center
+  padthickness = 0.3 mm # should be smaller than pitch
+  padlength = 1mm
+  silkbox inner
+  ovalpads = "1" # to get ovals use: oval, ovalpads, yes, true, 1
+  p1silkmark = "damage" # mark pin/pad 1: see global section, or for specific shape: circle, damage, slash
+  p1coppermark mark
+  Generate QFP16.fp
+
+Device = DIP
+  name = ""
+  description = ""
+  desc = ""
+  documentation = ""
+  pins = 2
+  width = 20 mm
+  defaultunit mm
+  hole-scale 120 # 120 %
+  hole-add-on 0.1 # add 0.1mm to drill
+  silkbox custom
+  silkboxwidth 20
+  silkboxheight 10 
+  pitch =  1mm # not really needed for two pin devices
+  pad-dia = 2mm 
+  drill-dia = 1.2*1.1 mm
+  ovalpads = "no"
+  p1silkmark = ""
+  p1coppermark = ""
+  Generate FuseLikeDip.fp
+
+  pins 4
+  pitch 2.5
+  width 8 
+  silkboxwidth 8 # will touch pins!
+  p1silkmark damage # but we will get gapbox to prevent pin overlap
+  silkboxheight 7 
+  Generate FancyDIP.fp
+
+  pins 3
+  silkbox custom
+  silkboxwidth 8
+  silkboxheight 10 
+  Generate DIP3PIN.fp
+
+  silkwidth 25 mil
+  pins 6
+  silkbox outer
+  p1silkmark semicircle
+  Generate FatDIP.fp
+
+Device = QFP
+  silkbox = "outer" # inner or outer for autosize, custom for explicit size, otherwise no box
+  silkboxwidth = 0 mil # silkbox width, used if silkbox = custom, no box if value is too small
+  silkboxheight = 0 mil # silkbox height, used if silkbox = custom, no box if value is too small
+  centerpadwidth 3 mm
+  centerpadheight 3 mm
+  silkbox outer
+  defaultunit mm
+  name = ""
+  description = ""
+  desc = ""
+  documentation = ""
+  pins = 32  
+  rows = 0
+  width = 5
+  height = 0
+  pitch = 0.5
+  padthickness = 0.3 
+  padlength = 0.8
+  ovalpads = no
+  p1silkmark = slash
+  Generate QFP32.fp
+
+  centerpadheight 4
+  rows 11
+  height 6
+  Generate QFPRect.fp
+
+  centerpadheight 0
+  pins 5
+  rows 3
+  width = 3
+  silkbox custom
+  silkboxwidth 4
+  silkboxheight 3 
+  Generate QFP5PINS.fp
+
+  pins 7
+  width 4
+  rows 4
+  silkboxheight 5
+  silkbox inner
+  p1silkmark = damage
+  Generate QFP7PINS.fp
+
+  width 2.4
+  height 1.8  
+  pins 3
+  rows 2
+  pitch 1
+  Generate Tr1.fp
+
+  pins 2
+  width 4
+  centerpadwidth 1 
+  centerpadheight 1
+  Generate TrX.fp
+
+  centerpadheight 0
+  pins 3
+  width 3
+  height 2.4  
+  rows 1
+  Generate Tr2.fp
+
+Device = CAPPR
+  defaultunit mm
+  hole-scale 120 # 120 %
+  hole-add-on 0.1 # add 0.1mm to drill
+  width 8.5
+  pad-dia 2
+  drill-dia 1
+  silkcircle-dia 10
+  silkmark p1plus
+  p1coppermark yes
+  Generate CAPPR.fp
+
+Device TRIMR
+  defaultunit mm
+  hole-scale 120 # 120 %
+  hole-add-on 0.1 # add 0.1mm to drill
+  chole = 3 mm
+  x1 -3
+  y1 -1
+  x2 -0
+  y2 1
+  x3 3
+  y3 -1
+  cx 0
+  cy 0
+  pad-dia 2
+  drill-dia 1
+  silkcircle-dia 7
+  Generate TRIMR.fp
+
+

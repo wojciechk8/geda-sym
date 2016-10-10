@@ -1,0 +1,441 @@
+Device = Global
+  author = "Stefan Salewski"
+  email = "mail@ssalewski.de"
+  dist-license = GPL
+  use-license = unlimited
+  date = "25-OCT-2009"
+  elementdir = "./"
+  silkwidth = 10 mil
+  silkoffset = 10 mil
+  #hole-scale = 125
+  #hole-add-on = 0.1 mm
+  textpos = upperleft
+  textorientation = horizontal
+  refdessize = 100
+  mask = 6 mil
+  clearance = 10 mil
+  p1silkmark = ""
+  p1coppermark = ""
+
+Device = QFP
+  defaultunit mm
+  centerpadwidth 0
+  centerpadheight 0
+  documentation = "http://www.nxp.com/#/pip/pip=[pip=PMBFJ620_1]|pp=[t=pip,i=PMBFJ620_1]"
+  pins = 6
+  rows = 3
+  width = 2
+  pitch = 0.65
+  padthickness = 0.35 
+  padlength = 0.8
+  ovalpads = no
+  p1silkmark = damage
+  p1coppermark yes
+  silkbox inner
+  Generate SOT363.fp
+ 
+#Names like CAPR-508P-381W-1016L-1168H__Kemet_C340.fp
+#Rectangular WIMA capacitors type MKP-10
+Device = DIP
+  defaultunit mm
+  hole-scale = 125
+  hole-add-on = 0.1 mm
+  documentation = "http://www.wima.com/EN/mkp10.htm"
+  pins = 2  
+  silkbox = custom
+  ovalpads = ""
+  p1silkmark = ""
+  p1coppermark = ""
+# 
+  width = 7.5
+  silkboxwidth = 10
+  silkboxheight = 4
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-750P-400W-1000L-900H-60d__WIMA_MKP-10.fp
+  width = 10
+  silkboxwidth = 13
+  silkboxheight = 4
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-1000P-400W-1300L-900H-60d__WIMA_MKP-10.fp
+  width = 7.5
+  silkboxwidth = 10.3
+  silkboxheight = 4.5
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-750P-450W-1030L-950H-60d__WIMA_MKP-10.fp
+  width = 10
+  silkboxwidth = 13
+  silkboxheight = 5
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-1000P-500W-1300L-1100H-60d__WIMA_MKP-10.fp
+  width = 15
+  silkboxwidth = 18
+  silkboxheight = 5
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-1500P-500W-1800L-1100H-80d__WIMA_MKP-10.fp
+  width = 7.5
+  silkboxwidth = 10.3
+  silkboxheight = 5.7
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-750P-570W-1030L-1250H-60d__WIMA_MKP-10.fp
+  width = 10
+  silkboxwidth = 13
+  silkboxheight = 6
+  pad-dia = 1.8
+  drill-dia = 0.6
+  Generate CAPR-1000P-600W-1300L-1200H-60d__WIMA_MKP-10.fp
+  width = 15
+  silkboxwidth = 18
+  silkboxheight = 6
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-1500P-600W-1800L-1250H-80d__WIMA_MKP-10.fp
+  width = 22.5
+  silkboxwidth = 26.5
+  silkboxheight = 6
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2250P-600W-2650L-1500H-80d__WIMA_MKP-10.fp
+  width = 15
+  silkboxwidth = 18
+  silkboxheight = 7
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-1500P-700W-1800L-1400H-80d__WIMA_MKP-10.fp
+  width = 22.5
+  silkboxwidth = 26.5
+  silkboxheight = 7
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2250P-700W-2650L-1650H-80d__WIMA_MKP-10.fp
+  width = 15
+  silkboxwidth = 18
+  silkboxheight = 8
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-1500P-800W-1800L-1500H-80d__WIMA_MKP-10.fp
+  width = 22.5
+  silkboxwidth = 26.5
+  silkboxheight = 8.5
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2250P-850W-2650L-1850H-80d__WIMA_MKP-10.fp
+  width = 15
+  silkboxwidth = 18
+  silkboxheight = 9
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-1500P-900W-1800L-1600H-80d__WIMA_MKP-10.fp
+  width = 27.5
+  silkboxwidth = 31.5
+  silkboxheight = 9
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2750P-900W-3150L-1900H-80d__WIMA_MKP-10.fp
+  width = 22.5
+  silkboxwidth = 26.5
+  silkboxheight = 10.5
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2250P-1050W-2650L-1900H-80d__WIMA_MKP-10.fp
+  width = 22.5
+  silkboxwidth = 26.5
+  silkboxheight = 11
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2250P-1100W-2650L-2100H-80d__WIMA_MKP-10.fp
+  width = 27.5
+  silkboxwidth = 31.5
+  silkboxheight = 11
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2750P-1100W-3150L-2100H-80d__WIMA_MKP-10.fp
+  width = 27.5
+  silkboxwidth = 31.5
+  silkboxheight = 13
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2750P-1300W-3150L-2400H-80d__WIMA_MKP-10.fp
+  width = 37.5
+  silkboxwidth = 41.5
+  silkboxheight = 13
+  pad-dia = 3.0
+  drill-dia = 1.0
+  Generate CAPR-3750P-1300W-4150L-2400H-100d__WIMA_MKP-10.fp
+  width = 27.5
+  silkboxwidth = 31.5
+  silkboxheight = 15
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2750P-1500W-3150L-2600H-80d__WIMA_MKP-10.fp
+  width = 37.5
+  silkboxwidth = 41.5
+  silkboxheight = 17
+  pad-dia = 3.0
+  drill-dia = 1.0
+  Generate CAPR-3750P-1700W-4150L-2900H-100d__WIMA_MKP-10.fp
+  width = 27.5
+  silkboxwidth = 31.5
+  silkboxheight = 17
+  pad-dia = 2.4
+  drill-dia = 0.8
+  Generate CAPR-2750P-1700W-3150L-3450H-80d__WIMA_MKP-10.fp
+  width = 37.5
+  silkboxwidth = 41.5
+  silkboxheight = 19
+  pad-dia = 3.0
+  drill-dia = 1.0
+  Generate CAPR-3750P-1900W-4150L-3200H-100d__WIMA_MKP-10.fp
+  width = 37.5
+  silkboxwidth = 41.5
+  silkboxheight = 20
+  pad-dia = 3.0
+  drill-dia = 1.0
+  Generate CAPR-3750P-2000W-4150L-3950H-100d__WIMA_MKP-10.fp
+  width = 37.5
+  silkboxwidth = 41.5
+  silkboxheight = 24
+  pad-dia = 3.0
+  drill-dia = 1.0
+  Generate CAPR-3750P-2400W-4150L-4550H-100d__WIMA_MKP-10.fp
+
+#Names like CAPR-508P-381W-1016L-1168H__Kemet_C340.fp
+#Dipped Radial Ceramic Capacitors TDK FK Series
+Device = DIP
+  documentation "http://www.tdk.co.jp/tefe02/e4942_fk.pdf"
+  defaultunit mm
+  hole-add-on = 0.2
+  hole-scale = 100
+  drill-dia = 0.5
+  pad-dia = 1.4
+  pins = 2  
+  silkbox = custom
+  ovalpads = ""
+  p1silkmark = ""
+  p1coppermark = ""
+#
+  width = 5.0
+  silkboxwidth = 5.0
+  silkboxheight = 2.5
+  Generate CAPR-500P-250W-500L-550H-50d__TDK_FK28.fp
+  width = 5.0
+  silkboxwidth = 5.0
+  silkboxheight = 2.5
+  Generate CAPR-500P-250W-500L-550H-50d__TDK_FK24.fp
+  width = 5.0
+  silkboxwidth = 5.5
+  silkboxheight = 3.5
+  Generate CAPR-500P-350W-550L-600H-50d__TDK_FK26.fp
+  width = 5.0
+  silkboxwidth = 5.5
+  silkboxheight = 4.0
+  Generate CAPR-500P-400W-550L-700H-50d__TDK_FK20.fp
+  width = 5.0
+  silkboxwidth = 7.5
+  silkboxheight = 4.0
+  Generate CAPR-500P-400W-750L-800H-50d__TDK_FK22.fp
+  width = 2.5
+  silkboxwidth = 4.0
+  silkboxheight = 2.5
+  Generate CAPR-250P-250W-400L-550H-50d__TDK_FK18.fp
+  width = 2.5
+  silkboxwidth = 4.5
+  silkboxheight = 2.5
+  Generate CAPR-250P-250W-450L-550H-50d__TDK_FK14.fp
+
+Device = TRIMR
+  defaultunit mm
+  hole-scale 100
+  hole-add-on 0 
+  desc = "Trimmer"
+  documentation = "http://www.spraguegoodman.com/pdfs/402.pdf"
+  pad-dia = 2.3
+  drill-dia = 1.3 
+  cx = 0
+  cy = 0
+  silkcircle-dia = 8 
+  p1coppermark = ""
+  x1 = 0
+  y1 = -3.75
+  x2 = 3.75
+  y2 = 0
+  x3 = 0
+  y3 = 3.75
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 8mm"
+  Generate TRIM_TB_3N_800D__Sprague-Goodman-1.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 8mm"
+  Generate TRIM_T_3N_800D__Sprague-Goodman-1.fp
+# rotated 90 degree clockwise
+  x1 = -3.75
+  y1 = 0
+  x2 = 0
+  y2 = 3.75
+  x3 = 3.75
+  y3 = 0  
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 8mm"
+  Generate TRIM_TB_3N_800D__Sprague-Goodman-2.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 8mm"
+  Generate TRIM_T_3N_800D__Sprague-Goodman-2.fp
+# rotated 45 degree clockwise
+  x1 = -3.75/1.414
+  y1 =  3.75/1.414
+  x2 =  3.75/1.414
+  y2 =  3.75/1.414
+  x3 =  3.75/1.414
+  y3 = -3.75/1.414 
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 8mm"
+  Generate TRIM_TB_3N_800D__Sprague-Goodman-3.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 8mm"
+  Generate TRIM_T_3N_800D__Sprague-Goodman-3.fp
+Device = TRIMR
+  defaultunit mm
+  hole-scale 100
+  hole-add-on 0
+  desc = "Trimmer"
+  documentation = "http://www.spraguegoodman.com/pdfs/402.pdf"
+  pad-dia = 2.3
+  drill-dia = 1.3 
+  cx = 0
+  cy = 0
+  silkcircle-dia = 10 
+  p1coppermark = ""
+  x1 = 0
+  y1 = -5
+  x2 = 5
+  y2 = 0
+  x3 = 0
+  y3 = 5
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 10mm Standard"
+  Generate TRIM_TB_3N_1000D__Sprague-Goodman_Std-1.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 10mm Standard"
+  Generate TRIM_T_3N_1000D__Sprague-Goodman_Std-1.fp
+# rotated 90 degree clockwise
+  x1 = -5
+  y1 = 0
+  x2 = 0
+  y2 = 5
+  x3 = 5
+  y3 = 0  
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 10mm Standard"
+  Generate TRIM_TB_3N_1000D__Sprague-Goodman_Std-2.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 10mm Standard"
+  Generate TRIM_T_3N_1000D__Sprague-Goodman_Std-2.fp
+# rotated 45 degree clockwise
+  x1 = -5/1.414
+  y1 =  5/1.414
+  x2 =  5/1.414
+  y2 =  5/1.414
+  x3 =  5/1.414
+  y3 = -5/1.414
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 10mm Standard"
+  Generate TRIM_TB_3N_1000D__Sprague-Goodman_Std-3.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 10mm Standard"
+  Generate TRIM_T_3N_1000D__Sprague-Goodman_Std-3.fp
+Device = TRIMR
+  defaultunit mm
+  hole-scale 100
+  hole-add-on 0 
+  desc = "Trimmer"
+  documentation = "http://www.spraguegoodman.com/pdfs/402.pdf"
+  pad-dia = 2.3
+  drill-dia = 1.3 
+  cx = 0
+  cy = 0
+  silkcircle-dia = 10 
+  p1coppermark = ""
+  x1 = -2.54
+  y1 = -2.54
+  x2 = 5.08
+  y2 = 0
+  x3 = -2.54
+  y3 = 2.54
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 10mm Special"
+  Generate TRIM_TB_3N_1000D__Sprague-Goodman_Spec-1.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 10mm Special"
+  Generate TRIM_T_3N_1000D__Sprague-Goodman_Spec-1.fp
+# rotated 45 degree clockwise
+  x1 = -2.54
+  y1 = -2.54
+  x2 = 0
+  y2 = 5.08
+  x3 = 2.54
+  y3 = -2.54
+  chole = 3
+  description = "Trimmer Top/Bottom adjust 3 Lead 10mm Special"
+  Generate TRIM_TB_3N_1000D__Sprague-Goodman_Spec-2.fp
+  chole = 0
+  description = "Trimmer Top adjust 3 Lead 10mm Special"
+  Generate TRIM_T_3N_1000D__Sprague-Goodman_Spec-2.fp
+
+# Reed-Relay_Meder_SILxx-1A72-71D
+# Caution: Rename pins 1,2,3,4 to 1,3,5,7
+Device = SIP
+  defaultunit mm
+  hole-scale 100
+  hole-add-on 0.1
+  description = "Reed Relay Meder SIL"
+  desc = "Reed Relay"
+  documentation = "http://www.meder.com/fileadmin/meder/pdf/en/Products/Reed_Relays/Relay_SIL_Series_E.pdf"
+  pins = 4 
+  pitch = 5.08
+  pad-dia = 1.4
+  drill-dia = 0.6 
+  silkbox = "custom"
+  silkboxwidth = 19.8
+  silkboxheight = 5.08
+  p1silkmark = "damage"
+  p1coppermark = octagon  
+  Generate Reed-Relay_Meder_SILxx-1A72-71D.fp
+
+# Reed-Relay Meder DIPxx-1C90-51D
+# Caution: Remove pins 3,4,5,10,11,12 and rename pin 8 to 7
+Device = DIP
+  defaultunit mm
+  hole-scale 100
+  hole-add-on 0.2
+  description = "Reed Relay Meder DIP"
+  desc = "Reed Relay"
+  documentation = "http://www.meder.com/fileadmin/meder/pdf/en/Products/Reed_Relays/Relay_DIP_Series_E.pdf"
+  pins = 14 # with 6 missing
+  width = 300 mil
+  pitch = 100 mil
+  pad-dia = 1.4
+  drill-dia = 0.5
+  silkbox = "custom"
+  silkboxwidth = 300 mil
+  silkboxheight = 19.3
+  p1silkmark = notch
+  p1coppermark = octagon
+  Generate Reed-Relay_Meder_DIPxx-1C90-51D.fp
+
+Device = MountingHole
+  defaultunit mm
+  hole-scale = 100
+  hole-add-on = 0.1 mm
+  description = "Mounting hole 4mm, for screw with 8mm head, plated"
+  desc = "Hole 4mm"
+  drill-dia = 4
+  pad-dia = 8 
+  silk-dia = 0 # auto adjust
+  Generate Hole-4mm_Head-8mm_plated.fp
+
+
