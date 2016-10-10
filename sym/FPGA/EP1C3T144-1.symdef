@@ -1,0 +1,67 @@
+--vmode
+--minwidth 4000
+--extlabels
+--compact
+
+[labels]
+r U?
+v EP1C3T144
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Cyclone FPGA
+! documentation=http://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/ds/ds_cyc.pdf
+! author=Wojciech Krutnik
+! footprint=LQFP144_20
+! device=IC
+! symversion=1.0
+
+[left]
+.skip 1000
+1 io IO/LVDS4p (INIT_DONE)
+2 io IO/LVDS4n (CRC_ERROR)
+3 io IO/LVDS3p (CLKUSR)
+4 io IO/LVDS3n
+5 io IO/VREF0B1
+6 io IO/LVDS2p
+7 io IO/LVDS2n
+10 io IO/DPCLK1
+11 io IO/VREF1B1
+12 io IO (nCSO)
+
+13 i  DATA0
+24 i  DCLK
+14 oc nCONFIG
+20 oc nCEO
+21 oc nCE
+
+[right]
+.skip 1000
+16 io CLK0/LVDSCLK1p
+17 io CLK1/LVDSCLK1n
+25 io IO (ASDO)
+26 io IO/PLL1_OUTp
+27 io IO/PLL1_OUTn
+28 io IO/DPCLK0
+31 io IO/VREF2B1
+32 io IO
+33 io IO/LVDS1p
+34 io IO/LVDS1n
+35 io IO/LVDS0p
+36 io IO/LVDS0n
+.skip 400
+22 i  MSEL0
+23 i  MSEL1
+
+[top]
+8 p VCCIO1
+29 p VCCIO1
+
+15 p VCCA_PLL1
+
+[bottom]
+9 p GND
+30 p GND
+
+18 p GNDA_PLL1
+19 p GNDG_PLL1

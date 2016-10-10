@@ -1,0 +1,65 @@
+--vmode
+--minwidth 4000
+--extlabels
+--compact
+
+[labels]
+r U?
+v EP1C3T144
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Cyclone FPGA
+! documentation=http://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/ds/ds_cyc.pdf
+! author=Wojciech Krutnik
+! footprint=LQFP144_20
+! device=IC
+! symversion=1.0
+
+[left]
+.skip 500
+73 io IO/LVDS22n
+74 io IO/LVDS22p
+75 io IO/LVDS21n
+76 io IO/LVDS21p
+77 io IO/LVDS20n
+78 io IO/LVDS20p
+79 io IO/VREF2B3
+82 io IO/DPCLK5
+83 io IO/LVDS19n
+84 io IO/LVDS19p
+85 io IO
+91 io IO
+92 io CLK3/LVDSCLK2n
+93 io CLK2/LVDSCLK2p
+
+86 oc CONF_DONE
+87 oc nSTATUS
+
+[right]
+.skip 500
+94 io IO
+96 io IO/VREF1B3
+97 io IO
+98 io IO/LVDS18n
+99 io IO/LVDS18p
+100 io IO/DPCLK4
+103 io IO
+104 io IO/VREF0B3
+105 io IO/LVDS17n
+106 io IO/LVDS17p
+107 io IO/LVDS16n
+108 io IO/LVDS16p
+
+88 i  TCK
+90 o  TDO
+89 i  TMS
+95 i  TDI
+
+[top]
+81 p VCCIO3
+102 p VCCIO3
+
+[bottom]
+80 p GND
+101 p GND

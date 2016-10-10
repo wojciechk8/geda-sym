@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+$device = "EP1C3T144";
+open($outf, ">$device") || die "Could not open $device for output";
+
+while (<>) {
+  next if /^\*/;
+
+  @data = split('\t', $_);
+
+  $num = $data[5];
+
+  $name = $data[2];
+  if($data[3] ne ""){
+    $name .= '/'.$data[3];
+  }
+  if($data[2] ne $data[4] && $data[4]){
+    $name .= ' ('.$data[4].')';
+  }
+
+  if ($name =~ /GND|VCC.*/){
+    $type = "p";
+  }else{
+    $type = "io";
+  }
+
+  print {$outf} join(' ', $num, $type, $name), "\n";
+}
+
+close($outf) || die "Could not close $device";
