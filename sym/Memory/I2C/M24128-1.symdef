@@ -1,0 +1,31 @@
+#--vmode
+--minwidth 1400
+
+[labels]
+r U?
+v M24128
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=128-Kbit serial I²C bus EEPROM
+! documentation=http://www.st.com/content/ccc/resource/technical/document/datasheet/59/05/c9/5b/7b/41/48/b6/CD00259167.pdf/files/CD00259167.pdf/jcr:content/translations/en.CD00259167.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+1  i   A0
+2  i   A1
+3  i   A2
+
+[right]
+5  oc  SDA
+6  oc  SCL
+7  i!  \_WC\_
+
+[top]
+8  p   VCC
+
+[bottom]
+4  p   GND
