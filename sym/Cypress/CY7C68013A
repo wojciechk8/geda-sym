@@ -1,0 +1,139 @@
+10 9 10 3 2D AVCC Power N/A N/A Analog VCC. Connect this pin to the 3.3 V power
+17 16 14 7 1D AVCC Power N/A N/A Analog VCC. Connect this pin to the 3.3 V power
+13 12 13 6 2F AGND Ground N/A N/A Analog Ground. Connect to ground with as short a
+20 19 17 10 1F AGND Ground N/A N/A Analog Ground. Connect to ground with as short a
+19 18 16 9 1E DMINUS I/O/Z Z N/A USB D– Signal. Connect to the USB D– signal.
+18 17 15 8 2E DPLUS I/O/Z Z N/A
+94 – – – – A0 Output L L
+95 – – – – A1 Output L L
+96 – – – – A2 Output L L
+97 – – – – A3 Output L L
+117 – – – – A4 Output L L
+118 – – – – A5 Output L L
+119 – – – – A6 Output L L
+120 – – – – A7 Output L L
+126 – – – – A8 Output L L
+127 – – – – A9 Output L L
+128 – – – – A10 Output L L
+21 – – – – A11 Output L L
+22 – – – – A12 Output L L
+23 – – – – A13 Output L L
+24 – – – – A14 Output L L
+25 – – – – A15 Output L L
+59 – – – – D0 I/O/Z Z Z
+60 – – – – D1 I/O/Z Z Z
+61 – – – – D2 I/O/Z Z Z
+62 – – – – D3 I/O/Z Z Z
+63 – – – – D4 I/O/Z Z Z
+86 – – – – D5 I/O/Z Z Z
+87 – – – – D6 I/O/Z Z Z
+88 – – – – D7 I/O/Z Z Z
+39 – – – – PSEN# Output H H
+34 28 – – – BKPT Output
+99 77 49 42 8B RESET# Input
+35 – – – – EA Input
+12 11 12 5 1C XTALIN Input
+11 10 11 4 2C XTALOUT Output
+1 100 5 54 2B CLKOUT O/Z 12 MHz Clock CLKOUT: 12-, 24- or 48-MHz clock, phase-locked
+
+#PORT A
+82 67 40 33 8G PA0/INT0# I/O/Z
+83 68 41 34 6G PA1/INT1# I/O/Z
+84 69 42 35 8F PA2/SLOE I/O/Z I
+85 70 43 36 7F PA3/WU2 I/O/Z I
+89 71 44 37 6F PA4/FIFOADR0 I/O/Z I
+90 72 45 38 8C PA5/FIFOADR1 I/O/Z I
+91 73 46 39 7C PA6/PKTEND I/O/Z I
+92 74 47 40 6C PA7/FLAGD/SLCS# I/O/Z I
+
+#PORT B
+44 34 25 18 3H PB0/FD[0] I/O/Z I
+45 35 26 19 4F PB1/FD[1] I/O/Z I
+46 36 27 20 4H PB2/FD[2] I/O/Z I
+47 37 28 21 4G PB3/FD[3] I/O/Z I
+54 44 29 22 5H PB4/FD[4] I/O/Z I
+55 45 30 23 5G PB5/FD[5] I/O/Z I
+56 46 31 24 5F PB6/FD[6] I/O/Z I
+57 47 32 25 6H PB7/FD[7] I/O/Z I
+
+#PORT C
+72 57 – – – PC0/GPIFADR0 I/O/Z I
+73 58 – – – PC1/GPIFADR1 I/O/Z I
+74 59 – – – PC2/GPIFADR2 I/O/Z I
+75 60 – – – PC3/GPIFADR3 I/O/Z I
+76 61 – – – PC4/GPIFADR4 I/O/Z I
+77 62 – – – PC5/GPIFADR5 I/O/Z I
+78 63 – – – PC6/GPIFADR6 I/O/Z I
+79 64 – – – PC7/GPIFADR7 I/O/Z I
+
+#PORT D
+102 80 52 45 8A PD0/FD[8] I/O/Z I
+103 81 53 46 7A PD1/FD[9] I/O/Z I
+104 82 54 47 6B PD2/FD[10] I/O/Z I
+105 83 55 48 6A PD3/FD[11] I/O/Z I
+121 95 56 49 3B PD4/FD[12] I/O/Z I
+122 96 1 50 3A PD5/FD[13] I/O/Z I
+123 97 2 51 3C PD6/FD[14] I/O/Z I
+124 98 3 52 2A PD7/FD[15] I/O/Z I
+
+#PORT E
+108 86 – – – PE0/T0OUT I/O/Z I
+109 87 – – – PE1/T1OUT I/O/Z I
+110 88 – – – PE2/T2OUT I/O/Z I
+111 89 – – – PE3/RXD0OUT I/O/Z I
+112 90 – – – PE4/RXD1OUT I/O/Z I
+113 91 – – – PE5/INT6 I/O/Z I
+114 92 – – – PE6/T2EX I/O/Z I
+115 93 – – – PE7/GPIFADR8 I/O/Z I
+
+4 3 8 1 1A RDY0/SLRD Input N/A N/A Multiplexed pin whose function is selected by the
+5 4 9 2 1B RDY1/SLWR Input N/A N/A Multiplexed pin whose function is selected by the
+6 5 – – – RDY2 Input N/A N/A RDY2 is a GPIF input signal.
+7 6 – – – RDY3 Input N/A N/A RDY3 is a GPIF input signal.
+8 7 – – – RDY4 Input N/A N/A RDY4 is a GPIF input signal.
+9 8 – – – RDY5 Input
+69 54 36 29 7H CTL0/FLAGA O/Z
+70 55 37 30 7G CTL1/FLAGB O/Z
+71 56 38 31 8H CTL2/FLAGC O/Z H L Multiplexed pin whose function is selected by the
+66 51 – – – CTL3 O/Z H L CTL3 is a GPIF control output.
+67 52 – – – CTL4 Output H L CTL4 is a GPIF control output.
+98 76 – – – CTL5 Output CTL5 is a GPIF control output.
+32 26 20 13 2G IFCLK I/O/Z
+28 22 – – – INT4 Input N/A N/A INT4 is the 8051 INT4 interrupt request input signal.
+106 84 – – – INT5# Input N/A N/A INT5# is the 8051 INT5 interrupt request input
+31 25 – – – T2 Input N/A N/A T2 is the active HIGH T2 input signal to 8051
+30 24 – – – T1 Input N/A N/A T1 is the active HIGH T1 signal for 8051 Timer1,
+29 23 – – – T0 Input N/A N/A T0 is the active HIGH T0 signal for 8051 Timer0,
+53 43 – – – RXD1 Input N/A N/A RXD1is an active HIGH input signal for 8051
+52 42 – – – TXD1 Output H L TXD1is an active HIGH output pin from 8051
+51 41 – – – RXD0 Input N/A N/A RXD0 is the active HIGH RXD0 input to 8051
+50 40 – – – TXD0 Output H L TXD0 is the active HIGH TXD0 output from 8051
+42 – – – – CS# Output H H CS# is the active LOW chip select for external memory.
+41 32 – – – WR# Output H H WR# is the active LOW write strobe output for external memory.
+40 31 – – – RD# Output H H RD# is the active LOW read strobe output for external memory.
+38 – – – – OE# Output H H OE# is the active LOW output enable for external memory.
+33 27 21 14 2H Reserved Input N/A N/A Reserved. Connect to ground.
+101 79 51 44 7B WAKEUP Input N/A N/A USB Wakeup.
+36 29 22 15 3F SCL OD Z Z Clock for the I 2 C interface. Connect to VCC with a
+37 30 23 16 3G SDA OD Z Z Data for I 2 C compatible interface. Connect to VCC
+2 1 6 55 5A VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+26 20 18 11 1G VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+43 33 24 17 7E VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+48 38 – – – VCC Power N/A N/A VCC. Connect to 3.3-V power source.
+64 49 34 27 8E VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+68 53 – – – VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+81 66 39 32 5C VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+100 78 50 43 5B VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+107 85 – – – VCC Power N/A N/A VCC. Connect to the 3.3-V power source.
+3 2 7 56 4B GND Ground N/A N/A Ground
+27 21 19 12 1H GND Ground N/A N/A Ground
+49 39 – – – GND Ground N/A N/A Ground
+58 48 33 26 7D GND Ground N/A N/A Ground
+65 50 35 28 8D GND Ground N/A N/A Ground
+80 65 – – – GND Ground N/A N/A Ground
+93 75 48 41 4C GND Ground N/A N/A Ground
+116 94 – – – GND Ground N/A N/A Ground
+125 99 4 53 4A GND Ground N/A N/A Ground
+14 13 – – – NC N/A N/A N/A No Connect. This pin must be left open.
+15 14 – – – NC N/A N/A N/A No Connect. This pin must be left open.
+16 15 – – – NC N/A N/A N/A No Connect. This pin must be left open.

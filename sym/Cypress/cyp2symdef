@@ -1,0 +1,51 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+use feature qw(switch);
+
+@packages = ("128", "100", "56PV", "56LT", "56BA");
+
+$i = 0;
+foreach $package (@packages){
+  open($outf[$i], ">CY7C68013A-$package") || die "Could not open CY7C68013A-$package for output";
+  $i++;
+}
+
+while (<>) {
+  next if /^#/;
+  s/^\s+//;
+  s/\s+$//;
+  s/[\s\t]+/ /g;
+  s/[\r\n]+$//;
+
+  @data = split(' ', $_, scalar(@packages)+3);
+  @num = @data[0..scalar(@packages)];
+  $name = $data[scalar(@packages)];
+  $type = $data[scalar(@packages)+1];
+
+  given ($type){
+    when('Power')     { $type = "p"; }
+    when('Ground')    { $type = "p"; }
+    when('Input')     { $type = "i"; }
+    when('Output')    { $type = "o"; }
+    when('O/Z')       { $type = "io"; }
+    when('I/O/Z')     { $type = "io"; }
+    when('I/O')       { $type = "io"; }
+    when('OD')        { $type = "oc"; }
+    default           { $type = ""; }
+  }
+
+  $i = 0;
+  foreach $package (@packages){
+    if($data[$i] =~ /\d+|(\d+[A-Z]+)/){
+      print {$outf[$i]} join(' ', $num[$i], $type, $name), "\n";
+    }
+    $i++;
+  }
+}
+
+$i = 0;
+foreach $package (@packages){
+  close($outf[$i]) || die "Could not close CY7C68013A-$package";
+  $i++;
+}
