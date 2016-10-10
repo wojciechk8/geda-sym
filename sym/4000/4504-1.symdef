@@ -1,0 +1,39 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 4504
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=CMOS Hex Voltage-Level Shifter for TTL-to-CMOS or CMOS-to-CMOS Operation
+! documentation=http://www.ti.com/lit/ds/symlink/cd4504b.pdf
+! author=Wojciech Krutnik
+! footprint=DIP16
+! device=IC
+! symversion=1.0
+
+[left]
+3  i   AIN
+5  i   BIN
+7  i   CIN
+9  i   DIN
+11 i   EIN
+14 i   FIN
+
+13 i   SEL
+
+[right]
+2  o   AOUT
+4  o   BOUT
+6  o   COUT
+10 o   DOUT
+12 o   EOUT
+15 o   FOUT
+
+[top]
+1  p   VCC
+16 p   VDD
+[bottom]
+8  p   VSS

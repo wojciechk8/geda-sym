@@ -1,0 +1,40 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 4094
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-stage shift-and-store register
+! documentation=http://www.nxp.com/documents/data_sheet/HEF4094B.pdf
+! author=Wojciech Krutnik
+! footprint=DIP16
+! device=IC
+! symversion=1.0
+
+[left]
+2  i   D
+3  i>  CP
+
+1  i   STR
+15 i   OE
+
+[right]
+9  o   QS1
+10 o   QS2
+
+4  o   QP0
+5  o   QP1
+6  o   QP2
+7  o   QP3
+14  o   QP4
+13  o   QP5
+12  o   QP6
+11  o   QP7
+
+[top]
+16 p   VDD
+[bottom]
+8  p   VSS
