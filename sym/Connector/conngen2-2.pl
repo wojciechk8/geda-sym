@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 for($num = 2; $num <= 64/2; $num++){
-  open(file, ">CONN${num}X2-1.sym") or die "Couldn't open file CONN${num}X2-1.sym, $!";
+  open(file, ">CONN${num}X2-2.sym") or die "Couldn't open file CONN${num}X2-2.sym, $!";
 
   $height = $num*400;
 
@@ -41,22 +41,22 @@ P 0 $piny 300 $piny 1 0 0
 T 100 @{[$piny+100]} 5 10 0 0 0 0 1
 pintype=pas
 T 400 $piny 9 12 1 1 0 1 1
-pinlabel=@{[$pin*2+1]}
+pinlabel=@{[$pin+1]}
 T 105 @{[$piny+95]} 5 10 0 1 0 6 1
-pinnumber=@{[$pin*2+1]}
+pinnumber=@{[$pin+1]}
 T 100 @{[$piny+100]} 5 10 0 0 0 0 1
-pinseq=@{[$pin*2+1]}
+pinseq=@{[$pin+1]}
 }
 P 1400 $piny 1100 $piny 1 0 0
 {
 T 1300 @{[$piny+100]} 5 10 0 0 0 6 1
 pintype=pas
 T 1000 $piny 9 12 1 1 0 7 1
-pinlabel=@{[($pin+1)*2]}
+pinlabel=@{[($num*2)-$pin]}
 T 1295 @{[$piny+95]} 5 10 0 1 0 0 1
-pinnumber=@{[($pin+1)*2]}
+pinnumber=@{[($num*2)-$pin]}
 T 1300 @{[$piny+100]} 5 10 0 0 0 6 1
-pinseq=@{[($pin+1)*2]}
+pinseq=@{[($num*2)-$pin]}
 }
 EOF
     $data = $data . $pindata;
