@@ -1,0 +1,44 @@
+Device = Global
+  author = "Wojciech Krutnik"
+  email = ""
+  license = ""
+  dist-license = GPL
+  use-license = unlimited
+  copyright = ""
+  comment = ""
+  version = ""
+  date = "07.11.2016"
+  elementdir = ""
+  defaultunit = "mm" # mm or mil
+  silkwidth = 0.2 mm # thickness of silk lines
+  silkoffset = 0.25 mm # distance between pads/pins and silk lines, ignored if silkbox = custom
+  textpos = upperleft # position of reference designator, upperleft, some devices may accept center
+  textorientation = horizontal # horizontal, some devices may accept vertical
+  refdessize = 100 # size of reference designator, default is 100 (integer)
+  mask = 0.075 mm # distance between the copper of pads/pins and the mask
+  clearance = 0.2 mm # distance between the copper of pads/pins and any polygon
+  p1silkmark = "" # mark pin/pad 1 with silk: to get a mark use: mark, p1mark, silkmark, yes, true, 1
+  p1coppermark = "" # mark pin/pad 1 with copper: to get a mark use: mark, coppermark, yes, true, 1
+Device = QFP
+  silkbox = "outer" # inner or outer for autosize, custom for explicit size, otherwise no box
+  silkboxwidth = 0 mil # silkbox width, used if silkbox = custom, no box if value is too small
+  silkboxheight = 0 mil # silkbox height, used if silkbox = custom, no box if value is too small
+  centerpadwidth 0 mm
+  centerpadheight 0 mm
+  name = "" # name of the footprint -- if left empty then filename is used
+  description = "" # detailed description
+  desc = "" # short description
+  documentation = "not available" # source of layout, i.e. URI of datasheet
+  pins =  10 # total number of pins (even)
+  rows = 5 # number of pins at side of pin one -- 0 is identical to pins/4
+  width =  4.4 mm # separation of the two columns of pads -- center to center. If 0 height is used.
+  height = 0 mm # separation of the two rows of pads -- center to center. If 0 width is used.
+  pitch =  0.5 mm# distance between adjancent pads -- center to center
+  padthickness = 0.29 mm # should be smaller than pitch
+  padlength = 1.3mm
+  silkbox inner
+  ovalpads = "0" # to get ovals use: oval, ovalpads, yes, true, 1
+  p1silkmark = "damage" # mark pin/pad 1: see global section, or for specific shape: circle, damage, slash
+  p1coppermark nomark
+  Generate MSOP10_A.fp
+
