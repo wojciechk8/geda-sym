@@ -6,7 +6,7 @@ symversion=1.0
 T 0 6200 5 10 0 0 0 0 1
 device=CONNECTOR
 T 0 6400 5 10 0 0 0 0 1
-footprint=HEADER26_2
+footprint=HEADER26_1
 T 0 6600 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 6800 5 10 0 0 0 0 1

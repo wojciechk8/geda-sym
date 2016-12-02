@@ -14,7 +14,7 @@ symversion=1.0
 T 0 @{[$height+1000]} 5 10 0 0 0 0 1
 device=CONNECTOR
 T 0 @{[$height+1200]} 5 10 0 0 0 0 1
-footprint=HEADER@{[$num*2]}_2
+footprint=HEADER@{[$num*2]}_1
 T 0 @{[$height+1400]} 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 0 @{[$height+1600]} 5 10 0 0 0 0 1
