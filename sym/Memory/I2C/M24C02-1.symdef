@@ -1,0 +1,31 @@
+#--vmode
+--minwidth 1400
+
+[labels]
+r U?
+v M24C02
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=1-Kbit and 2-Kbit serial I²C bus EEPROMs
+! documentation=http://www.st.com/content/ccc/resource/technical/document/datasheet/b0/d8/50/40/5a/85/49/6f/DM00071904.pdf/files/DM00071904.pdf/jcr:content/translations/en.DM00071904.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+1  i   A0
+2  i   A1
+3  i   A2
+
+[right]
+5  oc  SDA
+6  oc  SCL
+7  i!  \_WC\_
+
+[top]
+8  p   VCC
+
+[bottom]
+4  p   GND
