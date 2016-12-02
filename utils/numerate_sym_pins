@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+$input = $ARGV[0];
+$output = $input.".num";
+open($outf, ">$output") || die "Could not open $output for output";
+
+my $num = 1;
+
+while (<>) {
+  print {$outf} $_;
+  next unless /^P\s(\d+)\s(\d+)/;
+
+  $x = $1;
+  $y = $2 + 50;
+
+  local $/ = "}\n";
+  $pindata = <>;
+
+  # if attributes are present, then renumerate
+  if($pindata =~ /pinnumber=\d+/){
+    $pindata =~ s/pinnumber=\d+/pinnumber=$num/;
+    if($pindata =~ /pinseq=\d+/){
+      $pindata =~ s/pinseq=\d+/pinseq=$num/;
+    }
+    print {$outf} $pindata;
+    $num++;
+    next;
+  }
+
+
+  # create and append attributes
+  $pinnumber = <<"EOF";
+T $x $y 5 10 0 0 0 0 1
+pinnumber=$num
+EOF
+  $pinseq = <<"EOF";
+T $x $y 5 10 0 0 0 6 1
+pinseq=$num
+EOF
+  $pindata =~ s/}\n/$pinnumber$pinseq}\n/;
+
+  print {$outf} $pindata;
+
+  $num++;
+}
+
+close($outf) || die "Could not close $output";

@@ -1,6 +1,11 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
+###############
+#   WARNING   #
+# Currently pinnumber and pinseq attributes are not added to pins #
+###################################################################
+
 $width = 5000;
 
 $input = $ARGV[0];
