@@ -12,7 +12,7 @@ v CY7C68013A-128
 ! description=EZ-USB® FX2LP™ USB Microcontroller High-Speed USB Peripheral Controller
 ! documentation=http://www.cypress.com/file/138911/download
 ! author=Wojciech Krutnik
-! footprint=QFP128_R
+! footprint=TQFP128_R
 ! device=IC
 ! symversion=1.0
 

@@ -11,7 +11,7 @@ v MC34063A
 ! description=1.5 A, Step-Up/Down/Inverting Switching Regulators
 ! documentation=http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF
 ! author=Wojciech Krutnik
-! footprint=SOP8
+! footprint=SO8
 ! device=IC
 ! symversion=1.0
 
