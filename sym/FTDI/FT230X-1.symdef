@@ -1,0 +1,42 @@
+--vmode
+--minwidth 2000
+
+[labels]
+r U?
+v FT230XS
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=USB TO BASIC UART IC
+! documentation=http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf
+! author=Wojciech Krutnik
+! footprint=SSOP16
+! device=IC
+! symversion=1.0
+
+[left]
+10 p   3V3OUT
+.skip 800
+9  io  USBDM
+8  io  USBDP
+.skip 800
+11 i!  RESET#
+
+[right]
+1  o   TXD
+4  i   RXD
+2  o   RTS#
+6  i   CTS#
+
+15 io  CBUS0
+14 io  CBUS1
+7  io  CBUS2
+16 io  CBUS3
+
+[top]
+12 p   VCC
+3  p   VCCIO
+
+[bottom]
+5  p   GND
+13 p   GND
