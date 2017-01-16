@@ -1,0 +1,93 @@
+--vmode
+--minwidth 4000
+--extlabels
+
+[labels]
+r U?
+v STM32F401RxT
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=ARM® Cortex®-M4 32b MCU+FPU, 105 DMIPS, 512KB Flash/96KB RAM, 11 TIMs, 1 ADC, 11 comm. interfaces
+! documentation=http://www.st.com/resource/en/datasheet/stm32f401re.pdf
+! author=Wojciech Krutnik
+! footprint=LQFP64_10
+! device=IC
+! symversion=1.0
+
+
+[left]
+14 io PA0
+15 io PA1
+16 io PA2
+17 io PA3
+20 io PA4
+21 io PA5
+22 io PA6
+23 io PA7
+41 io PA8
+42 io PA9
+43 io PA10
+44 io PA11
+45 io PA12
+46 io PA13 (JTMS-SWDIO)
+49 io PA14 (JTCK-SWCLK)
+50 io PA15 (JTDI)
+
+26 io PB0
+27 io PB1
+28 io PB2 (BOOT1)
+55 io PB3 (JTDO-SWO)
+56 io PB4 (NJTRST)
+57 io PB5
+58 io PB6
+59 io PB7
+61 io PB8
+62 io PB9
+29 io PB10
+33 io PB12
+34 io PB13
+35 io PB14
+36 io PB15
+
+[right]
+8 io PC0
+9 io PC1
+10 io PC2
+11 io PC3
+24 io PC4
+25 io PC5
+37 io PC6
+38 io PC7
+39 io PC8
+40 io PC9
+51 io PC10
+52 io PC11
+53 io PC12
+2 io PC13
+3 io PC14 (OSC32_IN)
+4 io PC15 (OSC32_OUT)
+
+54 io PD2
+.skip 800
+5 io PH0 (OSC_IN)
+6 io PH1 (OSC_OUT)
+.skip 800
+60 i BOOT0
+7 io! NRST
+
+[top]
+1 p VBAT
+30 p VCAP1
+13 p VDDA/VREF+
+19 p VDD
+32 p VDD
+48 p VDD
+64 p VDD
+
+[bottom]
+12 p VSSA/VREF−
+18 p VSS
+31 p VSS
+47 p VSS
+63 p VSS

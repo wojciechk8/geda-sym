@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+use feature qw(switch);
+
+@packages = ("CxU", "CxY", "RxT", "VxT", "VxH");
+
+$i = 0;
+foreach $package (@packages){
+  open($outf[$i], ">STM32F401$package") || die "Could not open STM32F401$package for output";
+  $i++;
+}
+
+while (<>) {
+  next if /^#/;
+  s/^\s+//;
+  s/\s+$//;
+  s/[\s\t]+/ /g;
+  s/[\r\n]+$//;
+
+  @data = split(' ', $_, scalar(@packages)+3);
+  @num = @data[0..scalar(@packages)];
+  $name = $data[scalar(@packages)];
+  $type = $data[scalar(@packages)+1];
+
+  given ($type){
+    when('S')         { $type = "p"; }
+    when('I')         { $type = "i"; }
+    when('I/O')       { $type = "io"; }
+    default           { $type = ""; print "WARNING: unknown type: $type (l. $.)"; }
+  }
+
+  $i = 0;
+  foreach $package (@packages){
+    if($data[$i] =~ /\d+|([A-Z]+\d+)/){
+      print {$outf[$i]} join(' ', $num[$i], $type, $name), "\n";
+    }
+    $i++;
+  }
+}
+
+$i = 0;
+foreach $package (@packages){
+  close($outf[$i]) || die "Could not close STM32F401$package";
+  $i++;
+}
