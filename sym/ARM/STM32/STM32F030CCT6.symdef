@@ -13,7 +13,7 @@ v STM32F030CCT6
 ! author=Wojciech Krutnik
 ! footprint=LQFP48_7
 ! device=IC
-! symversion=1.0
+! symversion=2.0
 
 [left]
 10 io  PA0
@@ -37,8 +37,8 @@ v STM32F030CCT6
 3  io  PC14 (OSC32_IN)
 4  io  PC15 (OSC32_OUT)
 
-44 i   BOOT0
 7  i!  NRST
+44 i   BOOT0
 
 [right]
 18 io  PB0

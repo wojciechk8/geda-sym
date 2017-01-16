@@ -3,11 +3,12 @@
 
 use feature qw(switch);
 
-@packages = ("CxU", "CxY", "RxT", "VxT", "VxH");
+$device = "STM32F105";
+@packages = ("VxH", "RxT", "VxT");
 
 $i = 0;
 foreach $package (@packages){
-  open($outf[$i], ">STM32F401$package") || die "Could not open STM32F401$package for output";
+  open($outf[$i], ">$device$package") || die "Could not open $device$package for output";
   $i++;
 }
 
@@ -26,8 +27,9 @@ while (<>) {
   given ($type){
     when('S')         { $type = "p"; }
     when('I')         { $type = "i"; }
+    when('O')         { $type = "o"; }
     when('I/O')       { $type = "io"; }
-    default           { $type = ""; print "WARNING: unknown type: $type (l. $.)"; }
+    default           { $type = ""; print "WARNING: unknown type: $type (l. $.)\n"; }
   }
 
   $i = 0;
@@ -41,6 +43,6 @@ while (<>) {
 
 $i = 0;
 foreach $package (@packages){
-  close($outf[$i]) || die "Could not close STM32F401$package";
+  close($outf[$i]) || die "Could not close $device$package";
   $i++;
 }

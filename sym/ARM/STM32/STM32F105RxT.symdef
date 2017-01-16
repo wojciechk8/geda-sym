@@ -4,12 +4,12 @@
 
 [labels]
 r U?
-v STM32F401RxT
+v STM32F105RxT
 ! use-license=unlimited
 ! dist-license=GPL
 ! numslots=0
-! description=ARM® Cortex®-M4 32b MCU+FPU, 105 DMIPS, 512KB Flash/96KB RAM, 11 TIMs, 1 ADC, 11 comm. interfaces
-! documentation=http://www.st.com/resource/en/datasheet/stm32f401re.pdf
+! description=Connectivity line, ARM®-based 32-bit MCU with 64/256 KB Flash, USB OTG, Ethernet, 10 timers, 2 CANs, 2 ADCs, 14 communication interfaces
+! documentation=http://www.st.com/resource/en/datasheet/stm32f105r8.pdf
 ! author=Wojciech Krutnik
 ! footprint=LQFP64_10
 ! device=IC
@@ -17,7 +17,7 @@ v STM32F401RxT
 
 
 [left]
-14 io PA0
+14 io PA0 (WKUP)
 15 io PA1
 16 io PA2
 17 io PA3
@@ -30,14 +30,14 @@ v STM32F401RxT
 43 io PA10
 44 io PA11
 45 io PA12
-46 io PA13 (JTMS-SWDIO)
-49 io PA14 (JTCK-SWCLK)
-50 io PA15 (JTDI)
+46 io PA13 (JTMS/SWDIO)
+49 io PA14 (JTCK/SWCLK)
+50 io PA15
 
 26 io PB0
 27 io PB1
-28 io PB2 (BOOT1)
-55 io PB3 (JTDO-SWO)
+28 io PB2
+55 io PB3 (JTDO)
 56 io PB4 (NJTRST)
 57 io PB5
 58 io PB6
@@ -45,10 +45,11 @@ v STM32F401RxT
 61 io PB8
 62 io PB9
 29 io PB10
+30 io PB11
 33 io PB12
 34 io PB13
 35 io PB14
-36 io PB15
+36 io PB15 (JTDI)
 
 [right]
 8 io PC0
@@ -64,22 +65,21 @@ v STM32F401RxT
 51 io PC10
 52 io PC11
 53 io PC12
-2 io PC13
+2 io PC13 (TAMPER-RTC)
 3 io PC14 (OSC32_IN)
 4 io PC15 (OSC32_OUT)
 
 54 io PD2
 .skip 800
-5 io PH0 (OSC_IN)
-6 io PH1 (OSC_OUT)
+5 i OSC_IN
+6 o OSC_OUT
 .skip 800
 7 io! NRST
 60 i BOOT0
 
 [top]
 1 p VBAT
-30 p VCAP1
-13 p VDDA/VREF+
+13 p VDDA
 19 p VDD
 32 p VDD
 48 p VDD
@@ -91,3 +91,4 @@ v STM32F401RxT
 31 p VSS
 47 p VSS
 63 p VSS
+
