@@ -52,10 +52,6 @@ T 24200 1900 15 10 1 0 0 5 1
 DATE
 T 21100 700 9 14 1 1 0 1 1
 project=Project
-T 15200 2000 9 20 1 1 0 0 1
-title1=Schematic
-T 15200 1500 9 20 1 1 0 0 1
-title2=Diagram
 T 15900 700 9 14 1 1 0 1 1
 file=File.sch
 T 23700 700 9 14 1 1 0 4 1
@@ -488,3 +484,6 @@ sRdqeCdYXvbjdrtpbm6mv7+frq5uBEEglUoRi/1MKBTi0qWPGRu7W3IgsL39CqfTSWtrK0+f
 LmgOq+GfQyKRIBwOsb4eZ39/n6amZvR6AYvFgtVqrcjg7fP5ePFijc7OT7l1a0hzWA3/L/wJ
 KmKs0MH4NtsAAAAASUVORK5CYII=
 .
+T 15200 1600 9 20 1 1 0 0 2
+title1=Schematic
+Diagram
