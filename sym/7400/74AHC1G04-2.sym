@@ -30,7 +30,7 @@ symversion=1.0
 T 300 1550 5 10 0 0 0 0 1
 device=IC
 T 300 1750 5 10 0 0 0 0 1
-footprint=SC70_5
+footprint=SOT23_5
 T 300 1950 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 2150 5 10 0 0 0 0 1
