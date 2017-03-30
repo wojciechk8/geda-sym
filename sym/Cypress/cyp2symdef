@@ -1,6 +1,12 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
+# Usage:
+#   cyp2symdef [in_file]
+#
+# Row structure of input file:
+#   package0_pin package1_pin ... packageN_pin pin_name pin_type
+
 use feature qw(switch);
 
 @packages = ("128", "100", "56PV", "56LT", "56BA");

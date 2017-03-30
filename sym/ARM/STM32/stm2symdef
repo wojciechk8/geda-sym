@@ -1,6 +1,12 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
+# Usage:
+#   stm2symdef [in_file]
+#
+# Row structure of input file:
+#   package0_pin package1_pin ... packageN_pin pin_name pin_type
+
 use feature qw(switch);
 
 $device = "STM32F105";

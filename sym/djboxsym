@@ -5,6 +5,11 @@
 # Released under the terms of the GNU General Public License, version 2
 
 # Modified by Wojciech Krutnik <wojciechk8@gmail.com>
+# - Added "extlabels" option, which separates label text after a space
+#   and allows mirroring of the symbol without labels displacement
+#   (look at AVR/mega8A_DIP1.sym for example)
+# - Some modifications of symbol dimensions, drawing order and
+#   text placement
 
 # Usage: djboxsym sample.symdef > sample.sym
 
