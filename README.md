@@ -1,4 +1,4 @@
-This my repository of gEDA symbols/footprints. There are also some
+This is my repository of gEDA symbols/footprints. There are also some
 configuration files (\*rc), template files (template.\*), tools
 (utils directory).
 
@@ -20,7 +20,7 @@ content of stm32f105 file was copied from a datasheet and then converted
 to 3 symdef files (respectively for each package) using my *stm2symdef*
 perl script.
 
-Furthermore there are few connector generators in Connector directory.
+There are also few connectors generators in Connector directory.
 
 ## Footprints
 Most footprints I'm using come from stock *pcb* library. If there's no
