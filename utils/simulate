@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./simulate schematic.sch
+
 set -e
 
 gnetlist -g spice-sdb -o ${1%sch}cir ${1}
