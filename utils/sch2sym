@@ -1,6 +1,9 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
+# Desc: Generates sheet symbol with ports from schematic
+#       ./sch2sym schematic.sch
+
 ###############
 #   WARNING   #
 # Currently pinnumber and pinseq attributes are not added to pins #

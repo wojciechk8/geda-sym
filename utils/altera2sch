@@ -1,6 +1,9 @@
 #!/usr/bin/perl
 # -*- perl -*-
 
+# Desc: Converts ASCII pinout file from Quartus to geda schematic ports
+#       ./altera2sch file.pin
+
 $output = "pins.sch";
 open($outf, ">$output") || die "Could not open $output for output";
 
