@@ -1,3 +1,3 @@
-(set! use-legacy-frontend #t)
+#(set! use-legacy-frontend #t)
 
 (scheme-directory (build-path (getenv "HOME") ".gEDA" "scheme"))
