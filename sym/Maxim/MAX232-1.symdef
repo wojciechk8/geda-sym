@@ -1,0 +1,42 @@
+--vmode
+--minwidth 2000
+#--extlabels
+
+[labels]
+r U?
+v MAX232
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=+5V-Powered, Multichannel RS-232 Drivers/Receivers
+! documentation=http://datasheets.maximintegrated.com/en/ds/MAX220-MAX249.pdf
+! author=Wojciech Krutnik
+! footprint=DIP16
+! device=IC
+! symversion=1.0
+
+[left]
+1      C1+
+3      C1-
+4      C2+
+5      C2-
+
+11 i   T1IN
+10 i   T2IN
+
+12 o   R1OUT
+9  o   R2OUT
+[right]
+2      V+
+
+6      V-
+.skip 800
+14 o   T1OUT
+7  o   T2OUT
+
+13 i   R1IN
+8  i   R2IN
+[top]
+16 p   VCC
+[bottom]
+15 p   GND
