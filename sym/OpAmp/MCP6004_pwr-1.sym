@@ -1,21 +1,21 @@
-v 20140308 2
+v 20150930 2
 T 0 1600 8 10 1 1 0 0 1
 refdes=U?
-T 0 1900 5 10 0 0 0 0 1
-symversion=1.0
 T 0 2100 5 10 0 0 0 0 1
-device=IC
+symversion=1.0
 T 0 2300 5 10 0 0 0 0 1
-author=Wojciech Krutnik
+device=IC
 T 0 2500 5 10 0 0 0 0 1
-documentation=none
+author=Wojciech Krutnik
 T 0 2700 5 10 0 0 0 0 1
-description=Power pins
+documentation=none
 T 0 2900 5 10 0 0 0 0 1
-numslots=0
+description=Power pins
 T 0 3100 5 10 0 0 0 0 1
-dist-license=GPL
+numslots=0
 T 0 3300 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 3500 5 10 0 0 0 0 1
 use-license=unlimited
 P 200 1400 200 1100 1 0 0
 {
@@ -39,3 +39,5 @@ pinlabel=VSS
 T 150 150 5 8 1 1 0 8 1
 pinnumber=11
 }
+T 0 1900 5 10 0 0 0 0 1
+value=MCP6004
