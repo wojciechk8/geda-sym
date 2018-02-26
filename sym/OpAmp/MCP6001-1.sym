@@ -20,7 +20,7 @@ dist-license=GPL
 T 300 3000 5 10 0 0 0 0 1
 use-license=unlimited
 T 1500 0 8 10 1 1 0 6 1
-value=MCP6001R
+value=MCP6001
 P 0 200 300 200 1 0 0
 {
 T 300 300 5 10 0 0 0 0 1
