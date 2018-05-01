@@ -1,0 +1,39 @@
+v 20150930 2
+T 200 900 8 10 1 1 0 0 1
+refdes=H?
+T 200 1200 5 10 0 0 0 0 1
+symversion=1.0
+T 200 1400 5 10 0 0 0 0 1
+device=SCREW
+T 200 1600 5 10 0 0 0 0 1
+footprint=screw(3.2000mm, 6.0000mm, shape=circle)
+T 200 1800 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 200 2000 5 10 0 0 0 0 1
+documentation=none
+T 200 2200 5 10 0 0 0 0 1
+description=Screw hole
+T 200 2400 5 10 0 0 0 0 1
+numslots=0
+T 200 2600 5 10 0 0 0 0 1
+dist-license=GPL
+T 200 2800 5 10 0 0 0 0 1
+use-license=unlimited
+T 200 700 8 10 1 1 0 0 1
+value=3MM
+P 0 300 200 300 1 0 0
+{
+T 200 400 5 10 0 0 0 0 1
+pintype=pas
+T 310 290 9 10 0 0 0 0 1
+pinlabel=1
+T 10 390 5 10 0 0 0 6 1
+pinnumber=1
+T 200 400 5 10 0 0 0 0 1
+pinseq=1
+}
+V 500 300 300 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1
+A 300 500 200 270 90 3 20 1 0 -1 -1
+A 300 100 200 0 90 3 20 1 0 -1 -1
+A 700 100 200 90 90 3 20 1 0 -1 -1
+A 700 500 200 180 90 3 20 1 0 -1 -1
