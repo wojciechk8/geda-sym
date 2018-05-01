@@ -3,15 +3,16 @@
 set -e
 
 PS_BLOAT=-1mil
+PS_BLOAT_PASTE=0mil
 PS_FADE=0.25
 ASSY_SCALE=1.5
 
 pcb-rnd -x png --outfile ${1%.lht}.png --dpi 600 --photo-mode --photo-plating copper --photo-mask-colour green $1
 #pcb-rnd -x png --outfile ${1%.lht}_bot.png --dpi 600 --photo-mode --photo-flip-x --photo-plating copper --photo-mask-colour green $1
-pcb-rnd -x ps --psfile ${1%.lht}.ps --ps-bloat $PS_BLOAT --align-marks --outline --auto-mirror --media A5 --drill-copper --show-legend $1
-pcb-rnd -x ps --psfile ${1%.lht}_mirror.ps --ps-bloat $PS_BLOAT --align-marks --outline --mirror --auto-mirror --media A5 --drill-copper --show-legend $1
+pcb-rnd -x ps --psfile ${1%.lht}.ps --align-marks --outline --auto-mirror --media A5 --drill-copper --show-legend $1
+pcb-rnd -x ps --psfile ${1%.lht}_mirror.ps --ps-bloat $PS_BLOAT_PASTE --align-marks --outline --mirror --auto-mirror --media A5 --drill-copper --show-legend $1
 pcb-rnd -x ps --psfile ${1%.lht}_inv.ps --ps-bloat $PS_BLOAT --align-marks --outline --mirror --auto-mirror --ps-invert --media A5 --no-drill-copper --show-legend $1
-pcb-rnd -x ps --psfile ${1%.lht}_scaled.ps --ps-bloat $PS_BLOAT --psfade $PS_FADE --scale $ASSY_SCALE --align-marks --outline --auto-mirror --media A4 --drill-copper --show-legend $1
+pcb-rnd -x ps --psfile ${1%.lht}_scaled.ps --psfade $PS_FADE --scale $ASSY_SCALE --align-marks --outline --auto-mirror --media A4 --drill-copper --show-legend $1
 
 psselect 2 ${1%.lht}_inv.ps ${1%.lht}_top.ps
 psselect 4 ${1%.lht}_inv.ps ${1%.lht}_bot.ps
