@@ -8,9 +8,6 @@
 (zoom-with-pan "enabled")
 (log-window "later")
 (text-size 10)
-(middle-button "repeat")
-(third-button "mousepan")
-(third-button-cancel "disabled")
 
 ; bus ripper
 (bus-ripper-size 300)
