@@ -1,0 +1,53 @@
+#!/bin/sh
+
+#@@example smd_chip(size=0805)
+
+#@@purpose Generate 2-pad SMD chip
+
+#@@desc Generate 2-pad SMD chip for resistors, capacitors, etc.
+#@@desc Predefined footprint dimensions are taken from IPC-SM-782A
+
+#@@params x, y, z, g, c, size, shape, outline_style
+
+#@@param:x pad width (in the direction perpendicular to element)
+#@@optional:x
+#@@dim:x
+#@@param:y pad thickness (in the direction parallel to element)
+#@@optional:y
+#@@dim:y
+#@@param:z distance between outer edges of the pads
+#@@optional:z
+#@@dim:z
+#@@param:g distance between inner edges of the pads
+#@@optional:g
+#@@dim:g
+#@@param:c distance between centers of the pads
+#@@optional:c
+#@@dim:c
+
+#@@param:size predefined size [in]([mm])
+#@@enum:size:0402 1005
+#@@enum:size:0603 1608
+#@@enum:size:0805 2012
+#@@enum:size:1206 3216
+#@@enum:size:1210 3225
+#@@enum:size:2010 5025
+#@@enum:size:2512 6332
+#@@optional:size
+
+#@@param:shape pad shape
+#@@enum:shape:square
+#@@enum:shape:rounded
+#@@optional:shape
+#@@default:shape square
+
+#@@param:outline draw silk outline
+#@@bool:outline
+#@@optional:outline
+#@@default:outline true
+
+
+#@@include common.awk
+
+awk -f `dirname $0`/common.awk -f `dirname $0`/smd_chip.awk -v "args=$*" -v gen=`basename $0` -v "genfull=$0"
+
