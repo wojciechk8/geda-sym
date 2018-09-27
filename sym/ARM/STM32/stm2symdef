@@ -9,8 +9,8 @@
 
 use feature qw(switch);
 
-$device = "STM32F105";
-@packages = ("VxH", "RxT", "VxT");
+$device = "STM32F042";
+@packages = ("Cx[TU]", "TxY", "KxT", "KxU", "GxU", "FxP");
 
 $i = 0;
 foreach $package (@packages){

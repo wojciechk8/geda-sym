@@ -1,0 +1,47 @@
+--vmode
+--minwidth 3200
+--extlabels
+
+[labels]
+r U?
+v STM32F042FxP
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=ARM®-based 32-bit MCU, up to 32 KB Flash, crystal-less USB FS 2.0, CAN, 9 timers, ADC and comm. interfaces, 2.0 - 3.6 V
+! documentation=http://www.st.com/resource/en/datasheet/stm32f042f6.pdf
+! author=Wojciech Krutnik
+! footprint=tssop(n=20, pad_thickness=0.4mm, int_bloat=0.8mm)
+! device=IC
+! symversion=1.0
+
+
+[left]
+6 io PA0
+7 io PA1
+8 io PA2
+9 io PA3
+10 io PA4
+11 io PA5
+12 io PA6
+13 io PA7
+17 io PA9/PA11
+18 io PA10/PA12
+19 io PA13 (SWDIO)
+20 io PA14 (SWCLK)
+
+[right]
+14 io PB1
+1 io PB8 (BOOT0)
+.skip 1200
+2 io PF0 (OSC_IN)
+3 io PF1 (OSC_OUT)
+.skip 1200
+4 io NRST
+
+[top]
+5 p VDDA
+16 p VDD
+
+[bottom]
+15 p VSS
