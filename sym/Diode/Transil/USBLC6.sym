@@ -1,6 +1,6 @@
 v 20150930 2
 T 200 2300 8 10 1 1 0 8 1
-refdes=TVS?
+refdes=U?
 T 0 2900 5 10 0 0 0 0 1
 symversion=1.0
 T 0 3100 5 10 0 0 0 0 1
@@ -20,7 +20,7 @@ dist-license=GPL
 T 0 4500 5 10 0 0 0 0 1
 use-license=unlimited
 T 200 2100 8 10 1 1 0 8 1
-value=USBLC6
+value=USBLC6-2SC6
 P 2000 1600 1700 1600 1 0 0
 {
 T 1850 1500 5 10 0 0 180 0 1
