@@ -1,0 +1,60 @@
+--vmode
+--minwidth 3600
+--extlabels
+
+[labels]
+r U?
+v STM32F042KxT
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=ARM®-based 32-bit MCU, up to 32 KB Flash, crystal-less USB FS 2.0, CAN, 9 timers, ADC and comm. interfaces, 2.0 - 3.6 V
+! documentation=http://www.st.com/resource/en/datasheet/stm32f042f6.pdf
+! author=Wojciech Krutnik
+! footprint=qfp(32, 7x7, 0.8)
+! device=IC
+! symversion=1.0
+
+
+[left]
+6 io PA0
+7 io PA1
+8 io PA2
+9 io PA3
+10 io PA4
+11 io PA5
+12 io PA6
+13 io PA7
+18 io PA8
+19 io PA9
+20 io PA10
+21 io PA11
+22 io PA12
+23 io PA13 (SWDIO)
+24 io PA14 (SWCLK)
+25 io PA15
+
+[right]
+14 io PB0
+15 io PB1
+
+26 io PB3
+27 io PB4
+28 io PB5
+29 io PB6
+30 io PB7
+31 io PB8 (BOOT0)
+.skip 800
+2 io PF0 (OSC_IN)
+3 io PF1 (OSC_OUT)
+.skip 800
+4 io NRST
+
+[top]
+1 p VDD
+5 p VDDA
+17 p VDDIO2
+
+[bottom]
+16 p VSS
+32 p VSSA
