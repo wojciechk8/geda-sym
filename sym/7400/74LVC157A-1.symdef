@@ -1,0 +1,43 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 74LVC157A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Quad 2-input multiplexer
+! documentation=http://assets.nexperia.com/documents/data-sheet/74LVC157A.pdf
+! author=Wojciech Krutnik
+! footprint=so(16)
+! device=IC
+! symversion=1.0
+
+[left]
+1  i  S
+
+2  i  1I0
+3  i  1I1
+5  i  2I0
+6  i  2I1
+11 i  3I0
+10 i  3I1
+14 i  4I0
+13 i  4I1
+
+[right]
+15 i! \_E\_
+.skip 600
+4  o   1Y
+
+7  o   2Y
+
+9  o   3Y
+
+12 o   4Y
+
+[top]
+16 p   VCC
+[bottom]
+8  p   GND

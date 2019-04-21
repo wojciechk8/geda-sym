@@ -1,0 +1,44 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v 74LVC240A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Octal buffer/line driver with 5V tolerant inputs/outputs; inverting; 3-state
+! documentation=http://assets.nexperia.com/documents/data-sheet/74LVC240A.pdf
+! author=Wojciech Krutnik
+! footprint=so(20)
+! device=IC
+! symversion=1.0
+
+[left]
+1  i!  \_1OE\_
+19 i!  \_2OE\_
+
+2  i  1A0
+4  i  1A1
+6  i  1A2
+8  i  1A3
+17 i  2A0
+15 i  2A1
+13 i  2A2
+11 i  2A3
+
+[right]
+.skip 1200
+18 o!  1Y0
+16 o!  1Y1
+14 o!  1Y2
+12 o!  1Y3
+3  o!  2Y0
+5  o!  2Y1
+7  o!  2Y2
+9  o!  2Y3
+
+[top]
+20 p   VCC
+[bottom]
+10 p   GND

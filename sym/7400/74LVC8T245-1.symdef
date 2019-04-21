@@ -1,0 +1,49 @@
+--vmode
+--minwidth 2000
+
+[labels]
+r U?
+v 74LVC8T245
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=8-bit dual supply translating transceiver; 3-state
+! documentation=http://assets.nexperia.com/documents/data-sheet/74LVC_LVCH8T245.pdf
+! author=Wojciech Krutnik
+! footprint=tssop(24)
+! device=IC
+! symversion=1.0
+
+[left]
+2  i   DIR
+22 i!  \_OE\_
+
+3  i  A1
+4  i  A2
+5  i  A3
+6  i  A4
+7  i  A5
+8  i  A6
+9  i  A7
+10 i  A8
+
+[right]
+.skip 1200
+21 i  B1
+20 i  B2
+19 i  B3
+18 i  B4
+17 i  B5
+16 i  B6
+15 i  B7
+14 i  B8
+
+[top]
+1  p   VCC(A)
+23 p   VCC(B)
+24 p   VCC(B)
+
+[bottom]
+11 p   GND
+12 p   GND
+13 p   GND

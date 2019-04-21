@@ -1,0 +1,90 @@
+v 20150930 2
+P 1000 2000 1000 1700 1 0 0
+{
+T 1050 1800 5 8 1 1 0 0 1
+pinnumber=5
+T 900 1750 5 8 0 1 0 6 1
+pinseq=5
+T 1000 1600 9 10 1 1 0 5 1
+pinlabel=VDD
+T 1000 1300 5 10 0 1 0 5 1
+pintype=pwr
+}
+P 1000 0 1000 300 1 0 0
+{
+T 1050 200 5 8 1 1 0 2 1
+pinnumber=2
+T 900 250 5 8 0 1 0 8 1
+pinseq=2
+T 1000 400 9 10 1 1 0 3 1
+pinlabel=GND
+T 1000 700 5 10 0 1 0 3 1
+pintype=pwr
+}
+P 100 1000 400 1000 1 0 0
+{
+T 350 1050 5 8 1 1 0 6 1
+pinnumber=1
+T 350 900 5 8 0 1 0 8 1
+pinseq=1
+T 500 1000 9 10 1 1 0 1 1
+pinlabel=Y1
+T 500 1000 5 10 0 1 0 2 1
+pintype=in
+}
+P 1900 800 1600 800 1 0 0
+{
+T 1700 850 5 8 1 1 0 0 1
+pinnumber=4
+T 1650 700 5 8 0 1 0 2 1
+pinseq=4
+T 1500 800 9 10 1 1 0 7 1
+pinlabel=Z
+T 1500 800 5 10 0 1 0 8 1
+pintype=out
+}
+T 400 1800 8 10 1 1 0 0 1
+refdes=U?
+T 800 200 8 10 1 1 0 8 1
+value=74LVC1G3157
+T 400 2100 5 10 0 0 0 0 1
+symversion=1.0
+T 400 2300 5 10 0 0 0 0 1
+device=IC
+T 400 2500 5 10 0 0 0 0 1
+footprint=SC74
+T 400 2700 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 400 2900 5 10 0 0 0 0 1
+documentation=http://assets.nexperia.com/documents/data-sheet/74LVC1G3157.pdf
+T 400 3100 5 10 0 0 0 0 1
+description=2-channel analog multiplexer/demultiplexer
+T 400 3300 5 10 0 0 0 0 1
+numslots=0
+T 400 3500 5 10 0 0 0 0 1
+dist-license=GPL
+T 400 3700 5 10 0 0 0 0 1
+use-license=unlimited
+P 100 600 400 600 1 0 0
+{
+T 350 650 5 8 1 1 0 6 1
+pinnumber=3
+T 350 500 5 8 0 1 0 8 1
+pinseq=3
+T 500 600 9 10 1 1 0 1 1
+pinlabel=Y0
+T 500 600 5 10 0 1 0 2 1
+pintype=in
+}
+P 100 1400 400 1400 1 0 0
+{
+T 350 1450 5 8 1 1 0 6 1
+pinnumber=6
+T 350 1300 5 8 0 1 0 8 1
+pinseq=6
+T 500 1400 9 10 1 1 0 1 1
+pinlabel=S
+T 500 1400 5 10 0 1 0 2 1
+pintype=in
+}
+B 400 300 1200 1400 3 30 0 0 -1 -1 0 -1 -1 -1 -1 -1

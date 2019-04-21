@@ -1,0 +1,72 @@
+v 20150930 2
+P -300 600 0 600 1 0 0
+{
+T -50 650 5 8 1 1 0 6 1
+pinnumber=1
+T -50 500 5 8 0 1 0 8 1
+pinseq=1
+T 100 600 5 10 0 1 0 2 1
+pintype=in
+}
+P 1100 400 800 400 1 0 0
+{
+T 900 450 5 8 1 1 0 0 1
+pinnumber=4
+T 850 300 5 8 0 1 0 2 1
+pinseq=4
+T 700 400 9 10 0 1 0 7 1
+pinlabel=Y
+T 700 400 5 10 0 1 0 8 1
+pintype=out
+}
+T 600 1000 8 10 1 1 0 0 1
+refdes=U?
+T 600 800 8 10 1 1 0 0 1
+value=74LVC1G3157
+P -300 200 0 200 1 0 0
+{
+T -50 250 5 8 1 1 0 6 1
+pinnumber=3
+T -50 100 5 8 0 1 0 8 1
+pinseq=3
+T 100 200 5 10 0 1 0 2 1
+pintype=in
+}
+P -300 1000 0 1000 1 0 0
+{
+T -50 1050 5 8 1 1 0 6 1
+pinnumber=6
+T -50 900 5 8 0 1 0 8 1
+pinseq=6
+T 100 1000 9 10 0 1 0 1 1
+pinlabel=S
+T 100 1000 5 10 0 1 0 2 1
+pintype=in
+}
+L 150 275 550 400 3 30 1 0 -1 -1
+L 400 350 400 1000 3 20 1 2 100 100
+V 200 200 40 3 20 1 0 -1 -1 0 -1 -1 -1 -1 -1
+V 600 400 40 3 20 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 0 1350 5 10 0 0 0 0 1
+symversion=1.0
+T 0 1550 5 10 0 0 0 0 1
+device=IC
+T 0 1750 5 10 0 0 0 0 1
+footprint=SOT23_6
+T 0 1950 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 0 2150 5 10 0 0 0 0 1
+documentation=http://assets.nexperia.com/documents/data-sheet/74LVC1G3157.pdf
+T 0 2350 5 10 0 0 0 0 1
+description=2-channel analog multiplexer/demultiplexer
+T 0 2550 5 10 0 0 0 0 1
+numslots=0
+T 0 2750 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 2950 5 10 0 0 0 0 1
+use-license=unlimited
+V 200 600 40 3 20 1 0 -1 -1 0 -1 -1 -1 -1 -1
+L 0 600 150 600 3 20 1 0 -1 -1
+L 0 200 150 200 3 20 1 0 -1 -1
+L 650 400 800 400 3 20 1 0 -1 -1
+L 400 1000 0 1000 3 20 1 2 100 100

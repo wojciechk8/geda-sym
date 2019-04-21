@@ -1,0 +1,71 @@
+v 20150930 2
+P -300 1100 0 1100 1 0 0
+{
+T -50 1150 5 8 1 1 0 6 1
+pinnumber=1
+T -50 1000 5 8 0 1 0 8 1
+pinseq=1
+T 50 1100 9 10 1 1 0 1 1
+pinlabel=0
+T 100 1100 5 10 0 1 0 2 1
+pintype=in
+}
+P 900 900 600 900 1 0 0
+{
+T 700 950 5 8 1 1 0 0 1
+pinnumber=4
+T 650 800 5 8 0 1 0 2 1
+pinseq=4
+T 500 900 9 10 0 1 0 7 1
+pinlabel=Y
+T 500 900 5 10 0 1 0 8 1
+pintype=out
+}
+T 0 1600 8 10 1 1 0 0 1
+refdes=U?
+T 0 1400 8 10 1 1 0 0 1
+value=74LVC1G157
+T 0 1900 5 10 0 0 0 0 1
+symversion=1.0
+T 0 2100 5 10 0 0 0 0 1
+device=IC
+T 0 2300 5 10 0 0 0 0 1
+footprint=SOT326
+T 0 2500 5 10 0 0 0 0 1
+author=Wojciech Krutnik
+T 0 2700 5 10 0 0 0 0 1
+documentation=http://assets.nexperia.com/documents/data-sheet/74LVC1G157.pdf
+T 0 2900 5 10 0 0 0 0 1
+description=Single 2-input multiplexer
+T 0 3100 5 10 0 0 0 0 1
+numslots=0
+T 0 3300 5 10 0 0 0 0 1
+dist-license=GPL
+T 0 3500 5 10 0 0 0 0 1
+use-license=unlimited
+P -300 700 0 700 1 0 0
+{
+T -50 750 5 8 1 1 0 6 1
+pinnumber=3
+T -50 600 5 8 0 1 0 8 1
+pinseq=3
+T 50 700 9 10 1 1 0 1 1
+pinlabel=1
+T 100 700 5 10 0 1 0 2 1
+pintype=in
+}
+P 300 300 300 600 1 0 0
+{
+T 250 500 5 8 1 1 90 6 1
+pinnumber=6
+T 400 550 5 8 0 1 90 8 1
+pinseq=6
+T 300 700 9 10 0 1 90 1 1
+pinlabel=S
+T 300 700 5 10 0 1 90 2 1
+pintype=in
+}
+L 0 1300 0 500 3 30 2 0 -1 -1
+L 0 500 600 700 3 30 2 0 -1 -1
+L 600 700 600 1100 3 30 2 0 -1 -1
+L 600 1100 0 1300 3 30 2 0 -1 -1
