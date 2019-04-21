@@ -6,7 +6,7 @@ pinnumber=2
 T 550 1350 5 8 0 0 0 0 1
 pinseq=2
 T 1600 1400 5 10 1 1 0 7 1
-pinlabel=D-
+pinlabel=D−
 T 550 1350 5 8 0 1 0 0 1
 pintype=pas
 }
@@ -50,7 +50,7 @@ pinnumber=5
 T 850 1450 5 8 0 0 270 0 1
 pinseq=5
 T 900 350 5 8 0 1 90 0 1
-pinlabel=5
+pinlabel=SHIELD
 T 850 1450 5 8 0 1 270 0 1
 pintype=pas
 }
