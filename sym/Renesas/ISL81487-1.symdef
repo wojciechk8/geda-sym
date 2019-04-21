@@ -1,0 +1,27 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v ISL81487
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=1/8 Unit Load, 5V, Low Power, High Speed or Slew Rate Limited, RS-485/RS-422 Transceivers
+! documentation=http://www.renesas.com/eu/en/www/doc/datasheet/isl8487-81483-81487.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+1  o   RO
+2  i!  \_RE\_
+3  i   DE
+4  i   DI
+
+[right]
+8  p   VCC
+7  o!  B/Z
+6  o   A/Y
+5  p   GND
