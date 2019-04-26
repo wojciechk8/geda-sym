@@ -1,0 +1,50 @@
+--vmode
+--minwidth 2200
+#--extlabels
+
+[labels]
+r U?
+v SCT2024CSOG
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=16-bit Serial-In/Parallel-Out Constant-Current LED Driver
+! documentation=http://www.starchips.com.tw/pdf/datasheet/SCT2024V01_03.pdf
+! author=Wojciech Krutnik
+! footprint=so(n=24, row_spacing=450.0mil, int_bloat=75.0mil, pad_thickness=25.0mil)
+! device=IC
+! symversion=1.0
+
+[left]
+2  i   SDI
+3  i   CLK
+4  i!  \_LA\_
+21 i!  \_OE\_
+
+22 o   SDO
+.skip 3600
+23     REXT
+
+[right]
+5  oc  OUT0
+6  oc  OUT1
+7  oc  OUT2
+8  oc  OUT3
+9  oc  OUT4
+10 oc  OUT5
+11 oc  OUT6
+12 oc  OUT7
+13 oc  OUT8
+14 oc  OUT9
+15 oc  OUT10
+16 oc  OUT11
+17 oc  OUT12
+18 oc  OUT13
+19 oc  OUT14
+20 oc  OUT15
+
+[top]
+24 p   VDD
+
+[bottom]
+1  p   GND
