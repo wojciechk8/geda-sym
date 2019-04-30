@@ -1,0 +1,27 @@
+#--vmode
+--minwidth 1500
+
+[labels]
+r U?
+v ADM483E
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=15 kV ESD Protected, EMC Compliant, Slew Rate Limited, EIA RS-485 Transceiver
+! documentation=http://www.analog.com/media/en/technical-documentation/data-sheets/ADM483E.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+1  o   RO
+2  i!  \_RE\_
+3  i   DE
+4  i   DI
+
+[right]
+8  p   VCC
+7  o!  B
+6  o   A
+5  p   GND
