@@ -1,0 +1,93 @@
+--vmode
+--minwidth 3200
+--extlabels
+
+[labels]
+r U?
+v STM32G070RB
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Arm® Cortex®-M0+ 32-bit MCU, 128 KB Flash, 36 KB RAM, 4x USART, timers, ADC, comm. I/Fs, 2.0-3.6V
+! documentation=http://www.st.com/resource/en/datasheet/stm32g070cb.pdf
+! author=Wojciech Krutnik
+! footprint=qfp(pins=64, size=10x10, pitch=0.5)
+! device=IC
+! symversion=1.0
+
+
+[left]
+17 io PA0
+18 io PA1
+19 io PA2
+20 io PA3
+21 io PA4
+22 io PA5
+23 io PA6
+24 io PA7
+36 io PA8
+37 io PA9
+42 io PA10
+43 io PA11(PA9)
+44 io PA12(PA10)
+45 io PA13(SWDIO)
+46 io PA14(SWCLK,BOOT0)
+47 io PA15
+
+27 io PB0
+28 io PB1
+29 io PB2
+57 io PB3
+58 io PB4
+59 io PB5
+60 io PB6
+61 io PB7
+62 io PB8
+63 io PB9
+30 io PB10
+31 io PB11
+32 io PB12
+33 io PB13
+34 io PB14
+35 io PB15
+
+[right]
+13 io PC0
+14 io PC1
+15 io PC2
+16 io PC3
+25 io PC4
+26 io PC5
+38 io PC6
+39 io PC7
+48 io PC8
+49 io PC9
+64 io PC10
+1 io PC11
+2 io PC12
+3 io PC13
+4 io PC14(OSC32_IN)
+5 io PC15(OSC32_OUT)
+
+50 io PD0
+51 io PD1
+52 io PD2
+53 io PD3
+54 io PD4
+55 io PD5
+56 io PD6
+40 io PD8
+41 io PD9
+
+10 io PF0(OSC_IN)
+11 io PF1(OSC_OUT)
+
+12 io NRST
+
+[top]
+6 p VBAT
+7 p VREF+
+8 p VDD/VDDA
+
+[bottom]
+9 p VSS/VSSA

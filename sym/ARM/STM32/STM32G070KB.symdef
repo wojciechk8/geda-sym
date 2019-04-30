@@ -1,0 +1,59 @@
+--vmode
+--minwidth 3200
+--extlabels
+
+[labels]
+r U?
+v STM32G070CB
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=Arm® Cortex®-M0+ 32-bit MCU, 128 KB Flash, 36 KB RAM, 4x USART, timers, ADC, comm. I/Fs, 2.0-3.6V
+! documentation=http://www.st.com/resource/en/datasheet/stm32g070cb.pdf
+! author=Wojciech Krutnik
+! footprint=qfp(pins=32, size=7x7, pitch=0.8)
+! device=IC
+! symversion=1.0
+
+
+[left]
+7 io PA0
+8 io PA1
+9 io PA2
+10 io PA3
+11 io PA4
+12 io PA5
+13 io PA6
+14 io PA7
+18 io PA8
+19 io PA9
+21 io PA10
+22 io PA11(PA9)
+23 io PA12(PA10)
+24 io PA13(SWDIO)
+25 io PA14(SWCLK,BOOT0)
+26 io PA15
+
+[right]
+15 io PB0
+16 io PB1
+17 io PB2
+27 io PB3
+28 io PB4
+29 io PB5
+30 io PB6
+31 io PB7
+32 io PB8
+1 io PB9
+
+20 io PC6
+2 io PC14(OSC32_IN)
+3 io PC15(OSC32_OUT)
+
+6 io NRST
+
+[top]
+4 p VDD/VDDA
+
+[bottom]
+5 p VSS/VSSA
