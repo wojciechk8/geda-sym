@@ -1,0 +1,31 @@
+#--vmode
+--minwidth 1400
+#--extlabels
+
+[labels]
+r U?
+v AOZ1015
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=EZBuck™ 1.5A Non-Synchronous Buck Regulator
+! documentation=http://www.aosmd.com/pdfs/datasheet/AOZ1015AI.pdf
+! author=Wojciech Krutnik
+! footprint=SO8
+! device=IC
+! symversion=1.0
+
+[left]
+6       EN
+.skip 800
+5       COMP
+[right]
+7       LX
+8       LX
+
+4       FB
+[top]
+2   p   VIN
+[bottom]
+3   p   AGND
+1   p   PGND
