@@ -1,0 +1,28 @@
+#--vmode
+--minwidth 1400
+#--extlabels
+
+[labels]
+r U?
+v AP65111A
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=LIGHT LOAD IMPROVED 1.5A SYNCH DC/DC BUCK CONVERTER
+! documentation=http://www.diodes.com/assets/Datasheets/AP65111A.pdf
+! author=Wojciech Krutnik
+! footprint=SOT23_6
+! device=IC
+! symversion=1.0
+
+[left]
+5   i   EN
+[top]
+1   p   IN
+4       BST
+[right]
+3       SW
+
+6       FB
+[bottom]
+2   p   GND
