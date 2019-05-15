@@ -40,8 +40,8 @@ v STM32F042FxP
 4 io NRST
 
 [top]
-5 p VDDA
 16 p VDD
+5 p VDDA
 
 [bottom]
 15 p VSS

@@ -52,8 +52,8 @@ v STM32F042KxT
 
 [top]
 1 p VDD
-5 p VDDA
 17 p VDDIO2
+5 p VDDA
 
 [bottom]
 16 p VSS
