@@ -15,15 +15,20 @@ if [ "$1" = "-d" ]; then
 fi
 OUT="$1"
 shift
+PAGE_NUM="$#"
 
 for f in "$@"
 do
+  cp "$f" "$f.sub"
   if [ -n "$DATE" ]; then
-    sed -i "s/date=.*/date=$DATE/" $f
+    sed -i "s/%date%/$DATE/" "$f.sub"
   fi
-  num=`grep -oP '(?<=page=)\d+' $f`
+  sed -i "s/%page_num%/$PAGE_NUM/" "$f.sub"
+  sed -i "s/%file%/$f/" "$f.sub"
+  num=`grep -oP '(?<=page=)\d+' "$f.sub"`
   num=`echo $(printf '%03d' $num)`
-  gaf export -o "${num}_${f%.sch}.pdf" $f
+  gaf export -o "${num}_${f%.sch}.pdf" "$f.sub"
+  rm "$f.sub"
   PDFS="$PDFS ${num}_${f%.sch}.pdf"
 done
 
