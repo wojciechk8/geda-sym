@@ -1,14 +1,15 @@
 Element["" "" "" "" 2.4500mm 3.3800mm 0.0000 0.0000 0 100 ""]
 (
-  Pin[0mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "1" "edge2"]
+  Pin[0mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "1" "edge2,square"]
   Pin[2.5mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "2" "edge2"]
   Pin[5mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "3" "edge2"]
   Pin[7.5mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "4" "edge2"]
   Pin[10mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "5" "edge2"]
   Pin[12.5mm 0.0000 2.0320mm 0.7620mm 2.2320mm 0.9000mm "" "6" "edge2"]
   ElementLine [-2.4500mm -3.3800mm -2.4500mm 1.5200mm 0.2500mm]
-  ElementLine [-2.4500mm 1.5200mm 14.95mm 1.5200mm 0.2500mm]
-  ElementLine [14.95mm 1.5200mm 14.95mm -3.3800mm 0.2500mm]
+  ElementLine [-2.4500mm 1.5200mm 13.68mm 1.5200mm 0.2500mm]
+  ElementLine [14.95mm 0.2500mm 14.95mm -3.3800mm 0.2500mm]
   ElementLine [14.95mm -3.3800mm -2.4500mm -3.3800mm 0.2500mm]
+  ElementLine [-2.4500mm 0.2500mm -1.1800mm 1.5200mm 0.2500mm]
   ElementLine [14.95mm 0.2500mm 13.68mm 1.5200mm 0.2500mm]
 )
