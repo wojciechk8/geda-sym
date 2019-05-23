@@ -62,7 +62,7 @@ pinlabel=A
 T 1050 750 5 8 0 0 0 0 1
 pinnumber=4
 T 1000 600 5 10 0 0 180 0 1
-pinseq=2
+pinseq=4
 }
 P 0 700 200 700 1 0 0
 {
