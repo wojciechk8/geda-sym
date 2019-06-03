@@ -11,7 +11,7 @@ v STM32F030C6T6
 ! description=Value-line ARM®-based 32-bit MCU with up to 256-KB Flash, timers, ADC, communication interfaces, 2.4-3.6 V operation
 ! documentation=http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf
 ! author=Wojciech Krutnik
-! footprint=LQFP48_7
+! footprint=qfp(48, 7x7, 0.5)
 ! device=IC
 ! symversion=2.0
 

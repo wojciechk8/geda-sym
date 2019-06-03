@@ -4,7 +4,7 @@
 
 [labels]
 r U?
-v STM32F030CCT6
+v STM32F030CxT6
 ! use-license=unlimited
 ! dist-license=GPL
 ! numslots=0
@@ -60,18 +60,18 @@ v STM32F030CCT6
 .skip 800
 5  io  PF0 (OSC_IN)
 6  io  PF1 (OSC_OUT)
+35 io  PF6(C4/C6/C8)/VSS(CC)
+36 io  PF7(C4/C6/C8)/VDD(CC)
 
 [top]
 1  p   VDD
 24 p   VDD
-36 p   VDD
 48 p   VDD
 
 9  p   VDDA
 
 [bottom]
 23 p   VSS
-35 p   VSS
 47 p   VSS
 
 8  p   VSSA

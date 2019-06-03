@@ -4,7 +4,7 @@ symversion=2.0
 T 300 10600 5 10 0 0 0 0 1
 device=IC
 T 300 10800 5 10 0 0 0 0 1
-footprint=LQFP48_7
+footprint=qfp(48, 7x7, 0.5)
 T 300 11000 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 11200 5 10 0 0 0 0 1

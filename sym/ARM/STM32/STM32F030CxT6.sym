@@ -20,7 +20,7 @@ use-license=unlimited
 T 300 10050 8 10 1 1 0 0 1
 refdes=U?
 T 300 250 8 10 1 1 0 2 1
-value=STM32F030C6T6
+value=STM32F030CxT6
 P 1600 10300 1600 10000 1 0 0
 {
 T 1600 9950 9 10 1 1 90 7 1
@@ -409,7 +409,7 @@ T 840 4400 9 10 1 1 0 1 1
 P 4300 1600 4000 1600 1 0 0
 {
 T 3950 1600 9 10 1 1 0 7 1
-pinlabel=PF6
+pinlabel=PF6(C4/C6/C8)/VSS(CC)
 T 4100 1650 5 8 1 1 0 0 1
 pinnumber=35
 T 4100 1650 5 8 0 1 0 0 1
@@ -420,7 +420,7 @@ pintype=io
 P 4300 1200 4000 1200 1 0 0
 {
 T 3950 1200 9 10 1 1 0 7 1
-pinlabel=PF7
+pinlabel=PF7(C4/C6/C8)/VDD(CC)
 T 4100 1250 5 8 1 1 0 0 1
 pinnumber=36
 T 4100 1250 5 8 0 1 0 0 1
