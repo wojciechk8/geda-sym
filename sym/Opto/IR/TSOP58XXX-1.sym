@@ -1,4 +1,4 @@
-v 20140308 2
+v 20150930 2
 T 300 1500 8 10 1 1 0 0 1
 refdes=U?
 T 300 1800 5 10 0 0 0 0 1
@@ -6,13 +6,13 @@ symversion=1.0
 T 300 2000 5 10 0 0 0 0 1
 device=IC
 T 300 2200 5 10 0 0 0 0 1
-footprint=TSOP312XX
+footprint=IR_TSOP58_H
 T 300 2400 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 2600 5 10 0 0 0 0 1
-documentation=none
+documentation=http://www.vishay.com/docs/82462/tsop581.pdf
 T 300 2800 5 10 0 0 0 0 1
-description=Integrated IR receiver
+description=IR Receiver Modules for Remote Control Systems
 T 300 3000 5 10 0 0 0 0 1
 numslots=0
 T 300 3200 5 10 0 0 0 0 1
@@ -20,7 +20,7 @@ dist-license=GPL
 T 300 3400 5 10 0 0 0 0 1
 use-license=unlimited
 T 300 1300 8 10 1 1 0 0 1
-value=TSOP31240
+value=TSOP58336
 P 0 1000 300 1000 1 0 0
 {
 T 100 1100 5 10 0 0 0 0 1
@@ -28,9 +28,9 @@ pintype=pwr
 T 400 1000 9 10 1 1 0 1 1
 pinlabel=VCC
 T 200 1050 5 8 1 1 0 6 1
-pinnumber=2
+pinnumber=3
 T 100 1100 5 10 0 0 0 0 1
-pinseq=2
+pinseq=3
 }
 P 0 600 300 600 1 0 0
 {
@@ -39,9 +39,9 @@ pintype=oc
 T 400 600 9 10 1 1 0 1 1
 pinlabel=OUT
 T 200 650 5 8 1 1 0 6 1
-pinnumber=3
+pinnumber=1
 T 100 700 5 10 0 0 0 0 1
-pinseq=3
+pinseq=1
 }
 P 0 200 300 200 1 0 0
 {
@@ -50,9 +50,9 @@ pintype=pwr
 T 400 200 9 10 1 1 0 1 1
 pinlabel=GND
 T 200 250 5 8 1 1 0 6 1
-pinnumber=1
+pinnumber=2
 T 100 300 5 10 0 0 0 0 1
-pinseq=1
+pinseq=2
 }
 L 1400 800 1200 400 3 30 2 0 -1 -1
 L 1200 400 1000 800 3 30 2 0 -1 -1
@@ -67,3 +67,5 @@ L 1400 650 1450 650 3 20 2 0 -1 -1
 L 1200 800 1200 1000 3 30 1 0 -1 -1
 L 1200 400 1200 200 3 30 1 0 -1 -1
 B 300 0 1300 1200 3 30 1 0 -1 -1 0 -1 -1 -1 -1 -1
+T 1400 1000 9 12 1 0 0 4 1
+IR
