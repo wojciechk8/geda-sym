@@ -1,0 +1,48 @@
+#--vmode
+--minwidth 3000
+--extlabels
+
+[labels]
+r MOD?
+v ESP-12E
+! use-license=unlimited
+! dist-license=GPL
+! numslots=0
+! description=ESP-12E WiFi Module
+! documentation=http://www.kloppenborg.net/images/blog/esp8266/esp8266-esp12e-specs.pdf
+! author=Wojciech Krutnik
+! footprint=ESP12F
+! device=IC
+! symversion=1.0
+
+[left]
+18 io  GPIO0
+22 io  GPIO1 (TXD0)
+17 io  GPIO2 (TXD1)
+21 io  GPIO3 (RXD0)
+19 io  GPIO4
+20 io  GPIO5
+
+2      ADC
+.skip 800
+1  i   RST
+3  i   EN
+
+[right]
+11 io  GPIO9
+12 io  GPIO10
+6  io  GPIO12
+7  io  GPIO13 (CTS0)
+5  io  GPIO14
+16 io  GPIO15 (RTS0)
+4  io  GPIO16 (WKUP)
+
+9      CS0
+10     MISO
+13     MOSI
+14     SCLK
+
+[top]
+8  p   VCC
+[bottom]
+15 p   GND
