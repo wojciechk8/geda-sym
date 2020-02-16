@@ -1,4 +1,4 @@
-v 20150930 2
+v 20191008 2
 T 600 600 8 10 1 1 0 0 1
 refdes=Q?
 T 100 1300 5 10 0 0 0 0 1
@@ -10,7 +10,7 @@ footprint=SOT23
 T 100 1900 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 100 2100 5 10 0 0 0 0 1
-documentation=http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf
+documentation=https://assets.nexperia.com/documents/data-sheet/BC817_SER.pdf
 T 100 2300 5 10 0 0 0 0 1
 description=45V, 500mA NPN general-purpose transistors
 T 100 2500 5 10 0 0 0 0 1
