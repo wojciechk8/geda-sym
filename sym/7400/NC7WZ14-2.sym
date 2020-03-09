@@ -1,4 +1,4 @@
-v 20150930 2
+v 20191008 2
 P 0 600 300 600 1 0 0
 {
 T 200 650 5 8 1 1 0 6 1
@@ -34,7 +34,7 @@ footprint=SC70_6
 T 300 1950 5 10 0 0 0 0 1
 author=Wojciech Krutnik
 T 300 2150 5 10 0 0 0 0 1
-documentation=http://www.fairchildsemi.com/datasheets/NC/NC7WZ14.pdf
+documentation=https://www.onsemi.com/pub/Collateral/NC7WZ14-D.PDF
 T 300 2350 5 10 0 0 0 0 1
 description=TinyLogic® UHS Dual Inverter with Schmitt Trigger Inputs 
 T 300 2950 5 10 0 0 0 0 1
