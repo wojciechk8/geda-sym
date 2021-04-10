@@ -9,7 +9,8 @@ DATE=`date +%Y-%m-%d`
 
 for f in *.sch
 do
-  sed -i "s/date=.*/date=$DATE/" $f
+  sed -i "s/^date=.*/date=$DATE/" $f
+  sed -i "s/^file=.*/file=$f/" $f
   num=`grep -oP '(?<=page=)\d+' $f`
   num=`echo $(printf '%03d' $num)`
   gaf export -o "${num}_${f%.sch}.pdf" $f
